@@ -17,31 +17,43 @@
         <div class="dropdown">
             <a href="saleve.html">Le Salève</a>
             <a href="https://www.saleve.xyz/agas/">L'association</a>
-            <a href="https://www.saleve.xyz/infos-pratiques/">Infos</a> 
         </div>
     </div>
 </div>
 
-    <img src="assets/saleve-banner.jpg" alt="AGAS" style="width:100%;">
+<div id="languages">
+    <img src="assets/AGAS-banner.png" alt="AGAS" style="width:100%; display:block;">
     <h1>Benvenidos</h1>
-    <p style="text-align:center;">
-      <a href="english.html">Welcome</a>   •  
-      <a href="deutsch.html">Willkommen</a>  •  
-      <a href="index.html">Bienvenue</a>
+    <p style="text-align:center; margin-top:30px;">
+      <a href="english.html"><img src="assets/en.png" width="20" height="16" alt="EN "> Welcome</a><br>
+      <a href="deutsch.html"><img src="assets/de.png" width="20" height="16" alt="DE "> Willkommen</a><br>
+      <a href="index.html"><img src="assets/fr.png" width="20" height="16" alt="ES "> Bienvenue</a>
+    </p>
+</div>
 
-<h2>Excursiones gratuitas al Salève</h2>
-<p>La "Asociación Ginebrina de Amigos del Salève" (AGAS), organiza excursiones gratuitas al Salève, todos los domingos, 
-  en grupo, sin inscripción previa, cita a las <a href="https://www.saleve.xyz/infos-pratiques/">10:00h al 
-    terminal del bus 8 -   Veyrier-Douane</a>, salida 10:00h en punto. 
-    Se recomiendan buenas botas de marcha, impermeable, pasaporte, euros, comida y bebida (pic-nic); es 
-  indispensable tener una buena condición física.</p> </p>
+<div id="top">
 
-<h3 id="nextMeeting"></h3>
+  <h2>Excursiones gratuitas al Salève</h2>
+  <p>Todos los domingos nos reunimos a las 10:00h al terminal del autobús 8 en Veyrier-Douane, 
+    a 100 metros de la frontera, en el lado suizo. Un representante de la Association Genevoise des Amis du Salève (AGAS) 
+      le estará esperando haga el tiempo que haga. </p>
 
-<p>Dependiendo del número de guías voluntarios presentes, 
-  <a href="https://www.saleve.xyz/sentiers/">se pueden ofrecer varias rutas.</a>
-   Contar entre 4 y 6 horas de marcha (de las cuales entre 2 y 3 horas de subida - 800 m de desnivel). 
+  <p class="warning">Una <b>buena condición física</b> y un buen calzado (¡nada de pies descalzos, chanclas, etc.!) 
+    son absolutamente necesarios. El Salève es una auténtica montaña.<br>
+    <b>Lleve  suficiente agua</b> ya que no hay manantiales en los senderos de la Salève.
   </p>
+
+  <p> Se recomiendan también un sombrero y protector solar, uno o dos bastones de senderismo (opcional), 
+      impermeable, crampones en invierno si hay hielo, pasaporte, dinero y un picnic.
+  </p>
+
+  <h3 id="nextMeeting"></h3>
+
+  <p>Salida a pie desde el punto de encuentro. Dependiendo del número de guías voluntarios presentes, 
+    <a href="https://www.saleve.xyz/sentiers/">se pueden ofrecer varias rutas.</a>
+    Contar entre 4 y 6 horas de marcha (de las cuales entre 2 y 3 horas de subida - 800 m de desnivel).
+    Posibilidad de bajar en <a href="https://www.telepherique-du-saleve.com/en">teleférico</a>. 
+    </p>
 
     <h3>Excursiones adicionales</h3>
         <p>En ocasiones, organizamos una excursión adicional el mismo día, con punto de encuentro diferente, 
@@ -49,17 +61,14 @@
           del teleférico; solo aptas para excursionistas experimentados. Los detalles se anuncian aquí 
           con uno o dos días de antelación.
       </p>
- </div>
 
   <div id="cards"></div>
 
-
-<h2>Advertencia</h2>
-<p class="warning">Una <b>buena condición física</b> y un buen calzado (¡nada de pies descalzos, chanclas, etc.!) 
-  son absolutamente necesarios. El Salève es una auténtica montaña.<br>
-  <b>Lleve también suficiente agua</b>  
-  ya que no hay manantiales en los senderos de la Salève.
-</p>
+  <h2>Información práctica</h2>      
+    
+  <p>Lee las <a href="https://www.saleve.xyz/assets/pdf/prescriptions-internes.pdf">
+    reglas de nuestras excursiones (en francés)</a>.</p>
+</div>
 
 <footer id="bot">
 <p></p>
@@ -97,14 +106,14 @@
         </span></a>
     </div>
     <p class="decline"><a href="https://www.saleve.xyz/disclaimer/">La asociación declina cualquier responsabilidad en caso de accidentes.</a></p>
-    <p><img src="assets/VilleGE.png" style="width:7vw; height: auto; padding-top: 10px;"><br>
+    <p><img src="assets/VilleGE.png" width="80" height="auto" alt="Ville GE"><br>
     Association subventionnée par la Ville de Genève et reconnue d'utilité publique • 
     <a href="https://www.saleve.xyz/legal/">Mentions légales</a> • <a href="https://www.saleve.xyz/contact/">Contact</a></p>
     <p>AGAS • 2026 •  <a href="https://www.saleve.xyz">www.saleve.xyz</a></p>
 
 </footer>
 
-  <script>
+<script>
     var d = new Date();
     var today = new Date();
     d.setDate(d.getDate() + (7 + 7 - d.getDay()) % 7);
@@ -135,7 +144,6 @@
           card.innerHTML = `
             <p><strong> ${hike.Rdv || ""}</strong></p>
             <p> ${hike.Stops || ""}</p>
-            <p> ${hike.D || ""}</p>
           `;
 
           container.appendChild(card);
@@ -148,4 +156,8 @@
     }
 
     loadHikes();
+
+</script>
+</body>
+</html>
 

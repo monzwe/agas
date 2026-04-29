@@ -16,33 +16,40 @@
         <div class="dropdown">
             <a href="saleve.html">Le Salève</a>
             <a href="https://www.saleve.xyz/agas/">L'association</a>
-            <a href="https://www.saleve.xyz/infos-pratiques/">Infos</a> 
         </div>
     </div>
 </div>
 
-<div id="top">
+<div id="languages">
 
-    <img src="assets/saleve-banner.jpg" alt="AGAS" style="width:100%;">
+    <img src="assets/AGAS-banner.png" alt="AGAS" style="width:100%; display:block;">
     <h1>Welcome</h1>
-    <p style="text-align:center;">
-      <a href="index.html">Bienvenue</a>   •  
-      <a href="deutsch.html">Willkommen</a>  •  
-      <a href="english.html">Benvenidos</a>
-    </p>
+    <p style="text-align:center; margin-top:30px;">
+      <a href="index.html"><img src="assets/fr.png" width="20" height="16" alt="FR "> Bienvenue</a><br>
+      <a href="deutsch.html"><img src="assets/de.png" width="20" height="16" alt="DE "> Willkommen</a><br>
+      <a href="espagnol.html"><img src="assets/es.png" width="20" height="16" alt="ES "> Benvenidos</a>
+</div>
 
-    <div class="main">
+<div id="top">
       <h2>Free hikes on the Salève</h2>
-      <p>Every Sunday, hikers meet at 10:00 am <a href="/infos-pratiques">at the terminus of bus 8 in Veyrier-Douane 
-      </a>, 100 meters from the customs on the Swiss side. A representative of the Association Genevoise des Amis du Salève 
-      (AGAS) will be waiting for you in any weather. No need to sign up in advance. You will need proper hiking shoes, snow spikes in winter if icy, hat and sun cream in summer, 
-      one or two hiking poles (optional), waterproof jacket, passport, money, picnic and drinking water.</p>
+      <p>Every Sunday, we meet at <a href="https://www.saleve.xyz/infos-pratiques/">10:00 am at the terminus of bus 8 in Veyrier-Douane</a>, 
+      100 meters from the border on the Swiss side. A representative of the Association Genevoise des Amis du Salève 
+      (AGAS) will be waiting for you in any weather. No need to sign up in advance, just come.</p>
+      
+      <p class="warning">You need to be <b>in good shape</b> and wear appropriate footwear (no sandals, flip-flops, etc!) 
+      The Salève is a real mountain, where you have to be careful.<br>
+      Be sure to <b>bring enough water</b>, as there is no drinking water along the trails.</p>
+
+      <p>Also take a hat and sunscreen, 
+      one or two hiking poles (optional), waterproof jacket, snow spikes in winter if it's icy,
+      passport, money, and a picnic.</p>
       
       <h3 id="nextMeeting"></h3>
-      <p>Depending on the number of volunteer 
+      <p>Departure on foot from the meeting point. Depending on the number of volunteer 
       guides present, <a href="sentiers.html">several itineraries may be proposed.</a> Depending on the chosen circuit, 
       expect 4-6 hours of walking, including 2-3 hours of ascent at a steady pace (800 meters of altitude difference). 
-      Departure on foot from the meeting point. </p>
+      Possibility to get down by <a href="https://www.telepherique-du-saleve.com/en">cable car</a>. 
+       </p>
 
     <h3 id="nextAlternative">Additional hikes </h3>
         <p>Sometimes we organise an additional hike the same day from a different meet-up point to explore the South of Mont Salève.
@@ -50,15 +57,13 @@
          Details are announced here one or two days in advance. 
       </p>
 
-  </div>
 
-  <div id="cards"></div>
+      <div id="cards"></div>
 
-      
-      <h2 id="PleaseNote">Please note:</h2>
-      <p class="warning">You need to be <b>in good shape</b> and wear appropriate footwear (no sandals, flip-flops, etc!) 
-      The Salève is a real mountain. <br>Also be sure to <b>bring enough water</b>, as there is no drinking water along 
-      the trails.</p>
+    <h2>More information</h2>      
+    
+      <p>Here are the <a href="https://www.saleve.xyz/assets/pdf/prescriptions-internes.pdf">
+      rules for our outings (in French)</a>.</p>
 
 </div>
 
@@ -99,7 +104,7 @@
     </div>
     <p class="decline"><a href="https://www.saleve.xyz/disclaimer/">The association declines any  
         responsibility in case of accident.</a></p>
-    <p><img src="assets/VilleGE.png" style="width:7vw; height: auto; padding-top: 10px;"><br>
+    <p><img src="assets/VilleGE.png" width="80" height="auto" alt="Ville GE"><br>
     Association subventionnée par la Ville de Genève et reconnue d'utilité publique • 
     <a href="https://www.saleve.xyz/legal/">Mentions légales</a> • <a href="https://www.saleve.xyz/contact/">Contact</a></p>
     <p>AGAS • 2026 •  <a href="https://www.saleve.xyz">www.saleve.xyz</a></p>
@@ -137,7 +142,6 @@
           card.innerHTML = `
             <p><strong> ${hike.Rdv || ""}</strong></p>
             <p> ${hike.Stops || ""}</p>
-            <p> ${hike.D || ""}</p>
           `;
 
           container.appendChild(card);
