@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/0f006934a4.js" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
     <title>Randos gratuites au Salève</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     <link rel="stylesheet" href="styles.css">
@@ -12,7 +13,7 @@
 
 <body>
 
-<div class="navbar">
+<div id="navbar">
     <div>
         <a href="https://www.saleve.xyz">Association genevoise des amis du Salève</a>
         <div class="dropdown">
@@ -22,17 +23,16 @@
     </div>
 </div>
 
-<div id="languages">
-<img src="assets/AGAS-banner.png" alt="AGAS" style="width:100%; display:block;">
+<div id="top">
+
+<img src="assets/saleve-banner3.png" alt="AGAS" style="width:100%; display:block;">
 <h1>Bienvenue</h1>
     <p style="text-align:center; margin-top:30px;">
       <a href="english.html"><img src="assets/en.png" width="20" height="16" alt="EN "> Welcome</a><br>
       <a href="deutsch.html"><img src="assets/de.png" width="20" height="16" alt="DE "> Willkommen</a><br>
       <a href="espagnol.html"><img src="assets/es.png" width="20" height="16" alt="ES "> Benvenidos</a>
     </p>
-</div>
 
-<div id="top">
       <h2>Randonnées pédestres gratuites au Salève</h2>
       <p>Tous les dimanches, les amoureux de randonnées pédestres se donnent rendez-vous 
         à 10h00 <a href="https://maps.app.goo.gl/RwS1Cnwyc3q6vUXr6"> au terminus du bus 8</a> à Veyrier-Douane, 
@@ -55,7 +55,7 @@
          téléphérique</a>.  
         </p>
 
-    <h3>Randos supplémentaires</h3>
+    <h3 id="Sud">Randos supplémentaires</h3>
         <p class="sub">Parfois nous organisons un rendez-vous supplémentaire le même jour pour une occasion spéciale, ou pour explorer la partie sud du Salève.
          Ces marches sont souvent plus longues, et nous sommes loin du téléphérique. Réservées aux marcheurs initiés.
          Les détails sont annoncés ici un ou deux jours avant. 
@@ -123,7 +123,6 @@
     var date = d.toLocaleString('fr-CH', options);
     document.getElementById('nextMeeting').innerHTML = "Prochaine rando depuis Veyrier: "+date.toString();
 
-
     const scriptUrl = "https://script.google.com/macros/s/AKfycbxrDnesoYawPLQHClhvAdgQ99RgiN-gSm2uwStbYuDarsovduTptgTzfamoxxQPuR5X/exec"; 
 
     async function loadHikes() {
@@ -150,13 +149,11 @@
 
       } catch (err) {
         console.error(err);
-        container.innerHTML = "<p>Oops.</p>";
+        container.innerHTML = "<p>Oups... infos pas trouvés.</p>";
       }
     }
 
     loadHikes();
-
-
 
 </script>
 
