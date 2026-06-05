@@ -3,33 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amis du Salève</title>
+    <script src="https://kit.fontawesome.com/0f006934a4.js" crossorigin="anonymous"></script>
+    <title>L'Association</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<header class="header">
-  <a href="index.html">&#9664 Association genevoise des amis du Salève (AGAS)</a>  
-</header>
+    <div id="navbar">
+        <div>
+            <a href="index.html">&#9664 Association genevoise des amis du Salève (AGAS)</a>
+            <div class="dropdown">
+                <a href="saleve.html">Le Salève</a>
+                <a href="association.html">L'association</a>
+            </div>
+        </div>
+    </div>
 
-<div class="container">
-  <img src="assets/saleve-banner730x140.jpg" alt="AGAS" style="width:100%;">
-  <div class="text-block">
-    <h1>L'AGAS</h1>
-  </div>
-</div>
+    <div id="submenu">
+        <h1><a href="association.html">L'Association</a></h1>
+        <div class="subnavs">
+            <a href="#NousSoutenir">Nous soutenir</a> 
+            <a href="#Remerciements">Remerciements</a> 
+        </div>
+    </div>
 
-<div class="flex-container">  
-      <div class="flex-container-menu id="sidebar">
-        <p class="navtxt">
-          <a class="navlinks" href="saleve.html">Salève</a><br>
-          Association<br>
-          <a class="navlinks" href="infos.html">Info</a><br>
-        </p>  
-    </div> 
-    <div class="flex-container-main">
+<p></p>
+
+<div id="top">
+
         <h2>L'Association Genevoise des Amis du Salève (AGAS)</h2>
             <p>L'idée initiale de l'AGAS a été lancée en 1996 par David Viry et l'association a été fondée 
                 lors de la première assemblée générale en 1998. En 2025, elle a été reconnue d'utilité publique 
@@ -44,13 +47,6 @@
                 <li>Rapport annuel 2024</li>
                 <li>Rapport annuel 2023</li>
             </ul>
-        
-        <h2>Remerciements</h2>
-             <p>L'AGAS remercie la Ville de Genève pour son soutien.</p>
-                <img src="assets/VilleGE_bw.jpg" alt="Logo Ville GE" class="center" style="width:100px;height:auto;">
-
-             <p>Un grand merci aussi à nos membres et nos donneurs. C'est grâce à vous que l'AGAS a ses propres ressources, et peut ainsi demander un subside pour les compléter. Voici où nous en sommes:</p>
-            <iframe width="300" height="auto" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSs-DIgl9wCvINnDWGMpdkjxUiB32TePteXFaQIjX-WdHAr_yiGvQZIV0-_B-F6NuprT7DtcKHzv4HI/pubchart?oid=422951329&amp;format=image"></iframe>
 
         <h2 id="NousSoutenir">Nous soutenir</h2>
             <p>Nos randonnées sont gratuites, mais nous avons quand-même quelques dépenses. Vos [cotisations et dons](/remerciements/) en couvrent une partie, et par le passé la [Ville de Genève](/remerciements/) a bien voulu nous soutenir pour équilibrer le budget.</p>
@@ -75,8 +71,59 @@
         <p>
             <img src="assets/ThankYou.png" class="center" style="width: 200px; height: auto">
         </p>
-    </div>
+
+         <h2 id="Remerciements">Remerciements</h2>
+             <p>L'AGAS remercie la Ville de Genève pour son soutien.</p>
+                <img src="assets/VilleGE_bw.jpg" alt="Logo Ville GE" class="center" style="width:100px;height:auto;">
+
+             <p>Un grand merci aussi à nos membres et nos donneurs. C'est grâce à vous que l'AGAS a ses propres ressources, 
+                et peut ainsi demander un subside pour les compléter. Voici où nous en sommes:</p>
+            <p>
+            <iframe width="500" height="auto" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSs-DIgl9wCvINnDWGMpdkjxUiB32TePteXFaQIjX-WdHAr_yiGvQZIV0-_B-F6NuprT7DtcKHzv4HI/pubchart?oid=422951329&amp;format=image"></iframe>
+            </p>
 </div>
+
+<footer id="bot">
+    <div>
+        <p></p>
+        <a href="mailto:agas@saleve.xyz">
+        <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+        </span></a>
+
+        <a href="mailto:agas@saleve.xyz">
+        <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fa fa-whatsapp fa-stack-1x fa-inverse"></i>
+        </span></a>
+
+        <a href="https://wa.me/41765034533">
+        <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+        </span></a>
+
+        <a href="https://www.facebook.com/LesAmisduSaleve">
+        <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fa fa-facebook-square fa-stack-1x fa-inverse"></i>
+        </span></a>
+
+        <a href="+41225577593">
+        <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fa fa fa-phone fa-stack-1x fa-inverse"></i>
+        </span></a>
+    </div>
+    <p class="decline"><a href="https://www.saleve.xyz/disclaimer/">L'association décline toute 
+        responsabilité en cas d'accident.</a></p>
+    <p><img src="assets/VilleGE.png" style="width:7vw; height: auto; padding-top: 10px;"><br>
+    Association subventionnée par la Ville de Genève et reconnue d'utilité publique • 
+    <a href="https://www.saleve.xyz/legal/">Mentions légales</a> • <a href="https://www.saleve.xyz/contact/">Contact</a></p>
+    <p>AGAS • 2026 •  <a href="https://www.saleve.xyz">www.saleve.xyz</a></p>
+
+</footer>
 
 </body>
 </html>
