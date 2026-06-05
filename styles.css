@@ -65,11 +65,13 @@
   padding: 0 15vw;
 }
 
+.container div {
+  padding-right: 20px;
+}
 
 @media (max-width: 600px) {
     .container {flex-direction: column;}
   }
-
 
 body {
     margin: 0;
@@ -78,10 +80,14 @@ body {
 }
 
 
-p, ul {
+p, ul, h5 {
     padding: 0 15vw;
     font-size: 18px;
     color: #444;
+}
+
+li {
+    margin: 20px;
 }
 
 /* Style for additional hikes details */
@@ -159,7 +165,7 @@ h2 {
 
 h3 {
     color: #414141;
-    font-size: 28px;
+    font-size: 24px;
     line-height: 1.5;
     padding: 0 15vw;
     border-width: 0 0 0 10px;
@@ -173,6 +179,11 @@ h4 {
     color: white;
     text-align: center;
     text-shadow: 1px 1px 10px white;
+}
+
+h5 {
+    font-weight: 900;
+    text-align: left;
 }
 
 
