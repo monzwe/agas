@@ -74,8 +74,8 @@
   }
 
 body {
-    margin: 0;
     background-color: #fde5cb;
+    margin: 0;
     text-align: left;
 }
 
@@ -93,7 +93,6 @@ li {
 /* Style for additional hikes details */
 
 #cards {
-    border: 1px solid #fde5cb;
     border-left-width: 0.3125rem;
     border-radius: 0.3125rem 0.1875rem 0.1875rem 0.3125rem;
     border-left-color: #fff;
@@ -120,9 +119,14 @@ li {
     color: #0b879c;
     text-decoration: none;
 }
+
 #top a:hover {
     color: #0abcdb;
     background-color: #fdfdfd;
+}
+
+#bot {
+    padding-top: 30px;  
 }
 
 #bot a {
@@ -155,13 +159,14 @@ h1 a:hover {
 
 
 h2 {
-    color: #414141;
+    color: black;
     line-height: 1.5;
     text-align: center;
     font-size: 28px;
     padding: 0 15vw;
     scroll-margin-top: 200px;
 }
+
 
 h3 {
     color: #414141;
