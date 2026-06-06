@@ -7,9 +7,9 @@
 #navbar {
     padding: 0; 
     background-color: #e6e6e6;
-    text-transform:uppercase;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 14px;
+    text-transform:uppercase;
     width: 100%;
     position: sticky;
     top: 0;
@@ -104,6 +104,12 @@ li {
     margin: 0 5px 18px 5px;
 }
 
+.centerblock {
+  margin-top: 30px;
+  font-size: 18px;
+  padding-left: 40vw;
+}
+
 .center {
   display: block;
   margin-left: auto;
@@ -143,9 +149,50 @@ h1 {
     padding:2vw;
     margin: 0;
     font-weight: 900;
-    text-shadow: 3px 3px black;
     font-size: 3rem;
+    text-decoration: underline;
+    text-decoration-thickness: 20px;
+    width: 100%;
     text-align:center;
+    animation-duration: 1s;
+}
+
+.fr {
+    text-decoration-color: crimson;
+    animation-name: FR;
+}
+.en {
+    text-decoration-color: greenyellow;
+    animation-name: EN;
+}
+.es {
+    text-decoration-color: gold;
+    animation-name: ES;
+}
+.de {
+    text-decoration-color: blueviolet;
+    animation-name: DE;
+}
+
+
+@keyframes FR {
+  from {text-decoration: underline; text-decoration-color: #86857f; text-decoration-thickness: 20px;}
+  to {text-decoration: underline; text-decoration-color: crimson; text-decoration-thickness: 20px;}
+}
+
+@keyframes EN {
+  from {text-decoration: underline; text-decoration-color: #86857f; text-decoration-thickness: 20px;}
+  to {text-decoration: underline; text-decoration-color: greenyellow; text-decoration-thickness: 20px;}
+}
+
+@keyframes ES {
+  from {text-decoration: underline; text-decoration-color: #86857f; text-decoration-thickness: 20px;}
+  to {text-decoration: underline; text-decoration-color: gold; text-decoration-thickness: 20px;}
+}
+
+@keyframes DE {
+  from {text-decoration: underline; text-decoration-color: #86857f; text-decoration-thickness: 20px;}
+  to {text-decoration: underline; text-decoration-color: blueviolet; text-decoration-thickness: 20px;}
 }
 
 h1 a {
