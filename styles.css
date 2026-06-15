@@ -252,7 +252,7 @@ p.sub {
 
 p.warning {
     background-color: #fdfdfd;
-    border-color:  gold;
+    border-color:  #b09c93;
     border-style: solid;
     border-width: 0 0 0 10px;
     margin: 30px 15vw ;
