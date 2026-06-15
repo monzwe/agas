@@ -22,12 +22,13 @@
   text-align: left;
   line-height: normal;
   padding: 14px 16px;
-  text-decoration: none;
+  text-decoration-color: deeppink;
+  text-decoration-thickness: 2px;
 }
 
 #navbar a:hover, .dropdown a:hover {
- background-color: #eee;
-  color:#0abcdb;
+  color:white;
+  background-color: #86857f;
 }
 
 .dropdown {
@@ -52,11 +53,12 @@
   color: white;
   line-height: normal;
   padding: 14px 16px;
-  text-decoration: none;
+  text-decoration-color: deeppink;
+  text-decoration-thickness: 3px;
 }
 
 .subnavs a:hover {
-    background-color:#999999;
+    background-color: #eee;
     color:black;
 }
 
@@ -74,7 +76,7 @@
   }
 
 body {
-    background-color: #fde5cb;
+    background-color: #faeae9;
     margin: 0;
     text-align: left;
 }
@@ -105,9 +107,12 @@ li {
 }
 
 .centerblock {
-  margin-top: 30px;
-  font-size: 18px;
-  padding-left: 40vw;
+  margin: 30px auto;
+  width: 200px;
+  text-align: center;
+  padding: 10px;
+  font-size: 24px;
+  line-height: 32px;
 }
 
 .center {
@@ -121,27 +126,22 @@ li {
     color: white;
 }
 
-#top a {
-    color: #0b879c;
-    text-decoration: none;
+#top a, #bot a {
+    color: #444;
+    font-weight:600;
+    text-decoration-color: #999;
+    text-decoration-thickness: 2px;
 }
 
-#top a:hover {
-    color: #0abcdb;
-    background-color: #fdfdfd;
+#top a:hover, #bot a:hover {
+    color: black;
+    background-color: white;
 }
 
 #bot {
     padding-top: 30px;  
 }
 
-#bot a {
-color: #444;
-text-decoration: none;
-}
-#bot a:hover {
-    color: #0b879c;
-}
 
 h1 {
     color: white;
@@ -158,7 +158,7 @@ h1 {
 }
 
 .fr {
-    text-decoration-color: crimson;
+    text-decoration-color: deeppink;
     animation-name: FR;
 }
 .en {
@@ -176,23 +176,23 @@ h1 {
 
 
 @keyframes FR {
-  from {text-decoration: underline; text-decoration-color: #86857f; text-decoration-thickness: 20px;}
-  to {text-decoration: underline; text-decoration-color: crimson; text-decoration-thickness: 20px;}
+  from {text-decoration: underline; text-decoration-color: #86857f; text-decoration-thickness: 15px;}
+  to {text-decoration: underline; text-decoration-color: deeppink; text-decoration-thickness: 15px;}
 }
 
 @keyframes EN {
-  from {text-decoration: underline; text-decoration-color: #86857f; text-decoration-thickness: 20px;}
-  to {text-decoration: underline; text-decoration-color: greenyellow; text-decoration-thickness: 20px;}
+  from {text-decoration: underline; text-decoration-color: #86857f; text-decoration-thickness: 15px;}
+  to {text-decoration: underline; text-decoration-color: greenyellow; text-decoration-thickness: 15px;}
 }
 
 @keyframes ES {
-  from {text-decoration: underline; text-decoration-color: #86857f; text-decoration-thickness: 20px;}
-  to {text-decoration: underline; text-decoration-color: gold; text-decoration-thickness: 20px;}
+  from {text-decoration: underline; text-decoration-color: #86857f; text-decoration-thickness: 15px;}
+  to {text-decoration: underline; text-decoration-color: gold; text-decoration-thickness: 15px;}
 }
 
 @keyframes DE {
-  from {text-decoration: underline; text-decoration-color: #86857f; text-decoration-thickness: 20px;}
-  to {text-decoration: underline; text-decoration-color: blueviolet; text-decoration-thickness: 20px;}
+  from {text-decoration: underline; text-decoration-color: #86857f; text-decoration-thickness: 15px;}
+  to {text-decoration: underline; text-decoration-color: blueviolet; text-decoration-thickness: 15px;}
 }
 
 h1 a {
@@ -222,7 +222,7 @@ h3 {
     padding: 0 15vw;
     border-width: 0 0 0 10px;
     margin: 30px 0 10px 0;
-    text-decoration: overline #fdfdfd;
+    text-decoration: overline white;
     text-decoration-thickness: 9px;
 }
 
