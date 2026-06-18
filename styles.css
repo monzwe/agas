@@ -61,7 +61,7 @@
 }
 
 .button {
-  background-color: #86857f;
+  background-color: #ccc;
   border: none;
   color: white;
   padding: 16px 32px;
@@ -123,11 +123,25 @@ li {
 
 .centerblock {
   margin: 20px auto;
-  width: 200px;
+  width: 250px;
+  height: 200px;
   text-align: center;
   padding: 10px;
-  font-size: 24px;
-  line-height: 32px;
+  background-image: url('assets/welcome-heart-280.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.centerblock a {
+    background-color: white;
+    font-size: 20px;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.centerblock-active {
+    color: crimson;
+    font-size: 24px;
+    background-color: white;
 }
 
 .center {
@@ -137,9 +151,6 @@ li {
   width: 80%;
 }
 
-#nav-2 a {
-    color: white;
-}
 
 #top a, #bot a {
     color: #444;
@@ -147,6 +158,8 @@ li {
     text-decoration-color: #999;
     text-decoration-thickness: 2px;
 }
+
+
 
 #top a:hover, #bot a:hover {
     color: white;
@@ -161,12 +174,13 @@ li {
 h1 {
     color: white;
     background-color: #86857f;
+    line-height: normal;
     padding:2vw;
     margin: 0;
     font-weight: 900;
     font-size: 36px;
-    text-decoration: underline;
-    text-decoration-thickness: 15px;
+    text-decoration: underline #86857f 15px;
+    text-decoration-skip-ink: none;
     width: 100%;
     text-align:center;
     animation-duration: 1s;
@@ -211,10 +225,10 @@ h5 {
     font-weight: 900;
     text-align: left;
 }
-.nx {
-    text-decoration-color: #86857f;
-}
 
+.nx {
+    text-decoration-color: 86857f;
+}
 .fr {
     text-decoration-color: deeppink;
     animation-name: FR;
@@ -228,29 +242,29 @@ h5 {
     animation-name: ES;
 }
 .de {
-    text-decoration-color: mediumslateblue;
+    text-decoration-color: powderblue;
     animation-name: DE;
 }
 
 
 @keyframes FR {
-  from {text-decoration: underline; text-decoration-color: #86857f; text-decoration-thickness: 15px;}
-  to {text-decoration: underline; text-decoration-color: deeppink; text-decoration-thickness: 15px;}
+  from {text-decoration: underline #86857f 15px;}
+  to {text-decoration: underline deeppink 15px;}
 }
 
 @keyframes EN {
-  from {text-decoration: underline; text-decoration-color: #86857f; text-decoration-thickness: 15px;}
-  to {text-decoration: underline; text-decoration-color: greenyellow; text-decoration-thickness: 15px;}
+  from {text-decoration: underline #86857f 15px;}
+  to {text-decoration: underline greenyellow 15px;}
 }
 
 @keyframes ES {
-  from {text-decoration: underline; text-decoration-color: #86857f; text-decoration-thickness: 15px;}
-  to {text-decoration: underline; text-decoration-color: gold; text-decoration-thickness: 15px;}
+  from {text-decoration: underline #86857f 15px;}
+  to {text-decoration: underline gold 15px;}
 }
 
 @keyframes DE {
-  from {text-decoration: underline; text-decoration-color: #86857f; text-decoration-thickness: 15px;}
-  to {text-decoration: underline; text-decoration-color: mediumslateblue; text-decoration-thickness: 15px;}
+  from {text-decoration: underline #86857f 15px;}
+  to {text-decoration: underline powderblue 15px;}
 }
 
 .legend {
