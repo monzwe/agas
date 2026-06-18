@@ -215,7 +215,7 @@ h5 {
     animation-name: ES;
 }
 .de {
-    text-decoration-color: blueviolet;
+    text-decoration-color: mediumslateblue;
     animation-name: DE;
 }
 
@@ -237,7 +237,7 @@ h5 {
 
 @keyframes DE {
   from {text-decoration: underline; text-decoration-color: #86857f; text-decoration-thickness: 15px;}
-  to {text-decoration: underline; text-decoration-color: blueviolet; text-decoration-thickness: 15px;}
+  to {text-decoration: underline; text-decoration-color: mediumslateblue; text-decoration-thickness: 15px;}
 }
 
 .legend {
