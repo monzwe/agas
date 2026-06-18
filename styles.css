@@ -87,7 +87,7 @@
   }
 
 body {
-    background-color: #fef;
+    background-color: #fed;
     margin: 0;
     text-align: left;
 }
@@ -152,7 +152,7 @@ li {
 }
 
 
-#top a, #bot a {
+#top a, #bot a, #pgs a {
     color: #444;
     font-weight:600;
     text-decoration-color: #999;
@@ -161,13 +161,17 @@ li {
 
 
 
-#top a:hover, #bot a:hover {
+#top a:hover, #bot a:hover, #pgs a:hover {
     color: white;
     background-color: #86857f;
 }
 
 #bot {
     padding-top: 30px;  
+}
+
+#pgs {
+    background-color: white;
 }
 
 
