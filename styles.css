@@ -22,13 +22,11 @@
   text-align: left;
   line-height: normal;
   padding: 14px 16px;
-  text-decoration-color: deeppink;
-  text-decoration-thickness: 2px;
 }
 
 #navbar a:hover, .dropdown a:hover {
   color:white;
-  background-color: #86857f;
+  background-color: deeppink;
 }
 
 .dropdown {
@@ -76,7 +74,7 @@
   }
 
 body {
-    background-color: #faeae9;
+    background-color: #fef;
     margin: 0;
     text-align: left;
 }
@@ -86,6 +84,10 @@ p, ul, h5 {
     padding: 0 15vw;
     font-size: 18px;
     color: #444;
+}
+
+ul {
+    list-style: square inside url("assets/bullet.png");
 }
 
 li {
@@ -107,7 +109,7 @@ li {
 }
 
 .centerblock {
-  margin: 30px auto;
+  margin: 20px auto;
   width: 200px;
   text-align: center;
   padding: 10px;
@@ -149,12 +151,55 @@ h1 {
     padding:2vw;
     margin: 0;
     font-weight: 900;
-    font-size: 3rem;
+    font-size: 36px;
     text-decoration: underline;
-    text-decoration-thickness: 20px;
+    text-decoration-thickness: 15px;
     width: 100%;
     text-align:center;
     animation-duration: 1s;
+}
+
+h1 a {
+   color: white; 
+   text-decoration: none;
+}
+
+h1 a:hover {
+    background-color: #999999;
+}
+
+
+h2 {
+    color: black;
+    line-height: 1.5;
+    text-align: center;
+    font-size: 28px;
+    padding: 0 15vw;
+    scroll-margin-top: 200px;
+}
+
+h3 {
+    color: #414141;
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 0 15vw;
+    border-width: 0 0 0 10px;
+    margin: 30px 0 10px 0;
+    text-decoration: overline white;
+    text-decoration-thickness: 9px;
+}
+
+h4 {
+    color: white;
+    text-align: center;
+}
+
+h5 {
+    font-weight: 900;
+    text-align: left;
+}
+.nx {
+    text-decoration-color: #86857f;
 }
 
 .fr {
@@ -195,50 +240,6 @@ h1 {
   to {text-decoration: underline; text-decoration-color: blueviolet; text-decoration-thickness: 15px;}
 }
 
-h1 a {
-   color: white; 
-   text-decoration: none;
-}
-
-h1 a:hover {
-    background-color: #999999;
-}
-
-
-h2 {
-    color: black;
-    line-height: 1.5;
-    text-align: center;
-    font-size: 28px;
-    padding: 0 15vw;
-    scroll-margin-top: 200px;
-}
-
-
-h3 {
-    color: #414141;
-    font-size: 24px;
-    line-height: 1.5;
-    padding: 0 15vw;
-    border-width: 0 0 0 10px;
-    margin: 30px 0 10px 0;
-    text-decoration: overline white;
-    text-decoration-thickness: 9px;
-}
-
-h4 {
-    font-size: 2vw;
-    color: white;
-    text-align: center;
-    text-shadow: 1px 1px 10px white;
-}
-
-h5 {
-    font-weight: 900;
-    text-align: left;
-}
-
-
 .legend {
     color: black;
     text-align: center;
@@ -269,7 +270,6 @@ p.decline {
     padding: 15px 10px;
     font-family: 'Courier New', Courier, monospace;
 }
-
 
 footer {
     width: 100%;
