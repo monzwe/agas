@@ -48,6 +48,12 @@
     background-color: #b30000;
 }
 
+#banner {
+    min-height: 100px;
+    margin: 0;
+    padding: 0;
+}
+
 .subnavs {
     display: flex;
     margin: 0 15vw;
@@ -57,7 +63,7 @@
     margin: 0 5%;
 }
 
-.subnavs a:link, a:visited {
+.subnavs a {
   text-transform:uppercase;
   color: white;
   text-decoration: none;
@@ -243,12 +249,12 @@ h5 {
 
 h6 {
     font-weight: 900;
-    background-color: rgba(230,230,230,0.5);
     font-size: 18px;
     display:inline;
     position:relative;
     top: 25px;
     line-height: 1;
+    overflow:hidden;
 }
 
 .nx {
