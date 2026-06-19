@@ -160,6 +160,11 @@ li {
   width: 80%;
 }
 
+.center-unsized {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 #top a, #bot a {
     color: #b30000;
