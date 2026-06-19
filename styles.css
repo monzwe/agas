@@ -6,23 +6,20 @@
 
 #navbar {
     padding: 0 10vw; 
-    background-color: white;
-    animation: dawning 1s;
-    font-weight: 600;
-    font-size: 24px;
-    text-transform:uppercase;
+    align-items: center;
+    background-color: #ddd;
     width: 100%;
     position: sticky;
     top: 0;
-    height: 50px;
+    height: 70px;
 } 
 
 #navbar a {
   color: #444;
+  font-size: 24px;
   float: left;
-  text-align: left;
-  line-height: normal;
-  padding: 17px 16px;
+  margin-top: 11px;
+  padding: 12px;
 }
 
 #navbar a:hover, .dropdown a:hover {
@@ -43,22 +40,31 @@
     text-align: center;
     font-weight: 900;
     position: sticky;
-    top: 50px;
+    top: 70px;
     scroll-snap-type: y mandatory;
 }
 
 #fr-icons {
-    background-color: #ff6666;
+    background-color: #b30000;
+}
+
+.subnavs {
+    display: flex;
+    margin: 0 15vw;
+    justify-content: center;
+}
+.subnavs div{
+    margin: 0 5%;
 }
 
 .subnavs a:link, a:visited {
   text-transform:uppercase;
   color: white;
-  line-height: normal;
-  padding: 14px 16px;
-  text-decoration: underline #ff6666 15px;
+  text-decoration: none;
+  padding: 3px;
+  background-color: #b30000;
   animation-duration: 1s;
-  animation-name: "FR";
+  animation-name: "subs";
 }
 
 .subnavs a:hover {
@@ -67,14 +73,14 @@
 }
 
 .button {
-  background-color: #ccc;
+    background-color: #ccc;
   border: none;
   color: white;
-  padding: 16px 32px;
+  padding: 5px;
   text-align: center;
   display: inline-block;
   font-size: 24px;
-  margin: 4px 2px;
+  margin: 0 15vw;
   cursor: pointer;
 }
 
@@ -89,6 +95,7 @@
 
 @media (max-width: 700px) {
     .container {flex-direction: column;}
+    .subnavs {width: 100%; margin:0;}
   }
 
 body {
@@ -133,7 +140,7 @@ li {
 }
 
 .centerblock-active {
-    color: crimson;
+    color: #b30000;
     font-size: 28px;
     background-color: white;
 }
@@ -147,9 +154,13 @@ li {
 
 
 #top a, #bot a {
-    color: crimson;
+    color: #b30000;
     font-weight:400;
-    text-decoration: underline crimson 1px;
+    text-decoration: underline #b30000 1px;
+}
+
+#pgs a {
+    text-decoration: none;
 }
 
 #top a:hover, #bot a:hover, #pgs a:hover {
@@ -208,7 +219,7 @@ h2 {
 }
 
 h3 {
-    color: #414141;
+    color: #444;
     font-size: 20px;
     line-height: 1.5;
     padding: 0 15vw;
@@ -231,15 +242,17 @@ h5 {
 
 h6 {
     font-weight: 900;
-    text-transform: uppercase;
-    padding:0;
-    margin: 0 auto;
-    font-size: 14px;
-    text-align: center;
+    background-color: #ddd;
+    font-size: 18px;
+    display:inline;
+    position:relative;
+    top: 25px;
+    line-height: 1;
+    overflow: hidden;
 }
 
 .nx {
-    text-decoration-color: 86857f;
+    text-decoration-color: #86857f;
 }
 .fr {
     text-decoration-color: #ff6666;
@@ -258,9 +271,9 @@ h6 {
     animation-name: DE;
 }
 
-@keyframes dawning {
-    0% {background-color: #eee;}
-    100% {background-color: white;}
+@keyframes subs {
+    0% {background-color: #86857f;}
+    100% {background-color: #b30000;}
 }
 
 
@@ -292,8 +305,8 @@ h6 {
 }
 
 p.warning {
-    background-color: #fdfdfd;
-    border-color:  #b09c93;
+    background-color: white;
+    border-color:  #86857f;
     border-style: solid;
     border-width: 0 0 0 10px;
     margin: 30px 15vw ;
@@ -302,8 +315,8 @@ p.warning {
 }
 
 p.decline {
-    background-color: #fdfdfd;
-    border-color:  crimson;
+    background-color: white;
+    border-color:  #b30000;
     border-style: solid;
     border-width: 0 0 0 6px;
     margin: 20px 15vw;
@@ -320,4 +333,9 @@ footer {
 
 #social a {
     font-size: 30px;
+}
+
+#social a:hover {
+    color: #ff6666;
+    background-color: white;
 }
