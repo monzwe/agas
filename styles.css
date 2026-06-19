@@ -253,7 +253,7 @@ h6 {
     animation-name: ES;
 }
 .de {
-    text-decoration-color: powderblue;
+    text-decoration-color: #8080ff;
     animation-name: DE;
 }
 
@@ -275,7 +275,7 @@ h6 {
 
 @keyframes DE {
   from {text-decoration: underline #86857f 15px;}
-  to {text-decoration: underline powderblue 15px;}
+  to {text-decoration: underline #8080ff 15px;}
 }
 
 .legend {
@@ -304,7 +304,7 @@ p.decline {
     border-color:  crimson;
     border-style: solid;
     border-width: 0 0 0 6px;
-    margin: 20px 25vw;
+    margin: 20px 15vw;
     padding: 15px 10px;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -314,4 +314,8 @@ footer {
     background-color: #ccc;
     text-align: center;
     padding: 8px 30px;
+}
+
+#social a {
+    font-size: 30px;
 }
