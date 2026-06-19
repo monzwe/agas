@@ -49,7 +49,8 @@
 }
 
 #banner {
-    min-height: 100px;
+    width: 100%;
+    display:block;
     margin: 0;
     padding: 0;
 }
@@ -250,6 +251,7 @@ h5 {
 h6 {
     font-weight: 900;
     font-size: 18px;
+    background-color: rgba(221,221,221,0.6);
     display:inline;
     position:relative;
     top: 25px;
