@@ -6,7 +6,8 @@
 
 #navbar {
     padding: 0 10vw; 
-    background-color: #fff;
+    background-color: white;
+    animation: dawning 1s;
     font-weight: 600;
     font-size: 24px;
     text-transform:uppercase;
@@ -125,8 +126,11 @@ li {
 .centerblock a {
     background-color: white;
     font-size: 20px;
-    line-height: normal;
+    line-height: 1;
     text-decoration: none;
+}
+.centerblock a:hover {
+    font-size:24px;
 }
 
 .centerblock-active {
@@ -174,16 +178,16 @@ li {
 h1 {
     color: white;
     background-color: #86857f;
-    line-height: normal;
-    padding:2vw;
+    padding:28px 0;
     margin: 0;
     font-weight: 900;
     font-size: 36px;
+    line-height: 1;
     text-decoration: underline #86857f 15px;
     text-decoration-skip-ink: none;
     width: 100%;
     text-align:center;
-    animation-duration: 1s;
+    animation-duration: 2s;
 }
 
 h1 a {
@@ -198,7 +202,6 @@ h1 a:hover {
 
 h2 {
     color: black;
-    line-height: 1.5;
     text-align: center;
     font-size: 28px;
     padding: 0 15vw;
@@ -255,6 +258,11 @@ h6 {
 .de {
     text-decoration-color: #8080ff;
     animation-name: DE;
+}
+
+@keyframes dawning {
+    0% {background-color: #eee;}
+    100% {background-color: white;}
 }
 
 

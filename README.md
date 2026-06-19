@@ -1,2 +1,2 @@
 # landing-page
-Landing page with iframe for AGAS website
+A minimalist version of the website at https://www.saleve.xyz
