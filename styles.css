@@ -6,9 +6,9 @@
 
 #navbar {
     padding: 0 10vw; 
-    background-color: #e6e6e6;
+    background-color: #fff;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 24px;
     text-transform:uppercase;
     width: 100%;
     position: sticky;
@@ -26,7 +26,7 @@
 
 #navbar a:hover, .dropdown a:hover {
   color:white;
-  background-color: deeppink;
+  background-color: #ff6666;
 }
 
 .dropdown {
@@ -46,17 +46,23 @@
     scroll-snap-type: y mandatory;
 }
 
+#fr-icons {
+    background-color: #ff6666;
+    font-size: 36px;
+}
+
 .subnavs a:link, a:visited {
   text-transform:uppercase;
   color: white;
   line-height: normal;
   padding: 14px 16px;
-  text-decoration-color: deeppink;
-  text-decoration-thickness: 3px;
+  text-decoration: underline #ff6666 15px;
+  animation-duration: 1s;
+  animation-name: "FR";
 }
 
 .subnavs a:hover {
-    background-color: deeppink;
+    background-color: #ff6666;
     color: white;
 }
 
@@ -66,7 +72,6 @@
   color: white;
   padding: 16px 32px;
   text-align: center;
-  text-decoration: none;
   display: inline-block;
   font-size: 24px;
   margin: 4px 2px;
@@ -82,7 +87,7 @@
   padding-right: 20px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .container {flex-direction: column;}
   }
 
@@ -107,20 +112,6 @@ li {
     margin: 20px;
 }
 
-/* Style for additional hikes details */
-
-#cards {
-    border-left-width: 0.3125rem;
-    border-radius: 0.3125rem 0.1875rem 0.1875rem 0.3125rem;
-    border-left-color: #fff;
-    padding: 0rem 0.9375rem 0rem 0.625rem;
-    margin: 0 1.25rem 0 0.3125rem;
-}
-
-.card p {
-    margin: 0 5px 18px 5px;
-}
-
 .centerblock {
   margin: 20px auto;
   width: 250px;
@@ -140,7 +131,7 @@ li {
 
 .centerblock-active {
     color: crimson;
-    font-size: 24px;
+    font-size: 28px;
     background-color: white;
 }
 
@@ -152,18 +143,15 @@ li {
 }
 
 
-#top a, #bot a, #pgs a {
-    color: #444;
-    font-weight:600;
-    text-decoration-color: #999;
-    text-decoration-thickness: 2px;
+#top a, #bot a {
+    color: crimson;
+    font-weight:400;
+    text-decoration: underline crimson 1px;
 }
 
-
-
 #top a:hover, #bot a:hover, #pgs a:hover {
-    color: white;
-    background-color: #86857f;
+    color: black;
+    background-color: white;
 }
 
 #bot {
@@ -172,6 +160,14 @@ li {
 
 #pgs {
     background-color: white;
+}
+
+#cards {
+    margin: 0;
+}
+
+.card p {
+    margin: 0 5px 18px 5px;
 }
 
 
@@ -234,8 +230,9 @@ h5 {
 h6 {
     font-weight: 900;
     text-transform: uppercase;
+    text-decoration: none;
     padding:0;
-    margin-top: 5px;
+    margin: 0 auto;
     font-size: 14px;
     text-align: center;
 }
@@ -244,7 +241,7 @@ h6 {
     text-decoration-color: 86857f;
 }
 .fr {
-    text-decoration-color: deeppink;
+    text-decoration-color: #ff6666;
     animation-name: FR;
 }
 .en {
@@ -263,7 +260,7 @@ h6 {
 
 @keyframes FR {
   from {text-decoration: underline #86857f 15px;}
-  to {text-decoration: underline deeppink 15px;}
+  to {text-decoration: underline #ff6666 15px;}
 }
 
 @keyframes EN {
@@ -314,7 +311,7 @@ p.decline {
 
 footer {
     width: 100%;
-    background-color: rgb(230, 230, 230);
+    background-color: #ccc;
     text-align: center;
     padding: 8px 30px;
 }

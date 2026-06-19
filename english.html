@@ -26,9 +26,9 @@
     <p class="centerblock">
       <b>.<br>
       <a href="index.html">&#9658; Bienvenue</a><br>
-      <span class="centerblock-active" >Welcome</span><br>
       <a href="deutsch.html">&#9658; Willkommen</a><br>
-      <a href="espagnol.html">&#9658; Benvenidos</a>
+      <a href="espagnol.html">&#9658; Benvenidos</a><br>
+      <span class="centerblock-active" >Welcome</span>
       </b>
     </p>
 
@@ -55,7 +55,7 @@
     <h3 id="nextAlternative">Additional hikes </h3>
         <p>Sometimes we organise an additional hike the same day from a different meet-up point to explore the South of Mont Salève.
          These hikes tend to be longer, and we will be far from the cable car, for experienced hikers only. 
-         Details are announced here one or two days in advance. 
+         Details are confirmed one or two days in advance. 
       </p>
 
 
@@ -120,44 +120,9 @@
     var options = {'weekday': 'long', 'month': 'long', 'day': '2-digit', 'year': 'numeric'};
     var date = d.toLocaleString('en-US', options);
     document.getElementById('nextMeeting').innerHTML = "Next hike from Veyrier: "+date.toString();
-
-
-    const scriptUrl = "https://script.google.com/macros/s/AKfycbxrDnesoYawPLQHClhvAdgQ99RgiN-gSm2uwStbYuDarsovduTptgTzfamoxxQPuR5X/exec"; 
-
-    async function loadHikes() {
-      const container = document.getElementById("cards");
-      container.innerHTML = "<p>Loading ...</p>";
-
-      try {
-        const response = await fetch(scriptUrl);
-        const hikes = await response.json();
-
-        container.innerHTML = "";
-
-        hikes.forEach(hike => {
-          const card = document.createElement("div");
-          card.className = "card";
-
-          card.innerHTML = `
-            <p><strong> ${hike.Rdv || ""}</strong><br>
-            ${hike.Stops || ""}<br>
-            ${hike.Details || ""}</p>
-          `;
-
-          container.appendChild(card);
-        });
-
-      } catch (err) {
-        console.error(err);
-        container.innerHTML = "<p>Oops.</p>";
-      }
-    }
-
-    loadHikes();
-
-
-
 </script>
 
-    </body>
+<script src="scripts.js"></script>
+
+</body>
 </html>

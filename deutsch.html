@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body style="background-color: #eff0ff;">
+<body style="background-color: #e6e6ff;">
 
 <div id="navbar">
         <div><a href="index.html"><i class='fas fa-home' style='font-size:24px'></i></a></div>
@@ -26,9 +26,9 @@
     <p class="centerblock">
       <b>.<br>
       <a href="index.html">&#9658; Bienvenue</a><br>
-      <a href="english.html">&#9658; Welcome</a><br>
       <span class="centerblock-active" >Willkommen</span><br>
-      <a href="espagnol.html">&#9658; Benvenidos</a>
+      <a href="espagnol.html">&#9658; Benvenidos</a><br>
+      <a href="english.html">&#9658; Welcome</a>
       </b>
     </p>
 
@@ -55,9 +55,9 @@
    <a href="https://www.telepherique-du-saleve.com/en">Seilbahn</a>.<i style='font-size:14px' class='fas'>&#xf35d;</i></p>
 
   <h3>Zusätzliche Wanderungen</h3>
-        <p>Manchmal organisieren wir eine zusätzliche Wanderung am gleichen Tag von einem anderen Treffpunkt, um den Süden des Salève zu erkunden.
+      <p>Manchmal organisieren wir eine zusätzliche Wanderung am gleichen Tag von einem anderen Treffpunkt, um den Süden des Salève zu erkunden.
          Diese Wanderungen sind oft länger und fernab von der Seilbahn, daher den sportlichen Wanderern vorbehalten. 
-         Einzelheiten werden ein bis zwei Tage im voraus hier angekündigt. 
+         Einzelheiten werden ein bis zwei Tage im voraus bestätigt. 
       </p>
 
   <div id="cards"></div>
@@ -122,39 +122,10 @@
     var options = {'weekday': 'long', 'month': 'long', 'day': '2-digit', 'year': 'numeric'};
     var date = d.toLocaleString('de-CH', options);
     document.getElementById('nextMeeting').innerHTML = "Nächste Wanderung ab Veyrier: "+date.toString();
-
-
-    const scriptUrl = "https://script.google.com/macros/s/AKfycbxrDnesoYawPLQHClhvAdgQ99RgiN-gSm2uwStbYuDarsovduTptgTzfamoxxQPuR5X/exec"; 
-
-    async function loadHikes() {
-      const container = document.getElementById("cards");
-      container.innerHTML = "<p>Einen Moment...</p>";
-
-      try {
-        const response = await fetch(scriptUrl);
-        const hikes = await response.json();
-
-        container.innerHTML = "";
-
-        hikes.forEach(hike => {
-          const card = document.createElement("div");
-          card.className = "card";
-
-          card.innerHTML = `
-            <p><strong> ${hike.Rdv || ""}</strong><br>
-            ${hike.Stops || ""}<br>
-            ${hike.Details || ""}</p>
-          `;
-
-          container.appendChild(card);
-        });
-
-      } catch (err) {
-        console.error(err);
-        container.innerHTML = "<p>Oops.</p>";
-      }
-    }
-
-    loadHikes();
-
 </script>
+
+<script src="scripts.js"></script>
+
+</body>
+
+</html>

@@ -21,15 +21,15 @@
 
 <div id="top">
 
-<h6>Association&nbsp;genevoise des amis du Salève</h6>
+<h6><a href="association.html">Association&nbsp;genevoise des amis du Salève</a></h6>
 <img src="assets/AGAS-banner.png" alt="AGAS" style="width:100%; display:block;">
 <h1 class="fr">Randonnées gratuites au Salève</h1>
     <p class="centerblock">
       <b>.<br>
       <span class="centerblock-active" >Bienvenue</span><br>
-      <a href="english.html">&#9658; Welcome</a><br>
       <a href="deutsch.html">&#9658; Willkommen</a><br>
-      <a href="espagnol.html">&#9658; Benvenidos</a>
+      <a href="espagnol.html">&#9658; Benvenidos</a><br>
+      <a href="english.html">&#9658; Welcome</a>
       </b>
     </p>
     
@@ -57,7 +57,7 @@
     <h3 id="Alter-fr">Randos alternatives</h3>
         <p>Parfois nous organisons un rendez-vous supplémentaire pour explorer le sud du Salève, loin du téléphérique. 
         Ces sorties sont <strong>réservées aux randonneurs initiés qui ont déjà marché avec nous</strong>.
-         Les détails sont confirmés ici 1-2 jours avant, selon la météo. 
+         Les détails sont confirmés 1-2 jours avant, selon la météo. 
       </p>
 
     <div id="cards"></div>
@@ -121,41 +121,9 @@
     var options = {'weekday': 'long', 'month': 'long', 'day': '2-digit', 'year': 'numeric'};
     var date = d.toLocaleString('fr-CH', options);
     document.getElementById('nextMeeting').innerHTML = "Prochaine rando depuis Veyrier: "+date.toString();
+  </script>
 
-    const scriptUrl = "https://script.google.com/macros/s/AKfycbxrDnesoYawPLQHClhvAdgQ99RgiN-gSm2uwStbYuDarsovduTptgTzfamoxxQPuR5X/exec"; 
-
-    async function loadHikes() {
-      const container = document.getElementById("cards");
-      container.innerHTML = "<p>Un instant...</p>";
-
-      try {
-        const response = await fetch(scriptUrl);
-        const hikes = await response.json();
-
-        container.innerHTML = "";
-
-        hikes.forEach(hike => {
-          const card = document.createElement("div");
-          card.className = "card";
-
-          card.innerHTML = `
-            <p><strong> ${hike.Rdv || ""}</strong><br>
-            ${hike.Stops || ""}<br>
-            ${hike.Details || ""}</p>
-          `;
-
-          container.appendChild(card);
-        });
-
-      } catch (err) {
-        console.error(err);
-        container.innerHTML = "<p>Oups.</p>";
-      }
-    }
-
-    loadHikes();
-
-</script>
+  <script src="scripts.js"></script>
 
 </body>
 

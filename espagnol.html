@@ -26,9 +26,9 @@
     <p class="centerblock">
       <b>.<br>
       <a href="index.html">&#9658; Bienvenue</a><br>
-      <a href="english.html">&#9658; Welcome</a><br>
-      <a href="deutsch.html">&#9658; Willkommen</a>
+      <a href="deutsch.html">&#9658; Willkommen</a><br>
       <span class="centerblock-active" >Benvenidos</span><br>
+       <a href="english.html">&#9658; Welcome</a>
       </b>
     </p>
 
@@ -57,7 +57,7 @@
     <h3>Excursiones adicionales</h3>
         <p>En ocasiones, organizamos una excursión adicional el mismo día, con punto de encuentro diferente, 
           para explorar el sur del Mont Salève. Estas excursiones suelen ser más largas y se realizan lejos 
-          del teleférico; solo aptas para excursionistas experimentados. Los detalles se anuncian aquí 
+          del teleférico; solo aptas para excursionistas experimentados. Los detalles se confirman 
           con uno o dos días de antelación.
       </p>
 
@@ -122,42 +122,10 @@
     var options = {'weekday': 'long', 'month': 'long', 'day': '2-digit', 'year': 'numeric'};
     var date = d.toLocaleString('es-ES', options);
     document.getElementById('nextMeeting').innerHTML = "Próxima excursión desde Veyrier: "+date.toString();
-
-
-    const scriptUrl = "https://script.google.com/macros/s/AKfycbxrDnesoYawPLQHClhvAdgQ99RgiN-gSm2uwStbYuDarsovduTptgTzfamoxxQPuR5X/exec"; 
-
-    async function loadHikes() {
-      const container = document.getElementById("cards");
-      container.innerHTML = "<p>Loading ...</p>";
-
-      try {
-        const response = await fetch(scriptUrl);
-        const hikes = await response.json();
-
-        container.innerHTML = "";
-
-        hikes.forEach(hike => {
-          const card = document.createElement("div");
-          card.className = "card";
-
-          card.innerHTML = `
-            <p><strong> ${hike.Rdv || ""}</strong><br>
-            ${hike.Stops || ""}<br>
-            ${hike.Details || ""}</p>
-          `;
-
-          container.appendChild(card);
-        });
-
-      } catch (err) {
-        console.error(err);
-        container.innerHTML = "<p>Oops.</p>";
-      }
-    }
-
-    loadHikes();
-
 </script>
+
+<script src="scripts.js"></script>
+
 </body>
 </html>
 
