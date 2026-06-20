@@ -160,6 +160,7 @@ li {
   width: 250px;
   height: 200px;
   text-align: center;
+  font-size: 28px;
   padding: 10px;
   background-image: url('assets/welcome-heart-280.png');
   background-repeat: no-repeat;
@@ -169,7 +170,6 @@ li {
     background-color: white;
     font-size: 20px;
     line-height: 1;
-    text-decoration: none;
 }
 .centerblock a:hover {
     font-size:24px;
@@ -177,8 +177,7 @@ li {
 
 .centerblock-active {
     color: #b30000;
-    font-size: 28px;
-    background-color: white;
+       background-color: white;
 }
 
 #top a, #bot a {
