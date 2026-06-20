@@ -27,7 +27,7 @@
 
       } catch (err) {
         console.error(err);
-        container.innerHTML = "<p><i class='fas fa-info-circle'></i> Javascript ?</p>";
+        container.innerHTML = "<p><i class='fas fa-info-circle'></i> Internet ?</p>";
       }
     }
 

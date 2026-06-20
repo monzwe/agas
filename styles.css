@@ -93,18 +93,26 @@
 
 .container {
   display: flex;
-  padding: 0 15vw;
+  justify-content: center;
+  padding: 0 10vw;
 }
 
 .container div {
   margin: 0 0 12px 0;
 }
 
+.vert3, .center {
+    display: block;
+    margin: 0 auto 12px auto; 
+}
+.vert3 {
+    height: 25vw;
+    width: auto;
+}
+
 .center {
-  display: block;
-  margin: 12px auto 0 auto;
-  height: 25vw;
-  width: auto;
+  width: 70vw;
+  height: auto;  
 }
 
 .legend {
@@ -115,15 +123,16 @@
     padding: 0 18px;
 }
 
-
 @media (max-width: 700px) {
     .container {flex-direction: column;}
     .subnavs {width: 100%; margin:0;}
-    .center {width: 70vw; height: auto;}
-    h6 {font-size: 10px;}
-    body {background-color: white;}
-  }
+    .vert3 {width: 70vw; height: auto;}
+    .center {width: 85vw; height: auto;}
+}
 
+@media (max-width: 400px) {
+    .AGAS {display: none}
+}
 
 body {
     background-color: #fed;
@@ -259,15 +268,13 @@ h5 {
     text-align: left;
 }
 
-h6 {
+.AGAS {
     font-weight: 900;
     font-size: 18px;
     background-color: rgba(221,221,221,0.6);
     display:inline;
     position:relative;
     top: 25px;
-    line-height: 1;
-    overflow-inline:hidden;
 }
 
 .nx {
