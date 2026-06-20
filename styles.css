@@ -16,7 +16,7 @@
 
 #navbar a {
   color: #444;
-  font-size: 24px;
+  font-size: 30px;
   float: left;
   margin-top: 11px;
   padding: 12px;
@@ -45,7 +45,9 @@
 }
 
 #fr-icons {
-    background-color: #b30000;
+    text-shadow: 2px 2px 5px black;
+    animation-name: subs;
+    animation-duration: 2s;
 }
 
 #banner {
@@ -66,12 +68,10 @@
 
 .subnavs a {
   text-transform:uppercase;
+  font-weight: 900;
   color: white;
   text-decoration: none;
   padding: 3px;
-  background-color: #b30000;
-  animation-duration: 1s;
-  animation-name: "subs";
 }
 
 .subnavs a:hover {
@@ -297,8 +297,8 @@ h5 {
 }
 
 @keyframes subs {
-    0% {background-color: #86857f;}
-    100% {background-color: #b30000;}
+    from {color: #ccc; text-shadow: none;}
+    to {color: white; text-shadow: 2px 2px 5px black;}
 }
 
 @keyframes FR {
