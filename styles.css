@@ -131,7 +131,7 @@
 }
 
 @media (max-width: 400px) {
-    .AGAS {display: none}
+    .AGAS {display: none; position: absolute; left: -9999px;}
 }
 
 body {
