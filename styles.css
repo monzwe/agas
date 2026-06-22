@@ -91,6 +91,41 @@
   cursor: pointer;
 }
 
+div.tablecontainer {
+    width: 70vw;
+    margin: 0 auto;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  height: auto;
+  border: #ddd 1px;
+  border-collapse: collapse;
+  font-size: 16px;
+  text-align:  center;
+}
+
+tr:nth-child(even){background-color: rgba(221,221,221,0.4);}
+
+th, td {
+  padding: 5px;
+  font-size: 14px;
+  line-height: 1.1;
+}
+th {
+    font-size: 18px;
+  background-color: #ddd;
+  vertical-align: text-top;
+}
+
+.table-note {
+    font-size: 14px;
+}
+.table-lefthead {
+    text-align: left;
+}
+
 .container {
   display: flex;
   justify-content: center;
