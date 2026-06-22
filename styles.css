@@ -91,10 +91,10 @@
   cursor: pointer;
 }
 
-div.tablecontainer {
+.tablecontainer {
+    overflow-x: auto;
     width: 70vw;
     margin: 0 auto;
-  overflow-x: auto;
 }
 
 table {
@@ -114,14 +114,10 @@ th, td {
   line-height: 1.1;
 }
 th {
-    font-size: 18px;
   background-color: #ddd;
   vertical-align: text-top;
 }
 
-.table-note {
-    font-size: 14px;
-}
 .table-lefthead {
     text-align: left;
 }
@@ -148,6 +144,7 @@ th {
 .center {
   width: 70vw;
   height: auto;  
+  margin: 0 auto;
 }
 
 .legend {
@@ -162,7 +159,7 @@ th {
     .container {flex-direction: column;}
     .subnavs {width: 100%; margin:0;}
     .vert3 {width: 70vw; height: auto;}
-    .center {width: 85vw; height: auto;}
+    .center .tablecontainer {width: 90vw; height: auto;}
 }
 
 @media (max-width: 400px) {
