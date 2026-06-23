@@ -193,12 +193,16 @@ li {
   text-align: center;
   font-size: 28px;
   padding: 10px;
-  background-image: url('assets/welcome-heart-280.png');
+  background-image: url('assets/welcome-heart-grey.png');
   background-repeat: no-repeat;
   background-size: 100%;
+  animation-name: "welcome";
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 .centerblock a {
     background-color: white;
+    text-decoration: none;
     font-size: 20px;
     line-height: 1;
 }
@@ -207,8 +211,8 @@ li {
 }
 
 .centerblock-active {
-    color: #b30000;
-       background-color: white;
+    color: currentColor;
+    background-color: white;
 }
 
 #top a, #bot a {
@@ -254,7 +258,6 @@ h1 {
     text-decoration-skip-ink: none;
     width: 100%;
     text-align:center;
-    animation-duration: 2s;
 }
 
 h1 a {
@@ -305,21 +308,17 @@ h5 {
     top: 25px;
 }
 
-.fr {
-    text-decoration-color: #ff6666;
-    animation-name: FR;
+#fr {
+    color: crimson;
 }
-.en {
-    text-decoration-color: greenyellow;
-    animation-name: EN;
+#en {
+    color: #50db00;
 }
-.es {
-    text-decoration-color: gold;
-    animation-name: ES;
+#es {
+    color: #e6c300;
 }
-.de {
-    text-decoration-color: #8080ff;
-    animation-name: DE;
+#de {
+    color: #8080ff;
 }
 
 @keyframes subs {
@@ -327,24 +326,8 @@ h5 {
     to {color: white; text-shadow: 2px 2px 5px black;}
 }
 
-@keyframes FR {
-  from {text-decoration: underline #86857f 15px;}
-  to {text-decoration: underline #ff6666 15px;}
-}
-
-@keyframes EN {
-  from {text-decoration: underline #86857f 15px;}
-  to {text-decoration: underline greenyellow 15px;}
-}
-
-@keyframes ES {
-  from {text-decoration: underline #86857f 15px;}
-  to {text-decoration: underline gold 15px;}
-}
-
-@keyframes DE {
-  from {text-decoration: underline #86857f 15px;}
-  to {text-decoration: underline #8080ff 15px;}
+@keyframes welcome {
+  0% {color: black;}
 }
 
 p.warning {
