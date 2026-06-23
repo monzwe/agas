@@ -204,14 +204,12 @@ li {
     background-color: white;
     text-decoration: none;
     font-size: 20px;
-    line-height: 1;
 }
 .centerblock a:hover {
     font-size:24px;
 }
 
 .centerblock-active {
-    color: currentColor;
     background-color: white;
 }
 
@@ -244,6 +242,10 @@ li {
 
 .card p {
     margin: 0 5px 18px 5px;
+}
+
+#saleve {
+    background-image: url('/assets/saleve.png')
 }
 
 
