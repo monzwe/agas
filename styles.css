@@ -45,6 +45,11 @@
     scroll-snap-type: y mandatory;
 }
 
+.gradient {
+    display: inline-block; 
+    background: linear-gradient(180deg, #86857f 0%, #5e5c64 50%, #86857f 100%);
+}
+
 /* navbar icons at the top of French subpages; symbols replacing the javascript dropdowns */
 #fr-icons {
     font-size: 50px;
@@ -160,6 +165,12 @@ th {
 
 @media (max-width: 400px) {
     .AGAS {display: none; position: absolute; left: -9999px;}
+    h1 {font-size: 18px;}
+}
+
+@font-face {
+  font-family: Poppins; /* set name */
+  src: url(assets/Poppins-Black.woff); /* url of the font */
 }
 
 body {
@@ -213,17 +224,14 @@ li {
     animation-fill-mode: forwards;
 }
 
-#top a, #bot a {
+#top a, #bot a , #pgs a {
     color: black;
     font-weight:400;
-    text-decoration: underline #b30000 1px;
+    text-decoration: underline #444 1px;
 }
 
-#pgs a {
-    text-decoration: none;
-}
 
-#top a:hover, #bot a:hover, #pgs a:hover {
+#top a:hover, #bot a:hover {
     color: black;
     background-color: white;
 }
@@ -249,10 +257,8 @@ h1 {
     background-color: #86857f;
     padding:0 0 28px 0;
     margin: 0;
-    font-weight: 900;
     font-size: 36px;
     line-height: 1;
-    text-decoration-skip-ink: none;
     width: 100%;
     text-align:center;
 }
@@ -299,7 +305,6 @@ h5 {
 .AGAS { /* full name of AGAS in the navbar */
     font-weight: 900;
     font-size: 18px;
-    background-color: rgba(221,221,221,0.6);
     display:inline;
     position:relative;
     top: 25px;
@@ -319,7 +324,7 @@ h5 {
 }
 
 @keyframes appear {
-  0% {opacity: 0.5;}
+  0% {opacity: 0;}
 }
 
 p.warning {
