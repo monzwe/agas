@@ -27,6 +27,7 @@
   background-color: #ff6666;
 }
 
+/* navbar icons for subpages, symbols replacing the javascript dropdowns */
 .dropdown {
     float: right;
     padding: 0;
@@ -44,6 +45,7 @@
     scroll-snap-type: y mandatory;
 }
 
+/* navbar icons at the top of French subpages; symbols replacing the javascript dropdowns */
 #fr-icons {
     font-size: 50px;
     padding-bottom: 5px;
@@ -67,7 +69,6 @@
 .subnavs div{
     margin: 0 5%;
 }
-
 .subnavs a {
   text-transform:uppercase;
   font-weight: 900;
@@ -76,12 +77,12 @@
   text-decoration: none;
   padding: 3px;
 }
-
 .subnavs a:hover {
     background-color: #ff6666;
     color: white;
 }
 
+/* return button on "posts"-type pages, div id "pgs: */
 .button {
     background-color: #ccc;
   border: none;
@@ -94,12 +95,12 @@
   cursor: pointer;
 }
 
+/* table style for annual reports stats */
 .tablecontainer {
     overflow-x: auto;
     width: 70vw;
     margin: 0 auto;
 }
-
 table {
   width: 100%;
   height: auto;
@@ -108,9 +109,7 @@ table {
   font-size: 16px;
   text-align:  center;
 }
-
 tr:nth-child(even){background-color: rgba(221,221,221,0.4);}
-
 th, td {
   padding: 5px;
   font-size: 14px;
@@ -120,23 +119,23 @@ th {
   background-color: #ddd;
   vertical-align: text-top;
 }
-
 .table-lefthead {
     text-align: left;
 }
 
+/* styles for full-width images and flexbox images */
 .container {
   display: flex;
   justify-content: center;
   padding: 0 10vw;
 }
-
 .container div {
   margin: 0 0 12px 0;
 }
-
+/* Images with standardized height, for use in flexbox side-by-side, three images max: */
 .vert3 {
     height: 25vw; width: auto; display:block; margin: auto; 
+/* Centered images, standardized widths (as opposed to fixed number of pixels): */
 }
 .center-smaller {
     width: 50vw; height: auto; display:block; margin: auto; 
@@ -144,8 +143,7 @@ th {
 .center {
     width: 70vw; height: auto;  display:block; margin: auto; 
 }
-
-.legend {
+.legend { /* legends below images */
     color: black;
     text-align: center;
     line-height: 1.3;
@@ -164,21 +162,20 @@ th {
     .AGAS {display: none; position: absolute; left: -9999px;}
 }
 
-@media print {
-    h1 {text-decoration: none;}
-} 
-
 body {
     background-color: #fed;
     margin: 0;
     text-align: left;
 }
 
-
 p, ul, h5 {
     padding: 0 15vw;
     font-size: 18px;
     color: #444;
+}
+
+#extern { /* font-size for icons after external links */
+    font-size: 14px;
 }
 
 ul {
@@ -189,7 +186,8 @@ li {
     margin: 20px;
 }
 
-.centerblock {
+/* welcome heart and links to different languages */
+.centerblock { 
   margin: 20px auto;
   width: 250px;
   height: 200px;
@@ -199,7 +197,6 @@ li {
   background-image: url('assets/welcome-heart-grey.png');
   background-repeat: no-repeat;
   background-size: 100%;
-
 }
 .centerblock a {
     background-color: white;
@@ -209,7 +206,6 @@ li {
 .centerblock a:hover {
     font-size:24px;
 }
-
 .centerblock-active {
     background-color: white;
     animation-name: "appear";
@@ -236,22 +232,17 @@ li {
     padding-top: 30px;  
 }
 
-#pgs {
+#pgs { /*layout for "posts"-type pages, e.g. reports, statuts, contacts, regulations, legal.... */
     background-color: white;
 }
 
-#cards {
+/* styles for content read in from Google Sheets via JSON feed (see script) */
+#cards { 
     margin: 0;
 }
-
 .card p {
     margin: 0 5px 18px 5px;
 }
-
-#saleve {
-    background-image: url('/assets/saleve.png')
-}
-
 
 h1 {
     color: white;
@@ -294,8 +285,8 @@ h3 {
     text-decoration: overline white 9px;
 }
 
-h4 {
-    color: white;
+
+h4 {/* Centered para, e.g. for images with a fixed width */
     text-align: center;
 }
 
@@ -305,7 +296,7 @@ h5 {
     text-align: left;
 }
 
-.AGAS {
+.AGAS { /* full name of AGAS in the navbar */
     font-weight: 900;
     font-size: 18px;
     background-color: rgba(221,221,221,0.6);
@@ -358,10 +349,9 @@ footer {
     padding: 8px 30px;
 }
 
-#social a {
+#social a { /* simplified icons in footer, no stacking and divs etc. */
     font-size: 30px;
 }
-
 #social a:hover {
     color: #ff6666;
     background-color: white;
