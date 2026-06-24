@@ -35,19 +35,21 @@
 #submenu  {
     background-color: #86857f;
     display:block;
-    padding: 8px 0;
-    height: 130px;
+    padding: 5px 0;
+    height: 150px;
     text-align: center;
     font-weight: 900;
     position: sticky;
-    top: 70px;
+    top: 0px;
     scroll-snap-type: y mandatory;
 }
 
 #fr-icons {
-    text-shadow: 2px 2px 5px black;
-    animation-name: subs;
+    font-size: 50px;
+    padding-bottom: 5px;
+    animation-name: appear;
     animation-duration: 2s;
+    animation-fill-mode: forwards;
 }
 
 #banner {
@@ -70,6 +72,7 @@
   text-transform:uppercase;
   font-weight: 900;
   color: white;
+  background-color: #86857f;
   text-decoration: none;
   padding: 3px;
 }
@@ -196,9 +199,7 @@ li {
   background-image: url('assets/welcome-heart-grey.png');
   background-repeat: no-repeat;
   background-size: 100%;
-  animation-name: "welcome";
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
+
 }
 .centerblock a {
     background-color: white;
@@ -211,6 +212,9 @@ li {
 
 .centerblock-active {
     background-color: white;
+    animation-name: "appear";
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
 #top a, #bot a {
@@ -252,7 +256,7 @@ li {
 h1 {
     color: white;
     background-color: #86857f;
-    padding:28px 0;
+    padding:0 0 28px 0;
     margin: 0;
     font-weight: 900;
     font-size: 36px;
@@ -323,13 +327,8 @@ h5 {
     color: #4f4fee;
 }
 
-@keyframes subs {
-    from {color: #ccc; text-shadow: none;}
-    to {color: white; text-shadow: 2px 2px 5px black;}
-}
-
-@keyframes welcome {
-  0% {color: black;}
+@keyframes appear {
+  0% {opacity: 0.5;}
 }
 
 p.warning {
