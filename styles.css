@@ -166,11 +166,6 @@ th {
     h1 {font-size: 18px;}
 }
 
-@font-face {
-  font-family: Poppins; /* set name */
-  src: url(assets/Poppins-Black.woff); /* url of the font */
-}
-
 body {
     background-color: #FEE6CC;
     margin: 0;
@@ -341,7 +336,6 @@ p.warning {
     border-width: 0 0 0 10px;
     margin: 30px 15vw ;
     padding: 30px 10px;
-    font-family:'Courier New', Courier, monospace;
 }
 
 p.decline {
@@ -351,7 +345,6 @@ p.decline {
     border-width: 0 0 0 6px;
     margin: 20px 15vw;
     padding: 15px 10px;
-    font-family: 'Courier New', Courier, monospace;
 }
 
 footer {
