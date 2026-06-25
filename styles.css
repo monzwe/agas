@@ -9,9 +9,10 @@
     align-items: center;
     background-color: #ddd;
     width: 100%;
-    position: sticky;
-    top: 0;
     height: 70px;
+    top: 0px;
+    position: sticky;
+    scroll-snap-type: y mandatory;
 } 
 
 #navbar a {
@@ -40,9 +41,6 @@
     height: 150px;
     text-align: center;
     font-weight: 900;
-    position: sticky;
-    top: 0px;
-    scroll-snap-type: y mandatory;
 }
 
 .gradient {
@@ -174,7 +172,7 @@ th {
 }
 
 body {
-    background-color: #fed;
+    background-color: #FEE6CC;
     margin: 0;
     text-align: left;
 }
@@ -308,6 +306,7 @@ h5 {
     display:inline;
     position:relative;
     top: 25px;
+    background-color: #ddd;
 }
 
 #fr {
