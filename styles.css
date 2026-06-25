@@ -24,8 +24,8 @@
 }
 
 #navbar a:hover, .dropdown a:hover {
-  color:white;
-  background-color: #ff6666;
+  color:#ff6666;
+  background-color: white;
 }
 
 /* navbar icons for subpages, symbols replacing the javascript dropdowns */
@@ -53,7 +53,7 @@
     font-size: 50px;
     padding-bottom: 5px;
     animation-name: appear;
-    animation-duration: 2s;
+    animation-duration: 3s;
     animation-fill-mode: forwards;
 }
 
@@ -202,7 +202,7 @@ li {
   height: 200px;
   text-align: center;
   font-size: 28px;
-  padding: 10px;
+  padding: 0px;
   background-image: url('assets/welcome-heart-grey.png');
   background-repeat: no-repeat;
   background-size: 100%;
@@ -308,18 +308,26 @@ h5 {
     top: 25px;
     background-color: #ddd;
 }
+#xs { /* lighter color for in-text icons on home page */
+    color:#86857f;
+}
 
 #fr {
     color: crimson;
+    background-color: #FEE6CC;
 }
 #en {
-    color: #44b602;
+    color: #369101;
+    background-color: #e0fae0;
+
 }
 #es {
     color: #ccae03;
+    background-color: lightgoldenrodyellow;
 }
 #de {
     color: #4f4fee;
+    background-color: #e6e6ff;
 }
 
 @keyframes appear {
