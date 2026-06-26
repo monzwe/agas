@@ -20,7 +20,7 @@
   float: left;
   margin-top: 11px;
   padding: 12px;
-  text-decoration: none;
+  font-size: 30px;
 }
 
 #navbar a:hover, .dropdown a:hover {
