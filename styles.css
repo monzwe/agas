@@ -43,20 +43,24 @@
     font-weight: 900;
 }
 
-.gradient {
+.gradient-welcome, .gradient-sub {
     display: inline-block; 
-    background: linear-gradient(180deg, #86857f 0%, #5e5c64 50%, #86857f 100%);
+    animation: "appear" 1s;
+}
+.gradient-welcome {
+    background: radial-gradient(ellipse, #ffffff 52%, #ddd 100%);
+}
+.gradient-sub {
+    background: linear-gradient(180deg, #86857f 0%, #706860 50%, #86857f 100%);
 }
 
 /* navbar icons at the top of French subpages; symbols replacing the javascript dropdowns */
 #fr-icons {
     font-size: 50px;
     color: #FEE6CC;
-    text-shadow: 2px 2px 5px black;
+    text-shadow: 2px 2px #444;
     padding-bottom: 5px;
-    animation-name: appear;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
+    animation: "appear" 1s;
 }
 
 #banner {
@@ -184,12 +188,12 @@ li {
 
 /* welcome heart and links to different languages */
 .centerblock { 
-  margin: 20px auto;
+  margin: 8px auto;
   width: 250px;
   height: 200px;
   text-align: center;
   font-size: 28px;
-  padding: 0px;
+  padding: 10px 0px;
   background-image: url('assets/welcome-heart-grey.png');
   background-repeat: no-repeat;
   background-size: 100%;
@@ -201,12 +205,6 @@ li {
 }
 .centerblock a:hover {
     font-size:24px;
-}
-.centerblock-active {
-    background-color: white;
-    animation-name: "appear";
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
 }
 
 #top a, #bot a , #pgs a {
@@ -240,7 +238,7 @@ li {
 h1 {
     color: white;
     background-color: #86857f;
-    padding:0 0 28px 0;
+    padding:0 0 12px 0;
     margin: 0;
     font-size: 36px;
     line-height: 1.2;
@@ -306,20 +304,15 @@ h5 {
 
 #fr {
     color: crimson;
-    background-color: #FEE6CC;
 }
 #en {
-    color: #369101;
-    background-color: #e0fae0;
-
+    color: #2c7700;
 }
 #es {
-    color: #ccae03;
-    background-color: lightgoldenrodyellow;
+    color: #b99e00;
 }
 #de {
-    color: #4f4fee;
-    background-color: #e6e6ff;
+    color: #0f0f96;
 }
 
 @keyframes appear {
