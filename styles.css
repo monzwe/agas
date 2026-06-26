@@ -16,7 +16,7 @@
 } 
 
 #navbar a {
-  color: #444;
+  color: black;
   float: left;
   margin-top: 11px;
   padding: 12px;
@@ -51,9 +51,11 @@
 /* navbar icons at the top of French subpages; symbols replacing the javascript dropdowns */
 #fr-icons {
     font-size: 50px;
+    color: #FEE6CC;
+    text-shadow: 2px 2px 5px black;
     padding-bottom: 5px;
     animation-name: appear;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
 }
 
@@ -145,13 +147,14 @@ th {
     div p, div ul, div h3, div h5 {padding: 0 3vw;}
     div p.warning {margin: 3vw;}
     footer p {padding: 0 3vw;}
+    #navbar {padding: 0;}
     .container {flex-direction: column;}
     .subnavs {width: 100%; margin:0;}
     .vert3 {width: 70vw; height: auto;}
     .center, .center-smaller, .tablecontainer {width: 90vw; height: auto;}
 }
 
-@media (max-width: 480px) {
+@media (max-width: 400px) {
     .AGAS {display: none !important;}
 }
 
@@ -297,8 +300,8 @@ h5 {
     top: 25px;
     background-color: #ddd;
 }
-#xs { /* lighter color for in-text icons on home page */
-    color:#86857f;
+#xs { /* lighter color for in-text icons on home page, and icons of active subpages */
+    color:#aaa;
 }
 
 #fr {
