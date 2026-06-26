@@ -16,25 +16,42 @@
 } 
 
 #navbar a {
-  color: black;
+  color: #444;
   float: left;
   margin-top: 11px;
   padding: 12px;
   font-size: 30px;
 }
 
-#navbar a:hover, .dropdown a:hover {
-  color:#ff6666;
-  background-color: white;
+#navbar a:hover {
+  color:black;
+  background-color: #efefef;
 }
 
-/* navbar icons for subpages, symbols replacing the javascript dropdowns */
+/* navbar container for subpages icons, symbols replacing the javascript dropdowns */
 .dropdown {
     float: right;
     padding: 0;
 }
 
-#submenu  {
+footer {
+    width: 100%;
+    background-color: #ccc;
+    text-align: center;
+    padding: 8px 30px;
+}
+
+#social a { /* simplified icons in the footer, same as header icons. */
+    color:#444;
+    font-size: 30px;
+    padding: 12px;
+}
+#social a:hover {
+  color:black;
+  background-color: #efefef;
+}
+
+#submenu  { /* container for subpages titles and in-page navigation to level 2 headings */
     background-color: #86857f;
     display:block;
     padding: 5px 0;
@@ -54,11 +71,11 @@
     background: linear-gradient(180deg, #86857f 0%, #706860 50%, #86857f 100%);
 }
 
-/* navbar icons at the top of French subpages; symbols replacing the javascript dropdowns */
+/* navbar icons at the top of (French) subpages; symbols replacing the javascript dropdowns */
 #fr-icons {
     font-size: 50px;
     color: #FEE6CC;
-    text-shadow: 2px 2px #444;
+    text-shadow: 3px 3px #444;
     padding-bottom: 5px;
     animation: "appear" 1s;
 }
@@ -87,8 +104,8 @@
   padding: 3px;
 }
 .subnavs a:hover {
-    background-color: #ff6666;
-    color: white;
+    background-color: #efefef;
+    color: black;
 }
 
 /* table style for annual reports stats */
@@ -256,10 +273,6 @@ h1 a {
    text-decoration: none;
 }
 
-h1 a:hover {
-    background-color: #999999;
-}
-
 
 h2 {
     color: black;
@@ -337,17 +350,4 @@ p.decline {
     padding: 15px 10px;
 }
 
-footer {
-    width: 100%;
-    background-color: #ccc;
-    text-align: center;
-    padding: 8px 30px;
-}
 
-#social a { /* simplified icons in footer, no stacking and divs etc. */
-    font-size: 30px;
-}
-#social a:hover {
-    color: #ff6666;
-    background-color: white;
-}
