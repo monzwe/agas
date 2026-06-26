@@ -27,7 +27,7 @@
 
       } catch (err) {
         console.error(err);
-        container.innerHTML = "<p><i class='fas fa-info-circle'></i> Internet ?</p>";
+        container.innerHTML = "<p><i class='fas fa-info-circle'></i>  Merci d'actualiser la page / Please refresh page </p>";
       }
     }
 

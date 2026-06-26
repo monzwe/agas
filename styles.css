@@ -5,7 +5,7 @@
 }
 
 #navbar {
-    padding: 0 10vw; 
+    padding: 0 7vw; 
     align-items: center;
     background-color: #ddd;
     width: 100%;
@@ -17,10 +17,10 @@
 
 #navbar a {
   color: #444;
-  font-size: 30px;
   float: left;
   margin-top: 11px;
   padding: 12px;
+  text-decoration: none;
 }
 
 #navbar a:hover, .dropdown a:hover {
@@ -83,19 +83,6 @@
 .subnavs a:hover {
     background-color: #ff6666;
     color: white;
-}
-
-/* return button on "posts"-type pages, div id "pgs: */
-.button {
-    background-color: #ccc;
-  border: none;
-  color: white;
-  padding: 5px;
-  text-align: center;
-  display: inline-block;
-  font-size: 24px;
-  margin: 0 15vw;
-  cursor: pointer;
 }
 
 /* table style for annual reports stats */
@@ -235,7 +222,7 @@ li {
     padding-top: 30px;  
 }
 
-#pgs { /*layout for "posts"-type pages, e.g. reports, statuts, contacts, regulations, legal.... */
+#pgs { /*layout for subordinate pages, e.g. reports, statutes, contact page, mentions legales, disclaimer.... */
     background-color: white;
 }
 
@@ -258,6 +245,11 @@ h1 {
     text-align:center;
 }
 
+#pgs h1 { /* headings in subordinate pages, e.g. annual reports */
+    color: #444;
+    background-color: white;
+}
+
 h1 a {
    color: white; 
    text-decoration: none;
@@ -273,7 +265,7 @@ h2 {
     text-align: center;
     font-size: 28px;
     padding: 0 15vw;
-    scroll-margin-top: 200px;
+    scroll-margin-top: 70px;
 }
 
 h3 {
