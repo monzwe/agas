@@ -16,7 +16,6 @@
 } 
 
 #navbar a {
-  color: #444;
   float: left;
   margin-top: 6px;
   padding: 12px 16px;
@@ -24,7 +23,6 @@
 }
 
 #navbar a:hover {
-  color:black;
   background-color: #efefef;
 }
 
@@ -111,7 +109,6 @@ footer {
 }
 .subnavs a:hover {
     background-color: #efefef;
-    color: black;
 }
 
 /* table style for annual reports stats */
@@ -231,12 +228,12 @@ li {
     font-size:24px;
 }
 
-#top a, #bot a , #pgs a {
+a {
     color: black;
     font-weight:400;
     text-decoration: underline #444 1px;
 }
-#top a:hover, #bot a:hover {
+a:hover {
     background-color: white;
 }
 
