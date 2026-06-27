@@ -214,14 +214,14 @@ li {
     margin: 20px;
 }
 
-/* welcome heart and links to different languages */
+/* welcome heart and links to different languages, width and height are the png's size */
 .centerblock { 
   margin: 8px auto;
-  width: 250px;
-  height: 200px;
+  width: 280px;
+  height: 233px;
   text-align: center;
   font-size: 28px;
-  padding: 10px 0px;
+  padding: 20px 0px;
   background-image: url('assets/welcome-heart-grey.png');
   background-repeat: no-repeat;
   background-size: 100%;
@@ -240,10 +240,7 @@ li {
     font-weight:400;
     text-decoration: underline #444 1px;
 }
-
-
 #top a:hover, #bot a:hover {
-    color: black;
     background-color: white;
 }
 
@@ -251,7 +248,7 @@ li {
     padding-top: 30px;  
 }
 
-#pgs { /*layout for subordinate pages, e.g. reports, statutes, contact page, mentions legales, disclaimer.... */
+#pgs { /* subordinate pages, e.g. reports, statutes, contact page, mentions legales, disclaimer.... */
     background-color: white;
 }
 
