@@ -18,9 +18,9 @@
 #navbar a {
   color: #444;
   float: left;
-  margin-top: 11px;
-  padding: 12px;
-  font-size: 30px;
+  margin-top: 6px;
+  padding: 12px 16px;
+  font-size: 40px;
 }
 
 #navbar a:hover {
@@ -32,6 +32,15 @@
 .dropdown {
     float: right;
     padding: 0;
+
+    /*navbar icons */
+}
+.icons, .icons-grey {
+    height: 34px; width: auto;
+    opacity: 0.5;
+}
+.icons-grey {
+    opacity: 0.2;
 }
 
 footer {
@@ -41,15 +50,16 @@ footer {
     padding: 8px 30px;
 }
 
-#social a { /* simplified icons in the footer, same as header icons. */
-    color:#444;
-    font-size: 30px;
-    padding: 12px;
+
+#social a { /* icons spacing, font size for hover highlight area */
+    padding: 12px 12px 0 12px;
+    font-size: 28px;
 }
-#social a:hover {
-  color:black;
-  background-color: #efefef;
+#social img {
+    height: 30px; width: auto;
+    border-radius: 50%;
 }
+
 
 #submenu  { /* container for subpages titles and in-page navigation to level 2 headings */
     background-color: #86857f;
@@ -69,14 +79,15 @@ footer {
 }
 .gradient-sub {
     background: linear-gradient(180deg, #86857f 0%, #706860 50%, #86857f 100%);
+    line-height: 1;
 }
 
-/* navbar icons at the top of (French) subpages; symbols replacing the javascript dropdowns */
+/* navbar icons at the top of (French) subpages */
 #fr-icons {
-    font-size: 50px;
-    color: #FEE6CC;
-    text-shadow: 3px 3px #444;
-    padding-bottom: 5px;
+    height: 55px; width: auto;
+    filter:brightness(140%) saturate(200%) hue-rotate(320deg);
+    padding: 0;
+    margin: 0;
     animation: "appear" 1s;
 }
 
@@ -313,6 +324,9 @@ h5 {
 }
 #xs { /* lighter color for in-text icons on home page, and icons of active subpages */
     color:#aaa;
+}
+#xs img {
+    opacity: 0.5;
 }
 
 #fr {

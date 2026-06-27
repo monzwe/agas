@@ -2,7 +2,7 @@
 
     async function loadHikes() {
       const container = document.getElementById("cards");
-      container.innerHTML = "<p><i class='fas fa-hourglass-start'></i>...</p>";
+      container.innerHTML = "<p>...</p>";
 
       try {
         const response = await fetch(scriptUrl);
@@ -27,7 +27,7 @@
 
       } catch (err) {
         console.error(err);
-        container.innerHTML = "<p><i class='fas fa-info-circle'></i>  Merci d'actualiser la page / Please refresh page </p>";
+        container.innerHTML = "<p>(Merci d'actualiser la page / Please refresh page) </p>";
       }
     }
 
