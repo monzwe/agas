@@ -72,14 +72,15 @@ footer {
 
 .gradient-welcome, .gradient-sub {
     display: inline-block; 
-    animation: "appear" 1s;
+    animation-duration: 1s;
 }
 .gradient-welcome {
-    background: radial-gradient(ellipse, #ffffff 52%, #ddd 100%);
+    background: radial-gradient(ellipse, #ffffff 52%, rgba(255,255,255,0.5) 100%);
 }
 .gradient-sub {
     background: linear-gradient(180deg, #86857f 0%, #706860 50%, #86857f 100%);
     line-height: 1;
+    animation-name: "appear";
 }
 
 /* navbar icons at the top of (French) subpages */
