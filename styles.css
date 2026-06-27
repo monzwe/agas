@@ -108,7 +108,7 @@ footer {
   padding: 3px;
 }
 .subnavs a:hover {
-    background-color: #efefef;
+    background-color: #999;
 }
 
 /* table style for annual reports stats */
@@ -311,12 +311,6 @@ h5 {
     position:relative;
     top: 25px;
     background-color: #ddd;
-}
-#xs { /* lighter color for in-text icons on home page, and icons of active subpages */
-    color:#aaa;
-}
-#xs img {
-    opacity: 0.5;
 }
 
 #fr {
