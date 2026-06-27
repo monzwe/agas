@@ -70,17 +70,11 @@ footer {
     font-weight: 900;
 }
 
-.gradient-welcome, .gradient-sub {
-    display: inline-block; 
-    animation-duration: 1s;
-}
-.gradient-welcome {
-    background: radial-gradient(ellipse, #ffffff 52%, rgba(255,255,255,0.5) 100%);
-}
 .gradient-sub {
+    display: inline-block; 
     background: linear-gradient(180deg, #86857f 0%, #706860 50%, #86857f 100%);
     line-height: 1;
-    animation-name: "appear";
+    animation: "appear" 1s;
 }
 
 /* navbar icons at the top of (French) subpages */
@@ -92,7 +86,7 @@ footer {
     animation: "appear" 1s;
 }
 
-#banner {
+#banner img {
     width: 100%; height: auto;
     display:block;
     margin: 0;
@@ -215,28 +209,27 @@ li {
     margin: 20px;
 }
 
-/* welcome heart and links to different languages, width and height are the png's size */
+/* welcome heart and links to different languages */
 .centerblock { 
   margin: 8px auto;
-  width: 280px;
-  height: 233px;
+  width: 260px;
+  height: 210px;
   text-align: center;
   font-size: 28px;
-  padding: 20px 0px;
+  padding: 12px 0px;
   background-image: url('assets/welcome-heart-grey.png');
   background-repeat: no-repeat;
   background-size: 100%;
 }
 .centerblock a {
     background-color: white;
-    text-decoration: none;
     font-size: 20px;
 }
 .centerblock a:hover {
     font-size:24px;
 }
 
-#top a, #bot a , #pgs a {
+#banner a, #top a, #bot a , #pgs a {
     color: black;
     font-weight:400;
     text-decoration: underline #444 1px;
@@ -329,15 +322,19 @@ h5 {
 
 #fr {
     color: crimson;
+    background-color: #FEE6CC;
 }
 #en {
     color: #2c7700;
+    background-color: #e0fae0;
 }
 #es {
     color: #b99e00;
+    background-color: lightgoldenrodyellow;
 }
 #de {
     color: #0f0f96;
+    background-color: #e6e6ff;
 }
 
 @keyframes appear {
