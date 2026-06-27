@@ -224,6 +224,8 @@ li {
 .centerblock a {
     background-color: white;
     font-size: 20px;
+    color:#444;
+    font-weight: 400;
 }
 .centerblock a:hover {
     font-size:24px;
