@@ -86,7 +86,7 @@ footer {
     animation: "appear" 1s;
 }
 
-#banner img {
+.banner { /*banner image size **/
     width: 100%; height: auto;
     display:block;
     margin: 0;
@@ -229,7 +229,7 @@ li {
     font-size:24px;
 }
 
-#banner a, #top a, #bot a , #pgs a {
+#top a, #bot a , #pgs a {
     color: black;
     font-weight:400;
     text-decoration: underline #444 1px;
