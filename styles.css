@@ -22,14 +22,15 @@
 #navbar a {
   float: left;
   margin-top: 6px;
-  padding: 3px 16px;
-}
-#navbar a:hover { /* doesn't have any effect?? */
-    background-color: #ddd;
+  padding: 8px 16px;
 }
 #navbar img {
-    height: 50px; width: auto;
+    height: 40px; width: auto;
    filter:opacity(50%);
+}
+
+#navbar a:hover {
+    background-color: #ddd;
 }
 #navbar img:hover {
   filter: invert(100%);
@@ -66,7 +67,6 @@ footer {
     display: inline-block; 
     background: linear-gradient(180deg, #86857f 0%, #706860 50%, #86857f 100%);
     line-height: 1;
-    animation: "appear" 1s;
 }
 
 /* navbar icons at the top of (French) subpages */
@@ -75,9 +75,21 @@ footer {
     filter: invert(90%);
     padding: 0;
     margin: 0;
-    animation: "appear" 1s;
 }
-
+.sky {/* area above banner image */
+    height: 9vw;
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+.sky img{
+    opacity: 0.5;
+}
+.sky-icon {
+  position: absolute;
+  top: 12px;
+  left: 90vw;
+}
 .banner { /*banner image size **/
     width: 100%; height: auto;
     display:block;
@@ -230,6 +242,13 @@ a {
 a:hover {
     background-color: white;
 }
+/* automatically mark external links with a unicode icon */
+a:not([href*="https://monzwe.github.io"]):not([href^="#"]):not([href^="/"]):not(.no-icon)::after {
+  content: '\2197'; /* Code for ↗ */
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 0.9em;
+}
 
 #bot {
     padding-top: 30px;  
@@ -324,10 +343,6 @@ h5 {
     background-color: #e6e6ff;
 }
 
-@keyframes appear {
-  0% {opacity: 0;}
-}
-
 p.warning {
     background-color: white;
     border-color:  #86857f;
@@ -345,5 +360,3 @@ p.decline {
     margin: 20px 15vw;
     padding: 15px 10px;
 }
-
-
