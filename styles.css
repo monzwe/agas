@@ -173,6 +173,11 @@ th {
     margin: 0;
     padding: 3px 18px;
 }
+em {
+    color: black; 
+    font-style: normal;
+    background-color: rgba(255,255,255,0.5); 
+}
 
 @media (max-width: 700px) {
     div p, div ul, div h3, div h5 {padding: 0 3vw;}
@@ -189,6 +194,7 @@ th {
 
 @media (max-width: 410px) {
     .AGAS-full {display: none !important;}
+    .AGAS-short {display: inline !important;} /*doesn't work*/
 }
 
 body {
@@ -300,7 +306,7 @@ h3 {/* catch-eye lines */
 }
 
 
-h4 {/* Centered para, e.g. for images with a fixed width */
+h4 {/* Centered bold para, e.g. for images with a fixed width */
     text-align: center;
 }
 
@@ -310,14 +316,14 @@ h5 {/* Bold left-aligned text, for page intros and minor subheadings */
     text-align: left;
 }
 
-.AGAS, .AGAS-full { /* full name of AGAS in the navbar */
+.AGAS-short, .AGAS-full { /* full name of AGAS in the navbar */
     font-weight: 900;
     font-size: 18px;
     position:relative;
     top: 25px;
     background-color: #ddd;
 }
-.AGAS {display: none !important;} /* abbreviation only, for small screens */
+.AGAS-short {display: none !important;} /* abbreviation only, for small screens */
 .AGAS-full {display: inline;}
 
 #fr {
