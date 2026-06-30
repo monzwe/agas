@@ -85,10 +85,10 @@ footer {
 }
 .sky img{
     height: 3vw; width: auto;
-    filter: invert(60%);
+    filter: invert(100%);
 }
 .sky img:hover {
-    filter: invert(50%);
+    filter: invert(60%);
 }
 
 .banner { /*banner image size **/
@@ -183,11 +183,12 @@ th {
     .subnavs {width: 100%; margin:0;}
     .vert3 {width: 70vw; height: auto;}
     .center, .center-smaller, .tablecontainer {width: 90vw; height: auto;}
+    .sky {height:15vw;}
     .sky img {width:24px; height: auto;}
 }
 
-@media (max-width: 400px) {
-    .AGAS {display: none !important;}
+@media (max-width: 410px) {
+    .AGAS-full {display: none !important;}
 }
 
 body {
@@ -309,14 +310,15 @@ h5 {/* Bold left-aligned text, for page intros and minor subheadings */
     text-align: left;
 }
 
-.AGAS { /* full name of AGAS in the navbar */
+.AGAS, .AGAS-full { /* full name of AGAS in the navbar */
     font-weight: 900;
     font-size: 18px;
-    display:inline;
     position:relative;
     top: 25px;
     background-color: #ddd;
 }
+.AGAS {display: none !important;} /* abbreviation only, for small screens */
+.AGAS-full {display: inline;}
 
 #fr {
     color: crimson;
