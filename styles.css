@@ -194,7 +194,6 @@ em {
 
 @media (max-width: 410px) {
     .AGAS-full {display: none !important;}
-    .AGAS-short {display: inline !important;} /*doesn't work*/
 }
 
 body {
@@ -207,10 +206,6 @@ p, ul, h5 {
     padding: 0 15vw;
     font-size: 18px;
     color: #444;
-}
-
-#extern { /* font-size for icons after external links */
-    font-size: 14px;
 }
 
 ul {
@@ -253,7 +248,7 @@ a:hover {
 }
 
 
-#pgs { /* subordinate pages, e.g. reports, statutes, contact page, mentions legales, disclaimer.... */
+.posts { /* subordinate pages, e.g. reports, statutes, contact page, mentions legales, disclaimer.... */
     background-color: white;
 }
 
@@ -322,8 +317,8 @@ h5 {/* Bold left-aligned text, for page intros and minor subheadings */
     position:relative;
     top: 25px;
     background-color: #ddd;
-}
-.AGAS-short {display: none !important;} /* abbreviation only, for small screens */
+}inl
+.AGAS-short {display: none !important;} /* abbreviation only, inline for small screens? doesn't work */
 .AGAS-full {display: inline;}
 
 #fr {
