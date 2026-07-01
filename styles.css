@@ -93,7 +93,7 @@ footer {
     filter: invert(60%);
 }
 
-.banner { /*banner image size **/
+.banner { /*banner image **/
     width: 100vw; height: auto;
     display:block;
     margin: 0;
@@ -233,13 +233,26 @@ li {
   text-align: center;
   font-size: 28px;
   padding: 12px 0px;
-  background-image: url('assets/welcome-heart-grey.webp');
   background-repeat: no-repeat;
   background-size: 100%;
 }
+
+#fr.centerblock {
+    background-image: url('assets/welcome-heart-fr.webp');
+}
+#de.centerblock {
+    background-image: url('assets/welcome-heart-de.webp');
+}
+#es.centerblock {
+    background-image: url('assets/welcome-heart-es.webp');
+}
+#en.centerblock {
+    background-image: url('assets/welcome-heart-en.webp');
+}
+
 .centerblock a {
-    background-color: white;
     text-decoration: none;
+    background-color: rgba(255,250,250,0.9);
     border-radius: 30%;
     font-size: 20px;
     color:#444;
@@ -334,19 +347,15 @@ h5 {/* Bold left-aligned text, for page intros and minor subheadings */
 .AGAS-full {display: inline;}
 
 #fr {
-    color: crimson;
     background-color: #FEE6CC;
 }
 #en {
-    color: #2c7700;
     background-color: #e0fae0;
 }
 #es {
-    color: #b99e00;
     background-color: lightgoldenrodyellow;
 }
 #de {
-    color: #0f0f96;
     background-color: #e6e6ff;
 }
 
