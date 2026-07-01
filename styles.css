@@ -152,7 +152,7 @@ th {
 .container {
   display: flex;
   justify-content: space-between;
-  padding: 0 10vw;
+  padding: 0 15vw;
 }
 .container div {
   margin: 0 0 12px 0;
@@ -191,7 +191,7 @@ em {
     body p, body ul, body h3, body h5 {padding: 0 5vw;}
     body p.warning {margin: 5vw;}
     .navbar {padding: 0;}
-    .container {flex-direction: column;}
+    .container {flex-direction: column; padding: 0 3vw;}
     .subnavs {width: 100%; margin:0;}
     .imgs-flex {width: 70vw; height: auto;}
     .center, .center-smaller, .tablecontainer {width: 90vw; height: auto;}
