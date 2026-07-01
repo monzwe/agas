@@ -239,12 +239,15 @@ li {
 }
 .centerblock a {
     background-color: white;
+    text-decoration: none;
+    border-radius: 30%;
     font-size: 20px;
     color:#444;
     font-weight: 400;
 }
 .centerblock a:hover {
     font-size:24px;
+    font-weight: 900;
 }
 
 a {
@@ -364,9 +367,9 @@ p.decline {
     margin: 20px 15vw;
     padding: 15px 10px;
 }
-.rollout-bar {
+.rollout-bar { /* for "Please wait" bar in javascript (JSON feed) */
     margin: 0 15vw;
-    background-color: white; 
+    background-color: rgba(255,255,255,0.8); 
     color: white;
     animation: rollout 5s;
 }
