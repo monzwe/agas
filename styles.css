@@ -190,6 +190,7 @@ em {
 @media (max-width: 700px) {
     body p, body ul, body h3, body h5 {padding: 0 5vw;}
     body p.warning {margin: 5vw;}
+    body h1 {font-size: 36px;}
     .navbar {padding: 0;}
     .container {flex-direction: column; padding: 0 3vw;}
     .subnavs {width: 100%; margin:0;}
@@ -203,6 +204,7 @@ em {
     .AGAS-full {display: none !important;}
     body p, body ul, body h3, body h5 {padding: 0 3vw;}
     body p.warning {margin: 3vw;}
+    body h1 {font-size: 30px;}
 }
 
 body {
@@ -290,7 +292,7 @@ h1 {
     background-color: #86857f;
     padding:0 0 12px 0;
     margin: 0;
-    font-size: 36px;
+    font-size: 3vw;
     line-height: 1.2;
     width: 100%;
     text-align:center;
@@ -356,7 +358,7 @@ h5 {/* Bold left-aligned text, for page intros and minor subheadings */
     background-color: lightgoldenrodyellow;
 }
 #de {
-    background-color: #e6e6ff;
+    background-color: #e6eaff;
 }
 
 p.warning {
