@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-#navbar { /* containers */
+.navbar { /* containers */
     padding: 0 7vw; 
     align-items: center;
     background-color: #ddd;
@@ -19,19 +19,19 @@
     padding: 0;
 }
 
-#navbar a {
+.navbar a {
   float: left;
   margin-top: 6px;
   padding: 11px 20px;
 }
-#navbar img {
+.navbar img {
     height: 36px; width: auto;
    filter:opacity(50%);
 }
-#navbar a:hover {
+.navbar a:hover {
     background-color: #ddd;
 }
-#navbar img:hover {
+.navbar img:hover {
   filter: invert(100%);
 }
 
@@ -190,13 +190,13 @@ em {
 @media (max-width: 700px) {
     body p, body ul, body h3, body h5 {padding: 0 5vw;}
     body p.warning {margin: 5vw;}
-    #navbar {padding: 0;}
+    .navbar {padding: 0;}
     .container {flex-direction: column;}
     .subnavs {width: 100%; margin:0;}
     .imgs-flex {width: 70vw; height: auto;}
     .center, .center-smaller, .tablecontainer {width: 90vw; height: auto;}
     .sky {height:15vw;}
-    .sky img, #navbar img {width:30px; height: auto;}
+    .sky img, .navbar img {width:30px; height: auto;}
 }
 
 @media (max-width: 410px) {
@@ -363,4 +363,14 @@ p.decline {
     border-width: 0 0 0 6px;
     margin: 20px 15vw;
     padding: 15px 10px;
+}
+.rollout-bar {
+    margin: 0 15vw;
+    background-color: white; 
+    color: white;
+    animation: rollout 5s;
+}
+@keyframes rollout { /* for "Please wait" bar in javascript (JSON feed) */
+  from {width: 50px;}
+  to {width: 200px;}
 }

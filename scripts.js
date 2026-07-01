@@ -2,7 +2,7 @@
 
     async function loadHikes() {
       const container = document.getElementById("cards");
-      container.innerHTML = "<p>...</p>";
+      container.innerHTML = "<div class='rollout-bar'>...</div>";
 
       try {
         const response = await fetch(scriptUrl);
