@@ -48,9 +48,8 @@ footer {
 
 
 #submenu  { /* container for subpages titles and in-page navigation to level 2 headings */
-    background-color: #86857f;
     display:block;
-    padding: 5px 0;
+    padding: 0;
     height: 150px;
     text-align: center;
     font-weight: 600;
@@ -58,13 +57,13 @@ footer {
 
 .gradient-sub {
     display: inline-block; 
-    background: linear-gradient(180deg, #86857f 0%, #706860 50%, #86857f 100%);
+    background: linear-gradient(180deg, #86857f 0%, #706860 50%, #948f8a 100%);
     line-height: 1;
 }
 
 /* navbar icons at the top of (French) subpages */
 #fr-icons {
-    height: 55px; width: auto;
+    height: 5.3vw; width: auto;
     filter: invert(100%);
     padding: 0;
     margin: 0;
@@ -98,7 +97,19 @@ footer {
     display:block;
     margin: 0;
     padding: 0;
+    animation: "fade-in" 4s;
 }
+
+@keyframes fade-in {
+    0%  {
+        filter: contrast(0.2);
+        -webkit-filter: contrast(0.2);
+    }
+    100%   {
+        filter: contrast(1);
+        -webkit-filter: contrast(1);
+    }
+} 
 
 .subnavs {
     display: flex;
@@ -111,13 +122,12 @@ footer {
 .subnavs a {
   text-transform:uppercase;
   font-weight: 900;
-  color: white;
-  background-color: #86857f;
   text-decoration: none;
   padding: 3px;
 }
 .subnavs a:hover {
     background-color: #706860;
+    color: white;
 }
 
 /* table style for annual reports stats */
@@ -227,7 +237,7 @@ li {
 }
 
 .homepage-title {
-    padding-bottom: 24px;
+    background: linear-gradient(180deg, #86857f 0%, #706860 50%, #948f8a 100%);
 }
 
 /* welcome heart and links to different languages */
