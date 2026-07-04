@@ -190,7 +190,6 @@ em {
 @media (max-width: 700px) {
     body p, body ul, body h3, body h5 {padding: 0 5vw;}
     body p.warning {margin: 5vw;}
-    body h1 {font-size: 36px;}
     .navbar {padding: 0;}
     .container {flex-direction: column; padding: 0 3vw;}
     .subnavs {width: 100%; margin:0;}
@@ -204,7 +203,7 @@ em {
     .AGAS-full {display: none !important;}
     body p, body ul, body h3, body h5 {padding: 0 3vw;}
     body p.warning {margin: 3vw;}
-    body h1 {font-size: 30px;}
+    body h1 {font-size: 36px;}
 }
 
 body {
@@ -237,10 +236,11 @@ li {
   width: 260px;
   height: 210px;
   text-align: center;
-  font-size: 28px;
   padding: 12px 0px;
   background-repeat: no-repeat;
   background-size: 100%;
+  opacity: 0.8;
+  line-height: 2;
 }
 
 #fr.centerblock {
@@ -258,15 +258,16 @@ li {
 
 .centerblock a {
     text-decoration: none;
-    background-color: rgba(255,250,250,0.9);
     border-radius: 15%;
-    font-size: 20px;
-    color:#444;
-    font-weight: 400;
+    font-size: 22px;
+    color: #444;
+    text-shadow: 3px 3px 5px white;
+    font-weight: 900;
 }
 .centerblock a:hover {
     font-size:24px;
     font-weight: 900;
+    color: black;
 }
 
 a {
@@ -296,7 +297,7 @@ h1 {
     background-color: #86857f;
     padding:0 0 12px 0;
     margin: 0;
-    font-size: 3vw;
+    font-size: 3rem;
     line-height: 1.2;
     width: 100%;
     text-align:center;
@@ -305,11 +306,6 @@ h1 {
 .posts h1 { /* headings in subordinate pages, e.g. annual reports */
     color: #444;
     background-color: white;
-}
-
-h1 a {/* page heading */
-   color: white; 
-   text-decoration: none;
 }
 
 
