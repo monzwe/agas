@@ -203,7 +203,7 @@ em {
 
 @media (max-width: 540px) {
     .AGAS-full {display: none !important;} /*works*/
-    .AGAS-short {display: inline !important;} /*doesn't work */
+    .AGAS-short {display: inline-block !important;} /*doesn't work */
     body p, body ul, body h3, body h5 {padding: 0 3vw;}
     body p.warning {margin: 3vw;}
     body h1 {font-size: 2rem;}
@@ -351,8 +351,9 @@ h5 {/* Bold left-aligned text, for page intros and minor subheadings */
     top: 25px;
     background-color: #ddd;
 }
-.AGAS-short {display: none !important;} /* abbreviation only, switch to inline for small screens? doesn't work */
-.AGAS-full {display: inline;}
+
+.AGAS-full {display: inline-block;}
+.AGAS-short {display: none;}
 
 #fr {
     background-color: #FEE6CC;
