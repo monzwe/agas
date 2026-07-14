@@ -87,7 +87,7 @@ footer {
     display:block;
     margin: 0;
     padding: 0;
-    animation: "fade-in" 4s;
+    animation: "fade-in" 2s;
 }
 
 @keyframes fade-in { /* banner on homepage fades in from outline to details */
