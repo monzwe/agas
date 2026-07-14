@@ -5,7 +5,7 @@
 }
 
 .navbar { /* containers */
-    padding: 0 3vw; 
+    padding: 0 3vw;
     align-items: center;
     background-color: #ddd;
     width: 100%;
@@ -13,7 +13,7 @@
     top: 0px;
     position: sticky;
     scroll-snap-type: y mandatory;
-} 
+}
 .dropdown { /* navbar container for subpages icons, symbols replacing the javascript dropdowns */
     float: right;
     padding: 0;
@@ -25,17 +25,19 @@
   padding: 11px 20px;
 }
 .navbar img {
-    height: 36px; width: auto;
+   height: 36px; width: auto;
    filter:opacity(50%);
 }
 .navbar a:hover {
-    background-color: #ddd;
+    background-color: #ccc;
 }
-.navbar img:hover {
+.navbar img:hover, img:active {
   filter: invert(100%);
 }
-
-.greyed-out { /*icon for active page */
+#greyed-out {
+    background-color: #ccc;
+}
+#greyed-out img { /*icon for active page */
     filter: invert(100%);
 }
 
@@ -56,15 +58,16 @@ footer {
 }
 
 .gradient-sub {
-    display: inline-block; 
+    display: inline-block;
     background: linear-gradient(180deg, #86857f 0%, #706860 50%, #948f8a 100%);
     line-height: 1;
 }
 
-.sky {/* area above banner image */
+.sky {/* area above banner image, holds an extra icon */
     height: 9vw;
-    width: 260px;
-    text-align: center;
+    text-align: left;
+    padding-top: 6vw;
+    margin-left: 34.5vw;
     font-size: 3vw;
 }
 .sky a:hover {
@@ -96,7 +99,7 @@ footer {
         filter: contrast(1);
         -webkit-filter: contrast(1);
     }
-} 
+}
 
 .subnavs {
     display: flex;
@@ -112,6 +115,7 @@ footer {
   text-decoration: none;
   padding: 3px;
   background-color: #86857f;
+    color: #ddd;
 }
 .subnavs a:hover {
     background-color: #706860;
@@ -157,16 +161,16 @@ th {
 }
 /* Images with standardized height, for use in flexbox side-by-side, three images max: */
 .imgs-flex {
-    height: 25vw; width: auto; display:block; margin: auto; 
+    height: 25vw; width: auto; display:block; margin: auto;
 /* Centered images, standardized widths (as opposed to fixed number of pixels): */
 }
 .center-smaller {
-    width: 50vw; height: auto; display:block; margin: auto; 
+    width: 50vw; height: auto; display:block; margin: auto;
 }
 .center {
-    width: 70vw; height: auto;  display:block; margin: auto; 
+    width: 70vw; height: auto;  display:block; margin: auto;
 }
-.legend-centered, .legend-left { 
+.legend-centered, .legend-left {
     color: black;
     line-height: 1.3;
     margin: 0;
@@ -180,9 +184,9 @@ th {
 }
 
 em {
-    color: black; 
+    color: black;
     font-style: normal;
-    background-color: rgba(255,255,255,0.4); 
+    background-color: rgba(255,255,255,0.4);
 }
 
 @media (max-width: 700px) {
@@ -229,7 +233,7 @@ li {
 }
 
 /* welcome heart and links to different languages */
-.centerblock { 
+.centerblock {
   margin: 8px auto;
   width: 260px;
   height: 210px;
@@ -284,7 +288,7 @@ a:hover {
 }
 
 /* styles for content read in from Google Sheets via JSON feed (see script) */
-#cards { 
+#cards {
     margin: 0;
 }
 .card p {
@@ -379,7 +383,7 @@ p.decline {
 }
 .rollout-bar { /* for "Please wait" bar in javascript (JSON feed) */
     margin: 0 15vw;
-    background-color: rgba(255,255,255,0.8); 
+    background-color: rgba(255,255,255,0.8);
     color: white;
     animation: rollout 5s;
 }
