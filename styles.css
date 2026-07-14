@@ -204,6 +204,7 @@ em {
 @media (max-width: 540px) {
     .AGAS-full {display: none !important;} /*works*/
     .AGAS-short {display: inline-block !important;} /*doesn't work */
+    .subnavs {font-size: 0.9rem;}
     body p, body ul, body h3, body h5 {padding: 0 3vw;}
     body p.warning {margin: 3vw;}
     body h1 {font-size: 2rem;}
@@ -321,7 +322,7 @@ h2 {/* page subsection */
     text-align: center;
     line-height: 1.2;
     font-size: 24px;
-    padding: 5px 15vw 0;
+    padding: 12px 15vw 0;
     scroll-margin-top: 70px;
 }
 
