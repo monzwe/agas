@@ -22,7 +22,7 @@
 .navbar a {
   float: left;
   margin-top: 6px;
-  padding: 11px 20px;
+  padding: 11px 18px;
 }
 .navbar img {
    height: 36px; width: auto;
@@ -50,16 +50,16 @@ footer {
 
 
 #submenu  { /* container for subpages titles and in-page navigation to level 2 headings */
-    display:block;
     padding: 0;
-    height: 150px;
+    height: 15.7vw;
     text-align: center;
     font-weight: 600;
+    background-color: #86857f;
 }
 
 .gradient-sub {
     display: inline-block;
-    background: linear-gradient(180deg, #86857f 0%, #706860 50%, #948f8a 100%);
+    background: linear-gradient(180deg, #86857f 0%, #706860 50%, #86857f 100%);
     line-height: 1;
 }
 
@@ -106,14 +106,14 @@ footer {
     margin: 0 15vw;
     justify-content: center;
 }
-.subnavs div{
-    margin: 0 5%;
+.subnavs div {
+    margin: 12px 5%;
 }
 .subnavs a {
   text-transform:uppercase;
   font-weight: 900;
   text-decoration: none;
-  padding: 3px;
+  padding: 5px;
   background-color: #86857f;
   color: white;
 }
@@ -201,11 +201,17 @@ em {
     .sky img, .navbar img {width:30px; height: auto;}
 }
 
-@media (max-width: 410px) {
-    .AGAS-full {display: none !important;}
+@media (max-width: 540px) {
+    .AGAS-full {display: none !important;} /*works*/
+    .AGAS-short {display: inline !important;} /*doesn't work */
     body p, body ul, body h3, body h5 {padding: 0 3vw;}
     body p.warning {margin: 3vw;}
-    body h1 {font-size: 36px;}
+    body h1 {font-size: 2rem;}
+}
+
+@media (max-width: 350px) {
+    .subnavs {height:1rem;}
+    body h1 {text-shadow: 2px 2px #86857f;}
 }
 
 body {
@@ -295,11 +301,12 @@ a:hover {
 h1 {
     color: white;
     background-color: #86857f;
+    line-height: 1.2;
     padding:0 0 12px 0;
     margin: 0;
     font-size: 3rem;
-    line-height: 1.2;
     width: 100%;
+    height: 10vw;
     text-align:center;
 }
 
