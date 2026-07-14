@@ -35,7 +35,7 @@
   filter: invert(100%);
 }
 #greyed-out {
-    background-color: #ccc;
+    background-color: #86857f;
 }
 #greyed-out img { /*icon for active page */
     filter: invert(100%);
@@ -115,7 +115,7 @@ footer {
   text-decoration: none;
   padding: 3px;
   background-color: #86857f;
-    color: #ddd;
+  color: white;
 }
 .subnavs a:hover {
     background-color: #706860;
@@ -322,7 +322,6 @@ h3 {/* catch-eye heading */
     font-size: 20px;
     line-height: 1.5;
     padding: 0 15vw;
-    border-width: 0 0 0 10px;
     margin: 30px 0 10px 0;
     text-decoration: overline white 9px;
 }
