@@ -344,6 +344,7 @@ h5 {/* Bold left-aligned text, for page intros and minor subheadings */
     font-weight: 900;
     font-size: 18px;
     text-align: left;
+        scroll-margin-top: 70px;
 }
 
 .AGAS-short, .AGAS-full { /* full name of AGAS in the navbar */
