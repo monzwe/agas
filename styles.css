@@ -319,8 +319,9 @@ h1 {
 h2 {/* page subsection */
     color: black;
     text-align: center;
-    font-size: 28px;
-    padding: 0 15vw;
+    line-height: 1.2;
+    font-size: 24px;
+    padding: 5px 15vw 0;
     scroll-margin-top: 70px;
 }
 
