@@ -35,8 +35,8 @@
   filter: invert(100%);
 }
 
-.greyed-out {
-    opacity: 0.3;
+.greyed-out { /*icon for active page */
+    filter: invert(100%);
 }
 
 footer {
@@ -61,24 +61,11 @@ footer {
     line-height: 1;
 }
 
-/* navbar icons at the top of (French) subpages */
-#fr-icons {
-    height: 5.3vw; width: auto;
-    filter: invert(100%);
-    padding: 0;
-    margin: 0;
-}
 .sky {/* area above banner image */
     height: 9vw;
-    width: 100%;
-    position: relative;
+    width: 260px;
+    text-align: center;
     font-size: 3vw;
-}
-.sky-icon {
-  position: absolute;
-  bottom: 0;
-  left: 34.6vw;
-
 }
 .sky a:hover {
     background-color: rgba(100,100,100,0.3);
@@ -100,7 +87,7 @@ footer {
     animation: "fade-in" 4s;
 }
 
-@keyframes fade-in {
+@keyframes fade-in { /* banner on homepage fades in from outline to details */
     0%  {
         filter: contrast(0.2);
         -webkit-filter: contrast(0.2);
@@ -124,6 +111,7 @@ footer {
   font-weight: 900;
   text-decoration: none;
   padding: 3px;
+  background-color: #86857f;
 }
 .subnavs a:hover {
     background-color: #706860;
@@ -268,11 +256,12 @@ li {
 
 .centerblock a {
     text-decoration: none;
+    text-transform: uppercase;
     border-radius: 15%;
-    font-size: 22px;
+    font-size: 20px;
     color: #444;
     text-shadow: 3px 3px 5px white;
-    font-weight: 900;
+    font-weight: 400;
 }
 .centerblock a:hover {
     font-size:24px;
