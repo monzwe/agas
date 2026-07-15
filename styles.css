@@ -54,7 +54,7 @@ footer {
 
 #submenu  { /* container for subpages titles and in-page navigation to level 2 headings */
     padding: 5.7vw 0;
-    height: 18vw;
+    height: 16vw;
     text-align: center;
     font-weight: 600;
     background: linear-gradient(180deg, #86857f 0%, #706860 50%, #ccc 100%);
@@ -189,11 +189,12 @@ em {
     background-color: rgba(255,255,255,0.4);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     body p, body ul, body h3, body h5 {padding: 0 5vw;}
     body p.warning {margin: 5vw;}
     .navbar {padding: 0;}
     .container {flex-direction: column; padding: 0 3vw;}
+    #submenu {height: 18vw;}
     .subnavs {width: 100%; margin:0;}
     .subnavs div {margin: 0 5%;}
     .imgs-flex {width: 70vw; height: auto;}
@@ -202,9 +203,10 @@ em {
     .sky img, .navbar img {width:30px; height: auto;}
 }
 
-@media (max-width: 540px) {
+@media (max-width: 550px) {
     .AGAS-full {display: none !important;} /*works*/
-    .AGAS-short {display: inline-block !important;} /*doesn't work */
+    .AGAS-short {display: inline-block !important;} 
+    #submenu {height: 20vw;}
     .subnavs {font-size: 0.9rem;}
     body p, body ul, body h3, body h5 {padding: 0 3vw;}
     body p.warning {margin: 3vw;}
