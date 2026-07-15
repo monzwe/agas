@@ -21,21 +21,25 @@
 
 .navbar a {
   float: left;
-  margin-top: 6px;
-  padding: 11px 18px;
+  margin: 6px;
+  padding: 10px 15px 5px;
+  border-radius: 40% 0%;
+
 }
 .navbar img {
    height: 36px; width: auto;
    filter:opacity(50%);
 }
-.navbar a:hover {
+.navbar a:hover, a:active {
     background-color: #ccc;
+    box-shadow: 5px 5px 2px #bbb;
 }
 .navbar img:hover, img:active {
   filter: invert(100%);
 }
 #greyed-out {
     background-color: #86857f;
+    box-shadow: 5px 5px 2px #bbb;
 }
 #greyed-out img { /*icon for active page */
     filter: invert(100%);
@@ -48,19 +52,12 @@ footer {
     padding: 8px 30px;
 }
 
-
 #submenu  { /* container for subpages titles and in-page navigation to level 2 headings */
-    padding: 0;
-    height: 15.7vw;
+    padding: 5.7vw 0;
+    height: 18vw;
     text-align: center;
     font-weight: 600;
-    background-color: #86857f;
-}
-
-.gradient-sub {
-    display: inline-block;
-    background: linear-gradient(180deg, #86857f 0%, #706860 50%, #86857f 100%);
-    line-height: 1;
+    background: linear-gradient(180deg, #86857f 0%, #706860 50%, #ccc 100%);
 }
 
 .sky {/* area above banner image, holds an extra icon */
@@ -72,7 +69,8 @@ footer {
 }
 .sky a:hover {
     background-color: rgba(100,100,100,0.3);
-          border-radius: 30%;
+    padding: 5px;
+    border-radius: 40% 0%;
 }
 .sky img{
     height: 36px; width: auto;
@@ -87,7 +85,7 @@ footer {
     display:block;
     margin: 0;
     padding: 0;
-    animation: "fade-in" 2s;
+    animation: "fade-in" 1s;
 }
 
 @keyframes fade-in { /* banner on homepage fades in from outline to details */
@@ -113,13 +111,15 @@ footer {
   text-transform:uppercase;
   font-weight: 900;
   text-decoration: none;
-  padding: 5px;
-  background-color: #86857f;
-  color: white;
+  padding: 6px 10px;
+  border-radius: 40% 0%;
+  background-color: #ccc;
+  color: #444;
 }
-.subnavs a:hover {
-    background-color: #706860;
+.subnavs a:hover, a:active {
+    background-color: #666;
     color: white;
+    box-shadow: 5px 5px 2px #444;
 }
 
 /* table style for annual reports stats */
@@ -133,13 +133,13 @@ table {
   height: auto;
   border: #ddd 1px;
   border-collapse: collapse;
-  font-size: 16px;
+  font-size: 1rem;
   text-align:  center;
 }
 tr:nth-child(even){background-color: rgba(221,221,221,0.4);}
 th, td {
   padding: 5px;
-  font-size: 14px;
+  font-size: 0.87rem;
   line-height: 1.1;
 }
 th {
@@ -195,6 +195,7 @@ em {
     .navbar {padding: 0;}
     .container {flex-direction: column; padding: 0 3vw;}
     .subnavs {width: 100%; margin:0;}
+    .subnavs div {margin: 0 5%;}
     .imgs-flex {width: 70vw; height: auto;}
     .center, .center-smaller, .tablecontainer {width: 90vw; height: auto;}
     .sky {height:15vw;}
@@ -223,7 +224,7 @@ body {
 
 p, ul, h5 {
     padding: 0 15vw;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #444;
 }
 
@@ -236,7 +237,7 @@ li {
 }
 
 .homepage-title {
-    background: linear-gradient(180deg, #86857f 0%, #706860 50%, #948f8a 100%);
+    background: linear-gradient(180deg, #86857f 0%, #706860 50%, #ccc 100%);
 }
 
 /* welcome heart and links to different languages */
@@ -269,12 +270,12 @@ li {
     text-decoration: none;
     text-transform: uppercase;
     border-radius: 15%;
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 900;
     opacity: 1;
 }
 .centerblock a:hover {
-    font-size:24px;
+    font-size:1.5rem;
 }
 
 a {
@@ -301,19 +302,16 @@ a:hover {
 
 h1 {
     color: white;
-    background-color: #86857f;
     line-height: 1.2;
     padding:0 0 12px 0;
     margin: 0;
     font-size: 3rem;
     width: 100%;
-    height: 10vw;
     text-align:center;
 }
 
 .posts h1 { /* headings in subordinate pages, e.g. annual reports */
     color: #444;
-    background-color: white;
 }
 
 
@@ -321,14 +319,14 @@ h2 {/* page subsection */
     color: black;
     text-align: center;
     line-height: 1.2;
-    font-size: 24px;
+    font-size: 1.5rem;
     padding: 12px 15vw 0;
     scroll-margin-top: 70px;
 }
 
 h3 {/* catch-eye heading */
     color: #444;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.5;
     padding: 0 15vw;
     margin: 30px 0 10px 0;
@@ -342,17 +340,17 @@ h4 {/* Centered bold para, e.g. for images with a fixed width */
 
 h5 {/* Bold left-aligned text, for page intros and minor subheadings */
     font-weight: 900;
-    font-size: 18px;
+    font-size: 1.125rem;
     text-align: left;
         scroll-margin-top: 70px;
 }
 
 .AGAS-short, .AGAS-full { /* full name of AGAS in the navbar */
     font-weight: 900;
-    font-size: 16px;
+    font-size: 1rem;
     position:relative;
     top: 25px;
-    background-color: #ddd;
+    background-color: none;
 }
 
 .AGAS-full {display: inline-block;}
