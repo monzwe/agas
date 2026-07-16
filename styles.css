@@ -54,10 +54,10 @@ footer {
 
 #submenu  { /* container for subpages titles and in-page navigation to level 2 headings */
     padding: 5.7vw 0;
-    height: 16vw;
+    height: 12rem;
     text-align: center;
     font-weight: 600;
-    background: linear-gradient(180deg, #86857f 0%, #706860 50%, #ccc 100%);
+    background: linear-gradient(180deg, #86857f 0%, #706860 30%,  #706860 60%, rgba(170, 150, 100, 0) 100%);
 }
 
 .sky {/* area above banner image, holds an extra icon */
@@ -105,7 +105,7 @@ footer {
     justify-content: center;
 }
 .subnavs div {
-    margin: 12px 5%;
+    margin: 6px 5%;
 }
 .subnavs a {
   text-transform:uppercase;
@@ -113,11 +113,12 @@ footer {
   text-decoration: none;
   padding: 6px 10px;
   border-radius: 40% 0%;
-  background-color: #ccc;
+  background-color: rgba(255,255,255,0.8);
+  box-shadow: 2px 2px 5px #cba;
   color: #444;
 }
 .subnavs a:hover, a:active {
-    background-color: #666;
+    background-color: #86857f;
     color: white;
     box-shadow: 5px 5px 2px #444;
 }
@@ -188,27 +189,23 @@ th {
     body p.warning {margin: 5vw;}
     .navbar {padding: 0;}
     .container {flex-direction: column; padding: 0 3vw;}
-    #submenu {height: 18vw;}
+    #submenu {height: 10rem;}
     .subnavs {width: 100%; margin:0;}
     .subnavs div {margin: 0 5%;}
     .imgs-flex {width: 70vw; height: auto;}
     .center, .center-smaller, .tablecontainer {width: 90vw; height: auto;}
-    .sky {height:15vw;}
+    .sky {height:15vw; padding-top: 10vw;}
     .sky img, .navbar img {width:30px; height: auto;}
 }
 
 @media (max-width: 550px) {
     .AGAS-full {display: none !important;} /*works*/
     .AGAS-short {display: inline-block !important;} 
-    #submenu {height: 20vw;}
     .subnavs {font-size: 0.9rem;}
+    #submenu {height: 8rem;}
     body p, body ul, body h3, body h5 {padding: 0 3vw;}
     body p.warning {margin: 3vw;}
     body h1 {font-size: 2rem;}
-}
-
-@media (max-width: 350px) {
-    .subnavs {height:1rem;}
 }
 
 body {
@@ -232,20 +229,17 @@ li {
 }
 
 .homepage-title {
-    background: linear-gradient(180deg, #86857f 0%, #706860 50%, #ccc 100%);
+    background: linear-gradient(180deg, #86857f 0%, #706860 50%, rgba(170, 150, 100, 0) 100%);
 }
 
 /* welcome heart and links to different languages */
 .centerblock {
   margin: 8px auto;
-  width: 260px;
-  height: 210px;
+  width: 240px;
+  height: 200px;
   text-align: center;
   padding: 12px 0px;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  opacity: 1;
-  line-height: 2;
+  background-size: 100% 100%;
 }
 
 #fr.centerblock {
@@ -263,20 +257,19 @@ li {
 
 .centerblock a {
     text-decoration: none;
-    text-transform: uppercase;
-    border-radius: 15%;
-    font-size: 1rem;
+    background-color: rgba(255,255,255,0.8);
+    line-height: 2;
+    border-radius: 40% 0%;
+    padding: 5px;
     font-weight: 900;
-    opacity: 1;
 }
-.centerblock a:hover {
+.centerblock a:hover, a:active {
     font-size:1.5rem;
 }
 
 a {
     color: black;
     text-decoration: underline #444 1px;
-    background-color: rgba(255,255,255,0.4);
 }
 a:hover {
     background-color: white;
