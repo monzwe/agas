@@ -318,6 +318,7 @@ h2 {/* page subsection */
     padding: 12px 15vw 0;
     scroll-margin-top: 70px;
 }
+h2 img {height:18px; width:auto;}
 
 h3 {/* catch-eye heading */
     color: #444;
@@ -339,6 +340,7 @@ h5 {/* Bold left-aligned text, for page intros and minor subheadings */
     text-align: left;
         scroll-margin-top: 70px;
 }
+h5 img {height:18px; width:auto}
 
 .AGAS-short, .AGAS-full { /* full name of AGAS in the navbar */
     font-weight: 900;
