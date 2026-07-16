@@ -65,7 +65,7 @@ footer {
     text-align: left;
     padding-top: 6vw;
     margin-left: 34.5vw;
-    font-size: 3vw;
+    font-size: 32px;
 }
 .sky a:hover {
     background-color: rgba(100,100,100,0.3);
@@ -80,7 +80,7 @@ footer {
     filter: invert(100%);
 }
 
-.banner { /*banner image **/
+.banner { /*banner images (img sizes: 1200*132px and 1200*64px) **/
     width: 100vw; height: auto;
     display:block;
     margin: 0;
@@ -268,15 +268,16 @@ li {
 .centerblock a:hover, a:active {
     font-size:1.5rem;
     background-color: white;
-      box-shadow: 2px 2px 5px #cba;
+    box-shadow: 2px 2px 5px #cba;
 }
 
 a {
     color: black;
     text-decoration: underline #444 1px;
 }
-a:hover {
+a:hover, a:active {
     background-color: white;
+    font-size: inherit;
 }
 #disclaimer a, #aviso-legal a, #haftungsausschluss a {text-decoration: none;}
 
