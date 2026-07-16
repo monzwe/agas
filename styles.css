@@ -239,7 +239,7 @@ li {
   width: 240px;
   height: 200px;
   text-align: center;
-  padding: 12px 0px;
+  padding: 12px 0;
   background-size: 100% 100%;
 }
 
@@ -258,17 +258,16 @@ li {
 
 .centerblock a {
     text-decoration: none;
-    background-color: rgba(255, 250, 245, 0.85);
-          box-shadow: 5px 5px 5px white;
+    background: linear-gradient(90deg, rgba(255, 250, 245, 0.5) 0%, white 30%,  white 70%, rgba(255, 250, 245, 0.5) 100%);
     line-height: 2;
+    padding: 2px 5px;
     border-radius: 40% 0%;
-    padding: 1px;
     font-weight: 900;
 }
 .centerblock a:hover, a:active {
     font-size:1.5rem;
     background-color: white;
-    box-shadow: 2px 2px 5px #cba;
+    box-shadow: 2px 2px 5px #987;
 }
 
 a {
