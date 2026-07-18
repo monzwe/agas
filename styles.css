@@ -109,7 +109,7 @@ footer {
 }
 .subnavs a {
   text-transform:uppercase;
-  font-weight: 900;
+  font-weight: 700;
   text-decoration: none;
   padding: 6px 10px;
   border-radius: 40% 0%;
@@ -262,7 +262,7 @@ li {
     line-height: 2;
     padding: 2px 5px;
     border-radius: 40% 0%;
-    font-weight: 900;
+    font-weight: 700;
 }
 .centerblock a:hover, a:active {
     font-size:1.5rem;
@@ -299,6 +299,7 @@ h1 {
     padding-bottom: 12px;
     margin: 0;
     font-size: 3rem;
+    font-weight: 900;
     width: 100%;
     text-align:center;
 }
@@ -334,7 +335,7 @@ h4 {/* Centered bold para, e.g. for images with a fixed width */
 }
 
 h5 {/* Bold left-aligned text, for page intros and minor subheadings */
-    font-weight: 900;
+    font-weight: 700;
     font-size: 1.125rem;
     text-align: left;
         scroll-margin-top: 70px;
