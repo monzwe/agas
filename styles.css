@@ -232,18 +232,18 @@ li {
 
 .homepage-title {
     background: linear-gradient(180deg, #86857f 0%, #706860 50%, rgba(170, 150, 100, 0) 100%);
-    padding-bottom: 5.7vw;
+    padding-bottom: 3vw;
 }
 
 /* welcome heart and links to different languages */
 .centerblock {
   position: relative;
-  top:-5vw;
+  top:-1vw;
   margin: 0 auto;
   width: 240px;
   height: 200px;
   text-align: center;
-  padding: 12px 0;
+  padding: 12px 0 0;
   background-size: 100% 100%;
   box-shadow: 0 1vw rgba(255,245,240, 0.3) inset;
   border-radius: 30%;
@@ -264,7 +264,7 @@ li {
 
 .centerblock a {
     text-decoration: none;
-    background: linear-gradient(90deg, rgba(255, 250, 245, 0.5) 0%, white 30%,  white 70%, rgba(255, 250, 245, 0.5) 100%);
+    background: linear-gradient(90deg, rgba(255, 250, 245, 0.5) 0%, white 20%,  white 80%, rgba(255, 250, 245, 0.5) 100%);
     line-height: 2;
     padding: 2px 5px;
     border-radius: 40% 0%;
