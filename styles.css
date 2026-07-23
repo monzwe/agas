@@ -13,6 +13,7 @@
     top: 0px;
     position: sticky;
     scroll-snap-type: y mandatory;
+    z-index: 1;
 }
 .dropdown { /* navbar container for subpages icons, symbols replacing the javascript dropdowns */
     float: right;
@@ -37,11 +38,11 @@
 .navbar img:hover, img:active {
   filter: invert(100%);
 }
-#greyed-out {
+#active-page {
     background-color: #86857f;
     box-shadow: 5px 5px 2px #bbb;
 }
-#greyed-out img { /*icon for active page */
+#active-page img { /*icon for active page */
     filter: invert(100%);
 }
 
@@ -63,7 +64,7 @@ footer {
 .sky {/* area above banner image, holds an extra icon */
     height: 9vw;
     text-align: left;
-    padding-top: 6vw;
+    padding-top: calc(9vw - 36px);
     padding-left: 34.5vw;
     font-size: 32px;
   background-image: linear-gradient(180deg, rgba(221,221,221,1) 0%, rgba(221,221,221,0) 80%,rgba(221,221,221,0) 100%);
@@ -196,7 +197,7 @@ th {
     .subnavs div {margin: 0 5%;}
     .imgs-flex {width: 70vw; height: auto;}
     .center, .center-smaller, .tablecontainer {width: 90vw; height: auto;}
-    .sky {height:15vw; padding-top: 10vw;}
+    .sky {height:15vw; padding-top: calc(15vw - 36px);
     .sky img, .navbar img {width:30px; height: auto;}
 }
 
