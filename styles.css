@@ -64,7 +64,7 @@ footer {
 .sky {/* area above banner image, holds an extra icon */
     height: 9vw;
     text-align: left;
-    padding-top: calc(9vw - 36px);
+    padding-top: calc(9vw - 31px);
     padding-left: 34.5vw;
     font-size: 32px;
   background-image: linear-gradient(180deg, rgba(221,221,221,1) 0%, rgba(221,221,221,0) 80%,rgba(221,221,221,0) 100%);
@@ -197,7 +197,7 @@ th {
     .subnavs div {margin: 0 5%;}
     .imgs-flex {width: 70vw; height: auto;}
     .center, .center-smaller, .tablecontainer {width: 90vw; height: auto;}
-    .sky {height:15vw; padding-top: calc(15vw - 36px);}
+    .sky {height:15vw; padding-top: calc(15vw - 31px);}
     .sky img, .navbar img {width:30px; height: auto;}
 }
 
@@ -250,16 +250,16 @@ li {
   border-radius: 30%;
 }
 
-#fr.centerblock {
+#fra.centerblock {
     background-image: url('assets/welcome-heart-fr.webp');
 }
-#de.centerblock {
+#deu.centerblock {
     background-image: url('assets/welcome-heart-de.webp');
 }
-#es.centerblock {
+#esp.centerblock {
     background-image: url('assets/welcome-heart-es.webp');
 }
-#en.centerblock {
+#eng.centerblock {
     background-image: url('assets/welcome-heart-en.webp');
 }
 
