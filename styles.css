@@ -3,20 +3,21 @@
 }
 
 :root {
-    --navbar-color: whitesmoke;
-    --bg-color: #fefefe; 
+    --navbar-color: #ddd;
+    --bg-color: #fee6cc; 
     --sky-color: #fee6cc; 
     --ground-color: #555;
     --mountain-color: #686868;
     --text-color: #444;
     --link-color: black;
     --hover-color: white;
+    --accent-color: rgb(255, 91, 123);
 }
-
 .navbar { /* containers */
     padding: 0 3vw;
     align-items: center;
     background-color: var(--navbar-color);
+    color: black;
     width: 100%;
     height: 70px;
     top: 0px;
@@ -41,24 +42,16 @@
    filter:opacity(50%);
 }
 .navbar a:hover, a:active {
-    background-color: var(--bg-color);
+    background-color: var(--navbar-color);
 }
 .navbar img:hover, img:active {
   filter: invert(100%);
 }
 #active-page {
     background-color: #555;
-    box-shadow: 5px 5px 2px #bbb;
 }
 #active-page img { /*icon for active page */
     filter: invert(100%);
-}
-
-footer {
-    width: 100%;
-    background-color: #ddd;
-    text-align: center;
-    padding: 8px 30px;
 }
 
 #submenu  { /* container for subpages titles and in-page navigation to level 2 headings */
@@ -245,20 +238,23 @@ body {
 
 body.dark-mode {
     --bg-color: #303030;
-    --navbar-color: #acacc9;
+    --navbar-color: #9191a8;
     --text-color: #fefefe;
     --link-color: white;
     --hover-color: black;
     --sky-color: #999;
     --ground-color: #303030;
     --mountain-color: #404040;
+    --accent-color: #b0b0ee;
 }
-
 body.dark-mode > .banner {
     background-image: url('assets/AGAS-banner-dark.webp');
 }
 body.dark-mode > .banner-sub {
     background-image: url('assets/AGAS-banner-sub-dark.webp');
+}
+body.dark-mode > .centerblock {
+    background-image: url('assets/welcome-heart-de.webp')
 }
 
 p, ul, h5 {
@@ -291,19 +287,7 @@ li {
   padding: 12px 0 0;
   background-size: 100% 100%;
   border-radius: 30%;
-}
-
-#fra.centerblock {
-    background-image: url('assets/welcome-heart-fr.webp');
-}
-#deu.centerblock {
-    background-image: url('assets/welcome-heart-de.webp');
-}
-#esp.centerblock {
-    background-image: url('assets/welcome-heart-es.webp');
-}
-#eng.centerblock {
-    background-image: url('assets/welcome-heart-en.webp');
+  background-image: url('assets/welcome-heart-fr.webp')
 }
 
 .centerblock a {
@@ -323,7 +307,7 @@ li {
 
 a {
     color: var(--link-color);
-    text-decoration: underline #ccc 1px;
+    text-decoration: underline 1px;
 }
 a:hover, a:active {
     background-color: var(--hover-color);
@@ -377,7 +361,7 @@ h3 {/* catch-eye heading */
     line-height: 1.5;
     padding: 0 15vw;
     margin: 30px 0 10px 0;
-    text-decoration: overline white 9px;
+    text-decoration: overline var(--accent-color) 9px;
 }
 
 
@@ -399,7 +383,6 @@ h5 img {height:18px; width:auto}
     font-size: 1rem;
     position:relative;
     top: 25px;
-    color: var(--text-color);
     background-color: none;
 }
 
@@ -409,8 +392,8 @@ h5 img {height:18px; width:auto}
 p.warning {
     background-color: white;
     color: #444;
-    border-color:  #86857f;
     border-style: solid;
+    border-color: var(--accent-color);
     border-width: 0 0 0 10px;
     margin: 30px 15vw;
     padding: 30px 10px;
@@ -431,6 +414,14 @@ p.decline {
 .decline a:hover {
     background-color: white;
 }
+
+footer {
+    width: 100%;
+    background-color: var(--navbar-color);
+    text-align: center;
+    padding: 8px 30px;
+}
+
 .rollout-bar { /* for "Please wait" bar in javascript (JSON feed) */
     margin: 0 15vw;
     background-color: rgba(255,255,255,0.8);
