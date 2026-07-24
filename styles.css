@@ -232,7 +232,7 @@ li {
 }
 
 .homepage-title {
-    background: linear-gradient(180deg, #86857f 0%, #706860 50%, rgba(170, 150, 100, 0) 100%);
+    background: linear-gradient(180deg, #555 0%, rgba(170, 150, 100, 0) 100%);
     padding-bottom: 3vw;
 }
 
