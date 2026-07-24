@@ -110,7 +110,6 @@ button {
     background-size: contain;
     background-position: bottom;
     background-image: url('assets/AGAS-banner.webp');
-    animation: "fade-in" 1s;
 }
 
 .banner-sub { /*img size: 1200*64px) **/
@@ -122,18 +121,6 @@ button {
     background-size: contain;
     background-position: bottom;
     background-image: url('assets/AGAS-banner-sub.webp');
-    animation: "fade-in" 1s;
-}
-
-@keyframes fade-in { /* banner on homepage fades in from outline to details */
-    0%  {
-        filter: contrast(0.2);
-        -webkit-filter: contrast(0.2);
-    }
-    100%   {
-        filter: contrast(1);
-        -webkit-filter: contrast(1);
-    }
 }
 
 .subnavs {
