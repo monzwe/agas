@@ -10,6 +10,8 @@
 
 <body>
 
+  <script src="scripts.js"></script>
+
 <div class="navbar">
         <div><a href="index.html" title="BIENVENUE" id="active-page"><img src='assets/icon-home.png' alt="Bienvenue"></a></div>
         <div class="dropdown">
@@ -22,13 +24,12 @@
 
 <div class="sky">
     <a href="meteo.html" title="METEO"><img src="assets/icon-meteo.png" alt="Météo"></a>
+    <img class="dropdown" id="modeSwitcher" src="assets/icon-sun.png" title="Nuit" alt="Nuit">
 </div>
 
-<picture>
-    <source srcset="assets/AGAS-banner.webp" class="banner" >
-    <img src="assets/AGAS-banner.png" class="banner" width="100vw" style="aspect-ratio: 300 / 33" alt="Salève">
-</picture>
+<div class="banner"></div>
 
+  
 <h1 class="homepage-title">Bienvenue</h1>
     <p id="fra" class="centerblock">
       <strong><br>
@@ -43,7 +44,7 @@
         pour monter au <a href="saleve.html">Salève</a>. Bienvenue à tous! Un responsable de l'
         <a href="association.html">Association Genevoise des Amis du Salève</a> vous y attend par 
         tous les temps. Il n'y a pas d'inscription préalable. 
-        <span class="marked">Tout ce qu'il faut savoir se trouve sur cette page.</span></mark></h5>
+        <strong>Tout ce qu'il faut savoir se trouve sur cette page.<strong></h5>
 
       <p class="warning">Il faut absolument une <strong>bonne condition physique</strong> et de <strong>bonnes chaussures</strong> (pas de nu-pieds, tongs, etc!)
          Le Salève est une vraie montagne, où la prudence s'impose. <br>
@@ -103,8 +104,6 @@
     var date = d.toLocaleString('fr-CH', options);
     document.getElementById('nextMeeting').innerHTML = "Prochaine rando depuis Veyrier: "+date.toString();
   </script>
-
-  <script src="scripts.js"></script>
 
 </body>
 

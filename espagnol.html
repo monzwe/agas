@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body id="es">
+<body>
+<script src="scripts.js"></script>
 
 <div class="navbar">
         <div><a href="index.html" title="BIENVENUE"><img src='assets/icon-home.png' alt="Bienvenue"></a></div>
@@ -22,12 +23,9 @@
 
 <div class="sky">
     <a href="meteo.html" title="METEO"><img src="assets/icon-meteo.png" alt="Meteo"></a>
-</div>
+    <img class="dropdown" id="modeSwitcher" src="assets/icon-sun.png" title="Nuit" alt="Nuit"></div>
 
-<picture>
-    <source srcset="assets/AGAS-banner.webp" class="banner">
-    <img src="assets/AGAS-banner.png" class="banner" alt="Salève">
-</picture>
+<div class="banner"></div>
 
     <h1 class="homepage-title">Bienvenidos</h1>
     <p id="esp" class="centerblock">
@@ -44,7 +42,7 @@
     para subir al <a href="saleve.html">Salève</a>. 
     Todos los excursionistas son bienvenidos. Un representante de la 
     <a href="association.html">Association Genevoise des Amis du Salève</a> le estará esperando haga el tiempo 
-    que haga. <span class="marked">En esta página encontrará todo lo que necesita saber</span>.</h5>
+    que haga. <strong>En esta página encontrará todo lo que necesita saber</strong>.</h5>
 
   <p class="warning">Una <strong>buena condición física</strong> y un <strong>buen calzado</strong> (¡nada de pies descalzos, chanclas, etc.!) 
     son absolutamente necesarios. El Salève es una auténtica montaña, un lugar donde hay que tener cuidado.<br>
@@ -104,8 +102,6 @@
     var date = d.toLocaleString('es-ES', options);
     document.getElementById('nextMeeting').innerHTML = "Próxima excursión desde Veyrier: "+date.toString();
 </script>
-
-<script src="scripts.js"></script>
 
 </body>
 </html>

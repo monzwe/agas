@@ -8,7 +8,8 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 
-<body id="en">
+<body>
+<script src="scripts.js"></script>
 
 <div class="navbar">
         <div><a href="index.html" title="BIENVENUE"><img src='assets/icon-home.png' alt="Bienvenue"></a></div>
@@ -22,12 +23,9 @@
 
 <div class="sky">
     <a href="meteo.html" title="WEATHER"><img src="assets/icon-meteo.png" alt="Weather"></a>
-</div>
+    <img class="dropdown" id="modeSwitcher" src="assets/icon-sun.png" title="Nuit" alt="Nuit"></div>
 
-<picture>
-    <source srcset="assets/AGAS-banner.webp" class="banner">
-    <img src="assets/AGAS-banner.png" class="banner" alt="Salève">
-</picture>
+<div class="banner"></div>
 
     <h1 class="homepage-title">Welcome</h1>
     <p id="eng" class="centerblock">
@@ -44,7 +42,7 @@
         <a href="saleve.html">Salève</a>. Everybody welcome. A representative of the 
       <a href="association.html">Association Genevoise des Amis du Salève</a></span> will be waiting for you in any weather. 
       No need to sign up in advance, just come.
-      <span class="marked">All you need to know is found on this page</span>.</h5>
+      <strong>All you need to know is found on this page</strong>.</h5>
       
       <p class="warning">You need to be <strong>in good shape</strong> and wear appropriate <strong>footwear</strong> (no sandals, flip-flops, etc!) 
       The Salève is a real mountain, where you have to be careful.<br>
@@ -100,7 +98,7 @@
     document.getElementById('nextMeeting').innerHTML = "Next hike from Veyrier: "+date.toString();
 </script>
 
-<script src="scripts.js"></script>
+
 
 </body>
 </html>

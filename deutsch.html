@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body id="de">
+<body>
+
+  <script src="scripts.js"></script>
 
 <div class="navbar">
         <div><a href="index.html" title="BIENVENUE"><img src='assets/icon-home.png' alt="Bienvenue"></a></div>
@@ -22,12 +24,10 @@
 
 <div class="sky">
     <a href="meteo.html" title="WETTER"><img src="assets/icon-meteo.png" alt="Wetter"></a>
+    <img class="dropdown" id="modeSwitcher" src="assets/icon-moon.png" title="Nuit" alt="Nuit">
 </div>
 
-<picture>
-    <source srcset="assets/AGAS-banner.webp">
-    <img class="banner" src="assets/AGAS-banner.png" alt="Salève">
-</picture>
+<div class="banner"></div>
 
   <h1 class="homepage-title">Willkommen</h1>
     <p id="deu" class="centerblock">
@@ -44,7 +44,7 @@
     <a href="saleve.html">Salève</a> zu besteigen. 
     Alle Wanderfreunde sind willkommen. Ein Verantwortlicher des Genfer Vereins 
     <a href="association.html">Association Genevoise des Amis du Salève</a></span> erwartet euch dort bei jedem Wetter. 
-    Anmeldung nicht nötig. <span class="marked">Alle Infos finden sich hier auf dieser Seite.</span></h5>
+    Anmeldung nicht nötig. <strong>Alle Infos finden sich hier auf dieser Seite.</strong>
 
   <p class="warning">Unbedingt erforderlich sind <strong>eine gute körperliche Verfassung</strong> und <strong>gutes Schuhwerk</strong> 
     (keine Barfußschuhe, Flip-Flops usw.!). Der Salève ist ein echter Berg, wo beim Wandern Vorsicht geboten ist.<br>
@@ -102,8 +102,6 @@
     var date = d.toLocaleString('de-CH', options);
     document.getElementById('nextMeeting').innerHTML = "Nächste Wanderung ab Veyrier: "+date.toString();
 </script>
-
-<script src="scripts.js"></script>
 
 </body>
 </html>
