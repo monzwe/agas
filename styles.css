@@ -11,7 +11,7 @@
     --text-color: #444;
     --link-color: black;
     --hover-color: white;
-    --accent-color: rgb(255, 91, 123);
+    --accent-color: #ff5b7b;
 }
 .navbar { /* containers */
     padding: 0 3vw;
@@ -88,10 +88,11 @@
     background-color: var(--sky-color);
 }
 
-button {
-    border: none;
-    background-color: rgba(255,255,255,0);
-    cursor: pointer;
+em {
+    color: var(--hover-color);
+    background-color: var(--accent-color);
+    font-style: normal;
+    font-weight: 700;
 }
 
 .banner { /*banner  (img sizes: 1200*132px **/
@@ -130,8 +131,7 @@ button {
   text-decoration: none;
   padding: 6px 10px;
   border-radius: 40% 0%;
-  background-color: #86857f;
-  box-shadow: 5px 5px 2px #ba9;
+  background-color: #555;
   color: white;
 
 }
