@@ -77,6 +77,9 @@
 .sky img:hover {
     filter: invert(100%);
 }
+.sky a:hover {
+    background-color: var(--sky-color);
+}
 
 mark {
   margin: 0;
@@ -319,9 +322,6 @@ a:hover, a:active {
 }
 #disclaimer a, #aviso-legal a, #haftungsausschluss a {text-decoration: none;}
 
-.posts { /* subordinate pages, e.g. reports, statutes, contact page, mentions legales, disclaimer.... */
-    background-color: white;
-}
 
 /* styles for content read in from Google Sheets via JSON feed (see script) */
 #cards {
@@ -335,17 +335,18 @@ h1 {
     color: white;
     text-shadow: 3px 3px #303030;
     line-height: 1.2;
-    padding-bottom: 12px;
+    padding: 0 0 12px 0;
     margin: 0;
     font-size: 3rem;
     font-weight: 900;
     width: 100%;
-    text-align:center;
+    text-align: center;
 }
 
 .posts h1 { /* headings in subordinate pages, e.g. annual reports */
     color: var(--text-color);
     text-shadow: none;
+    padding: 24px 0;
 }
 
 
