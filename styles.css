@@ -27,7 +27,14 @@
 }
 .dropdown { /* navbar container for subpages icons, symbols replacing the javascript dropdowns */
     float: right;
-    padding: 0;
+}
+.switcher {
+    float:right;
+    padding: 17px;
+}
+
+@media print {
+    .switcher{display: none;}
 }
 
 .navbar a {
