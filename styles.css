@@ -5,9 +5,9 @@
 :root {
     --navbar-color: #ddd;
     --bg-color: #fee6cc; 
-    --sky-color: #fee6cc; 
-    --ground-color: #555;
-    --mountain-color: #686868;
+    --sky-color: #fde6cc; /*matches top of both AGAS-banner images */
+    --ground-color: #555; /*matches bottom of AGAS-banner image */
+    --mountain-color: #6a6a6a; /*matches bottom of AGAS-banner-sub image */
     --text-color: #444;
     --link-color: black;
     --hover-color: white;
@@ -59,7 +59,7 @@
     height: 12rem;
     text-align: center;
     font-weight: 600;
-    background: linear-gradient(180deg, var(--mountain-color) 0%, var(--bg-color) 100%);
+    background: linear-gradient(180deg, var(--mountain-color) 30%, var(--bg-color) 100%);
 }
 
 .sky { /* area above banner image, holds an extra icon */
@@ -242,9 +242,9 @@ body.dark-mode {
     --text-color: #fefefe;
     --link-color: white;
     --hover-color: black;
-    --sky-color: #999;
-    --ground-color: #303030;
-    --mountain-color: #404040;
+    --sky-color: #999; /*matches top of both AGAS-banner-*dark.* images */
+    --ground-color: #303030; /*matches bottom of AGAS-banner-dark.* image */
+    --mountain-color: #404040; /*matches bottom of AGAS-banner-sub-dark.* image */
     --accent-color: #b0b0ee;
 }
 body.dark-mode > .banner {
@@ -273,7 +273,7 @@ li {
 }
 
 .homepage-title {
-    background: linear-gradient(180deg, var(--ground-color) 0%, rgba(170, 150, 100, 0) 100%);
+    background: linear-gradient(180deg, var(--ground-color) 20%,var(--bg-color) 100%);
     padding-bottom: 3vw;
 }
 
@@ -331,7 +331,7 @@ a:hover, a:active {
 
 h1 {
     color: white;
-    text-shadow: 2px 2px #86857f;
+    text-shadow: 3px 3px #86857f;
     line-height: 1.2;
     padding-bottom: 12px;
     margin: 0;
