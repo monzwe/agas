@@ -44,6 +44,12 @@ body.dark-mode > .centerblock {
     border-radius: 50%;
     background-color: var(--hover-color);
 }
+.switcher img:hover {
+    height: 39px; width: auto;
+}
+.switcher img:active {
+    height: 36px; width: auto;
+}
 @media print {
     .switcher{display: none;}
 }
@@ -80,9 +86,6 @@ NAVIGATION
 }
 #active-page {
     background-color: var(--accent-color);
-}
-#active-page img { /*icon for active page */
-    filter: invert(0%);
 }
 .AGAS-short, .AGAS-full { /* full name or abbrev of AGAS in the navbar, responsive to viewport width */
     font-weight: 900;
