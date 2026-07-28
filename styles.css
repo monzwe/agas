@@ -47,9 +47,6 @@ body.dark-mode > .centerblock {
 @media print {
     .switcher{display: none;}
 }
-.switcher img:hover {
-    height: 40px; width: auto;
-}
 /*----------------------------------------
 NAVIGATION
 /*----------------------------------------*/
