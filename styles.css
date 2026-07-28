@@ -44,12 +44,6 @@ body.dark-mode > .centerblock {
     border-radius: 50%;
     background-color: var(--hover-color);
 }
-.switcher img:hover {
-    height: 39px; width: auto;
-}
-.switcher img:active {
-    height: 36px; width: auto;
-}
 @media print {
     .switcher{display: none;}
 }
@@ -279,8 +273,8 @@ ul {
     list-style: square inside;
 }
 ul li::marker {
-    font-size: 100%;
-    content: "❯ ";
+    font-size: 150%;
+    content: "ᯓ ";
     color: var(--accent-color);
 }
 li {
@@ -288,7 +282,7 @@ li {
 }
 mark { /*MARKER-STYLE HIGHLIGHTS IN PAGE INTRO TEXTS */
   margin: 0;
-  padding: 0.1em 0.4em;
+  padding: 0em 0.3em;
   border-radius: 0.8em 0.3em;
   background: var(--accent-color);
   background-image: linear-gradient(
@@ -314,7 +308,7 @@ General-style links in body text
 /*----------------------------------------*/
 a {
     color: var(--link-color);
-    text-decoration: underline 1px;
+    text-decoration: underline 2px var(--accent-color);
 }
 a:hover, a:active {
     background-color: var(--hover-color);
