@@ -1,7 +1,9 @@
 * {
     box-sizing: border-box;
 }
-
+/*----------------------------------------
+DARK THEME
+/*----------------------------------------*/
 :root {
     --navbar-color: #ddd;
     --bg-color: #fee6cc; 
@@ -13,6 +15,37 @@
     --hover-color: white;
     --accent-color: #ff6262;
 }
+body.dark-mode {
+    --bg-color: #303030;
+    --navbar-color: #9191a8;
+    --text-color: #fdfdfd;
+    --link-color: white;
+    --hover-color: black;
+    --sky-color: #999; /*matches top of both AGAS-banner-*dark.* images */
+    --ground-color: #303030; /*matches bottom of AGAS-banner-dark.* image */
+    --mountain-color: #404040; /*matches bottom of AGAS-banner-sub-dark.* image */
+    --accent-color: gold;
+}
+body.dark-mode > .banner {
+    background-image: url('assets/AGAS-banner-dark.webp');
+}
+body.dark-mode > .banner-sub {
+    background-image: url('assets/AGAS-banner-sub-dark.webp');
+}
+body.dark-mode > .centerblock {
+    background-image: url('assets/welcome-heart-es.webp');
+    filter: hue-rotate(190deg);
+}
+.switcher {
+    float:right;
+    padding: 17px;
+}
+@media print {
+    .switcher{display: none;}
+}
+/*----------------------------------------
+NAVIGATION
+/*----------------------------------------*/
 .navbar { /* containers */
     padding: 0 3vw;
     align-items: center;
@@ -28,27 +61,20 @@
 .dropdown { /* navbar container for subpages icons, symbols replacing the javascript dropdowns */
     float: right;
 }
-.switcher {
-    float:right;
-    padding: 17px;
-}
-
-@media print {
-    .switcher{display: none;}
-}
-
 .navbar a {
-  float: left;
-  margin: 6px;
-  padding: 10px 15px 5px;
-  border-radius: 40% 0%;
-
+    float: left;
+    margin: 6px;
+    padding: 10px 15px 5px;
+    border-radius: 40% 0%;
+    text-decoration: none;
+    font-size: 36px;
 }
 .navbar img {
    height: 36px; width: auto;
 }
 .navbar a:hover, a:active {
     background-color: var(--navbar-color);
+    color: var(--hover-color);
 }
 .navbar img:hover, img:active {
   filter: invert(100%);
@@ -59,16 +85,49 @@
 #active-page img { /*icon for active page */
     filter: invert(100%);
 }
+.AGAS-short, .AGAS-full { /* full name or abbrev of AGAS in the navbar, responsive to viewport width */
+    font-weight: 900;
+    font-size: 1rem;
+    position:relative;
+    top: 25px;
+    background-color: none;
+}
+.AGAS-full {display: inline-block;}
+.AGAS-short {display: none;}
 
-#submenu  { /* container for subpages titles and in-page navigation to level 2 headings */
+#submenu  { /* container holding subpages titles and subnavs to level 2 headings */
     padding: 5.7vw 0;
     height: 12rem;
     text-align: center;
     font-weight: 600;
     background: linear-gradient(180deg, var(--mountain-color) 30%, var(--bg-color) 100%);
 }
-
-.sky { /* area above banner image, holds an extra icon */
+.subnavs {
+    display: flex;
+    margin: 0 15vw;
+    justify-content: center;
+}
+.subnavs div {
+    margin: 6px 5%;
+}
+.subnavs a {
+  text-transform:uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 40% 0%;
+  background-color: #555;
+  color: white;
+}
+.subnavs a:hover, a:active {
+  background-color: white;
+  box-shadow: 5px 5px 2px #cba;
+  color: #444;
+}
+/*----------------------------------------
+AREA ABOVE BANNER, WITH EXTRA ICONS
+/*----------------------------------------*/
+.sky { /* area above banner image, saves on image size and holds extra iconS */
     height: 9vw; 
     text-align: left;
     margin: 0;
@@ -87,22 +146,9 @@
 .sky a:hover {
     background-color: var(--sky-color);
 }
-
-mark {
-  margin: 0;
-  padding: 0.1em 0.4em;
-  border-radius: 0.8em 0.3em;
-  background: white;
-  background-image: linear-gradient(
-    to right,
-    var(--accent-color),
-    rgba(240, 160, 0, 0.7) 5%,
-    rgba(240, 160, 0, 0.3)
-  );
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
-}
-
+/*----------------------------------------
+BANNERS
+/*----------------------------------------*/
 .banner { /*banner  (img sizes: 1200*132px **/
     width: 100vw; height: 11vw;
     display:block;
@@ -113,7 +159,6 @@ mark {
     background-position: bottom;
     background-image: url('assets/AGAS-banner.webp');
 }
-
 .banner-sub { /*img size: 1200*64px) **/
     width: 100vw; height: 5.33vw;
     display:block;
@@ -124,31 +169,9 @@ mark {
     background-position: bottom;
     background-image: url('assets/AGAS-banner-sub.webp');
 }
-
-.subnavs {
-    display: flex;
-    margin: 0 15vw;
-    justify-content: center;
-}
-.subnavs div {
-    margin: 6px 5%;
-}
-.subnavs a {
-  text-transform:uppercase;
-  font-weight: 700;
-  text-decoration: none;
-  padding: 6px 10px;
-  border-radius: 40% 0%;
-  background-color: #555;
-  color: white;
-
-}
-.subnavs a:hover, a:active {
-  background-color: white;
-  box-shadow: 5px 5px 2px #cba;
-  color: #444;
-}
-
+/*----------------------------------------
+TABLES
+/*----------------------------------------*/
 /* table style for annual reports stats */
 .tablecontainer {
     overflow-x: auto;
@@ -161,6 +184,7 @@ table {
   border: #ddd 1px;
   border-collapse: collapse;
   font-size: 1rem;
+  color: #444;
   text-align:  center;
 }
 tr:nth-child(even){background-color: rgba(221,221,221,0.4);}
@@ -176,7 +200,9 @@ th {
 .table-lefthead {
     text-align: left;
 }
-
+/*----------------------------------------
+IMAGE FLEXBOXES AND LEGENDS
+/*----------------------------------------*/
 /* styles for full-width images and flexbox images */
 .container {
   display: flex;
@@ -209,7 +235,9 @@ th {
 .legend-left { /* paragraphs side-by-side */
     text-align: left;
 }
-
+/*----------------------------------------
+RESPONSIVE DESIGN
+/*----------------------------------------*/
 @media (max-width: 800px) {
     body p, body ul, body h3, body h5 {padding: 0 5vw;}
     body p.warning {margin: 5vw;}
@@ -223,7 +251,6 @@ th {
     .sky {height:15vw; padding-top: calc(15vw - 30px);}
     .sky img, .navbar img {width:30px; height: auto;}
 }
-
 @media (max-width: 550px) {
     .AGAS-full {display: none !important;} /*works*/
     .AGAS-short {display: inline-block !important;} 
@@ -233,7 +260,9 @@ th {
     body p.warning {margin: 3vw;}
     body h1 {font-size: 2rem;}
 }
-
+/*----------------------------------------
+BODY, TEXT STYLES
+/*----------------------------------------*/
 body {
     font-family: Arial, sans-serif;
     line-height: 1.7rem;
@@ -243,35 +272,11 @@ body {
     text-align: left;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
-
-body.dark-mode {
-    --bg-color: #303030;
-    --navbar-color: #9191a8;
-    --text-color: #fdfdfd;
-    --link-color: white;
-    --hover-color: black;
-    --sky-color: #999; /*matches top of both AGAS-banner-*dark.* images */
-    --ground-color: #303030; /*matches bottom of AGAS-banner-dark.* image */
-    --mountain-color: #404040; /*matches bottom of AGAS-banner-sub-dark.* image */
-    --accent-color: gold;
-}
-body.dark-mode > .banner {
-    background-image: url('assets/AGAS-banner-dark.webp');
-}
-body.dark-mode > .banner-sub {
-    background-image: url('assets/AGAS-banner-sub-dark.webp');
-}
-body.dark-mode > .centerblock {
-    background-image: url('assets/welcome-heart-es.webp');
-    filter: hue-rotate(190deg);
-}
-
 p, ul, h5 {
     padding: 0 15vw;
     font-size: 1.125rem;
     color: var(--text-color);
 }
-
 ul {
     list-style: square inside;
 }
@@ -279,17 +284,48 @@ ul li::marker {
     font-size: 150%;
     color: var(--accent-color);
 }
-
 li {
     margin: 10px 0;
 }
-
-.homepage-title {
-    background: linear-gradient(180deg, var(--ground-color) 20%,var(--bg-color) 100%);
-    padding-bottom: 3vw;
+mark { /*MARKER-STYLE HIGHLIGHTS IN PAGE INTRO TEXTS */
+  margin: 0;
+  padding: 0.1em 0.4em;
+  border-radius: 0.8em 0.3em;
+  background: var(--accent-color);
+  background-image: linear-gradient(
+    to right,
+    var(--accent-color),
+    rgba(255, 255, 255, 0.4) 5%,
+    rgba(255, 255, 255, 0.7)
+  );
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
-
-/* welcome heart and links to different languages */
+p.warning { /* message "you need to be in good shape and wear proper shoes..." */
+    background-color: white;
+    color: #444;
+    border-style: solid;
+    border-color: var(--accent-color);
+    border-width: 0 0 0 10px;
+    margin: 30px 15vw;
+    padding: 30px 10px;
+}
+/*----------------------------------------
+General-style links in body text
+/*----------------------------------------*/
+a {
+    color: var(--link-color);
+    text-decoration: underline 1px;
+}
+a:hover, a:active {
+    background-color: var(--hover-color);
+    font-size: inherit;
+}
+#disclaimer a, #aviso-legal a, #haftungsausschluss a {text-decoration: none;}
+/*----------------------------------------
+WELCOME HEART
+/*----------------------------------------*/
+/* heart background image and links to different languages */
 .centerblock {
   position: relative;
   top:-1vw;
@@ -303,7 +339,6 @@ li {
   background-image: url('assets/welcome-heart-es.webp');
   filter: hue-rotate(310deg);
 }
-
 .centerblock a {
     color: black;
     text-decoration: none;
@@ -318,18 +353,9 @@ li {
     background-color: white;
     box-shadow: 2px 2px 5px #987;
 }
-
-a {
-    color: var(--link-color);
-    text-decoration: underline 1px;
-}
-a:hover, a:active {
-    background-color: var(--hover-color);
-    font-size: inherit;
-}
-#disclaimer a, #aviso-legal a, #haftungsausschluss a {text-decoration: none;}
-
-
+/*----------------------------------------
+JSON FEED
+/*----------------------------------------*/
 /* styles for content read in from Google Sheets via JSON feed (see script) */
 #cards {
     margin: 0;
@@ -337,7 +363,19 @@ a:hover, a:active {
 .card p {
     margin: 0 5px 18px 5px;
 }
-
+.rollout-bar { /* for "Please wait" bar in javascript (JSON feed) */
+    margin: 0 15vw;
+    background-color: rgba(255,255,255,0.8);
+    color: white;
+    animation: rollout 5s;
+}
+@keyframes rollout { /* for "Please wait" bar in javascript (JSON feed) */
+  from {width: 50px;}
+  to {width: 200px;}
+}
+/*----------------------------------------
+HEADINGS
+/*----------------------------------------*/
 h1 {
     color: white;
     text-shadow: 3px 3px #303030;
@@ -349,14 +387,15 @@ h1 {
     width: 100%;
     text-align: center;
 }
-
 .posts h1 { /* headings in subordinate pages, e.g. annual reports */
     color: var(--text-color);
     text-shadow: none;
     padding: 24px 0;
 }
-
-
+.homepage-title {
+    background: linear-gradient(180deg, var(--ground-color) 20%,var(--bg-color) 100%);
+    padding-bottom: 3vw;
+}
 h2 {/* page subsection */
     color: var(--link-color);
     text-align: center;
@@ -366,7 +405,7 @@ h2 {/* page subsection */
     padding: 12px 15vw 0;
     scroll-margin-top: 70px;
 }
-h2 img {height:18px; width:auto;}
+h2 img {height:18px; width:auto;} /* for "Back" or "Top" icons on long pages*/
 
 h3 {/* catch-eye heading */
     color: var(--text-color);
@@ -376,42 +415,26 @@ h3 {/* catch-eye heading */
     margin: 30px 0 10px 0;
     text-decoration: overline var(--accent-color) 9px;
 }
-
-
 h4 {/* Centered bold para, e.g. for images with a fixed width */
     text-align: center;
     color: var(--text-color);
 }
-
 h5 {/* Bold left-aligned text, for page intros and minor subheadings */
     font-weight: 700;
     font-size: 1.125rem;
     text-align: left;
-        scroll-margin-top: 70px;
+    scroll-margin-top: 70px;
 }
 h5 img {height:18px; width:auto}
-
-.AGAS-short, .AGAS-full { /* full name of AGAS in the navbar */
-    font-weight: 900;
-    font-size: 1rem;
-    position:relative;
-    top: 25px;
-    background-color: none;
+/*----------------------------------------
+FOOTER
+/*----------------------------------------*/
+footer {
+    width: 100%;
+    background-color: var(--navbar-color);
+    text-align: center;
+    padding: 8px 30px;
 }
-
-.AGAS-full {display: inline-block;}
-.AGAS-short {display: none;}
-
-p.warning {
-    background-color: white;
-    color: #444;
-    border-style: solid;
-    border-color: var(--accent-color);
-    border-width: 0 0 0 10px;
-    margin: 30px 15vw;
-    padding: 30px 10px;
-}
-
 p.decline {
     background-color: white;
     color: #444;
@@ -428,20 +451,4 @@ p.decline {
     background-color: white;
 }
 
-footer {
-    width: 100%;
-    background-color: var(--navbar-color);
-    text-align: center;
-    padding: 8px 30px;
-}
 
-.rollout-bar { /* for "Please wait" bar in javascript (JSON feed) */
-    margin: 0 15vw;
-    background-color: rgba(255,255,255,0.8);
-    color: white;
-    animation: rollout 5s;
-}
-@keyframes rollout { /* for "Please wait" bar in javascript (JSON feed) */
-  from {width: 50px;}
-  to {width: 200px;}
-}
