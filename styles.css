@@ -41,6 +41,9 @@ body.dark-mode > .centerblock {
     border-radius: 50%;
     background-color: var(--hover-color);
 }
+.switcher:hover, .switcher-sky:hover {
+    background-color: var(--accent-color);
+}
 .switcher {
     float: right;
     margin-top: 17px;
