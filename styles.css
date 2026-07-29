@@ -127,7 +127,7 @@ NAVIGATION
 }
 .subnavs a:hover, a:active {
   background-color: white;
-  box-shadow: 5px 5px 2px #cba;
+  box-shadow: 5px 5px 2px var(--accent-color);
   color: #444;
 }
 /*----------------------------------------
