@@ -83,7 +83,7 @@ NAVIGATION
     text-decoration: none;
 }
 .navbar a:hover, a:active {
-    background-color: var(--hover-color);
+    background-color: white;
 }
 #active-page {
     background-color: var(--accent-color);
