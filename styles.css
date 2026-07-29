@@ -36,13 +36,19 @@ body.dark-mode > .centerblock {
     background-image: url('assets/welcome-heart-es.webp');
     filter: hue-rotate(190deg);
 }
-.switcher {
-    float:right;
-    height: 42px; /*36px image plus 3+3px padding top and bottom*/
-    margin-top: 17px;
-    padding: 3px;
+.switcher, .switcher-sky {
+    height: 36px; width: 36px;
     border-radius: 50%;
     background-color: var(--hover-color);
+}
+.switcher {
+    float: right;
+    margin-top: 17px;
+}
+.switcher-sky {
+    position: fixed;
+    top: 80px;
+    right: calc(3vw + 20px); /* navbar margin + navbar img padding */
 }
 @media print {
     .switcher{display: none;}
@@ -63,14 +69,15 @@ NAVIGATION
     z-index: 1;
 }
 .navbar img {
-   height: 36px; width: auto;
+   height: 36px; width: 36px;
 }
 .dropdown { /* navbar container for subpages icons, symbols replacing the javascript dropdowns */
     float: right;
 }
 .navbar a {
     float: left;
-    margin: 17px 20px;
+    margin: 17px;
+    height: 36px;
     border-radius: 50%;
     background-color: rgba(255, 250, 245, 0.5);
     text-decoration: none;
@@ -91,7 +98,7 @@ NAVIGATION
 .AGAS-full {display: inline-block;}
 .AGAS-short {display: none;}
 
-#submenu  { /* container holding subpages titles and subnavs to level 2 headings */
+#submenu  { /* container holding subpages titles (Le Salève, Qui nous sommes) and subnavs to level 2 headings */
     padding: 5.7vw 0;
     height: 12rem;
     text-align: center;
@@ -133,10 +140,11 @@ AREA ABOVE BANNER, WITH EXTRA ICONS
     background: linear-gradient(180deg, var(--navbar-color), var(--sky-color) 80%);
 }
 .sky img {
-    height: 36px; width: auto;
+    height: 36px; width: 36px;
 }
 .sky a:hover, a:active {
     background: rgba(255, 255, 255, 0.5);
+    border-radius: 20%;
 }
 /*----------------------------------------
 BANNERS
@@ -234,14 +242,14 @@ RESPONSIVE DESIGN
     body p, body ul, body h3, body h5 {padding: 0 5vw;}
     body p.warning {margin: 5vw;}
     .navbar {padding: 0;}
+    .switcher-sky {right: 20px;}
     .container {flex-direction: column; padding: 0 3vw;}
     #submenu {height: 10rem;}
     .subnavs {width: 100%; margin:0;}
     .subnavs div {margin: 0 5%;}
     .imgs-flex {width: 70vw; height: auto;}
     .center, .center-smaller, .tablecontainer {width: 90vw; height: auto;}
-    .sky {height:15vw; padding-top: calc(15vw - 30px);}
-    .sky img, .navbar img {width:30px; height: auto;}
+    .sky {height:15vw; padding-top: calc(15vw - 36px);}
 }
 @media (max-width: 550px) {
     .AGAS-full {display: none !important;} /*works*/
@@ -288,8 +296,8 @@ mark { /*MARKER-STYLE HIGHLIGHTS IN PAGE INTRO TEXTS */
   background-image: linear-gradient(
     to right,
     var(--accent-color),
-    rgba(255, 255, 255, 0.3) 5%,
-    rgba(255, 255, 255, 0.5)
+    rgba(255, 255, 255, 0.2) 5%,
+    rgba(255, 255, 255, 0.4)
   );
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
