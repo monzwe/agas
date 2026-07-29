@@ -137,7 +137,7 @@ AREA ABOVE BANNER, WITH EXTRA ICONS
     padding-top: calc(9vw - 30px); /*icon height*/
     padding-left: 34vw;
     padding-right: 3vw;
-    background: linear-gradient(180deg, var(--sky-color) 0%, var(--sky-color) 50%); 
+    background: linear-gradient(180deg, var(--navbar-color) 0%, var(--sky-color) 10%); 
     /*can start gradient with navbar colour to fade the navbar into the "sky"  */
 }
 .sky img {
