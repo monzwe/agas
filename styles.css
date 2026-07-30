@@ -13,7 +13,7 @@ DARK THEME
     --text-color: #444;
     --link-color: black;
     --hover-color: white;
-    --accent-color: #ffaa88;
+    --accent-color: #ff8866;
 }
 body.dark-mode {
     --bg-color: #303030;
@@ -259,14 +259,15 @@ RESPONSIVE DESIGN
     .center, .center-smaller, .tablecontainer {width: 90vw; height: auto;}
     .sky {height:15vw; padding-top: calc(15vw - 30px);}
 }
-@media (max-width: 550px) {
+@media (max-width: 570px) {
     .AGAS-full {display: none !important;} /*works*/
     .AGAS-short {display: inline-block !important;} 
     .subnavs {font-size: 0.9rem;}
     #submenu {height: 8rem;}
-    body p, body ul, body h3, body h5 {padding: 0 3vw;}
+    body p, body ul, body h2,body h3, body h5 {padding: 0 3vw;}
     body p.warning {margin: 3vw;}
     body h1 {font-size: 2rem;}
+    body h2 {text-align: left;}
 }
 /*----------------------------------------
 BODY, TEXT STYLES
