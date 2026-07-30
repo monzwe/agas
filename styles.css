@@ -291,7 +291,7 @@ ul {
 }
 ul li::marker {
     font-size: 150%;
-    content: "ᯓ ";
+    content: "✦ ";
     color: var(--accent-color);
 }
 li {
