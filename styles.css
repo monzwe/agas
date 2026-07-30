@@ -307,8 +307,8 @@ mark { /*MARKER-STYLE HIGHLIGHTS IN PAGE INTRO TEXTS */
   background-image: linear-gradient(
     to right,
     var(--accent-color),
-    rgba(255, 255, 255, 0.3) 5%,
-    rgba(255, 255, 255, 0.5)
+    rgba(255, 255, 255, 0.5) 5%,
+    rgba(255, 255, 255, 0.7)
   );
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
