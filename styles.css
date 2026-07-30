@@ -13,6 +13,7 @@ DARK THEME
     --text-color: #444;
     --link-color: black;
     --hover-color: white;
+    --hover-col-trsp: rgba(255, 255, 255, 0.5);
     --accent-color: #ff8866;
 }
 body.dark-mode {
@@ -21,6 +22,7 @@ body.dark-mode {
     --text-color: #fdfdfd;
     --link-color: white;
     --hover-color: black;
+    --hover-col-trsp: rgba(0, 0, 0, 0.5);
     --sky-color: #999; /*matches top of both AGAS-banner-*dark.* images */
     --ground-color: #303030; /*matches bottom of AGAS-banner-dark.* image */
     --mountain-color: #404040; /*matches bottom of AGAS-banner-sub-dark.* image */
@@ -360,7 +362,7 @@ WELCOME HEART
     text-decoration: none;
     border-radius: 40% 0%;
     font-weight: 700;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 0%, white 50%,  rgba(255, 255, 255, 0.5) 100%)
+    background: linear-gradient(90deg, var(--hover-col-trsp) 0%, var(--hover-color) 50%,  var(--hover-col-trsp) 100%);
 }
 .centerblock a:hover {
     box-shadow: 3px 3px 5px var(--link-color);
