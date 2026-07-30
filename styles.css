@@ -34,9 +34,9 @@ body.dark-mode > .banner {
 body.dark-mode > .banner-sub {
     background-image: url('assets/img/AGAS-banner-sub-dark.webp');
 }
-body.dark-mode > .centerblock {
-    filter: hue-rotate(190deg);
-}
+body.dark-mode > .centerblock {filter: hue-rotate(190deg);}
+body.dark-mode > .back-to-top img {filter: invert(100%);}
+
 .switcher, .back-to-top {
     float: right;
     position: fixed;
