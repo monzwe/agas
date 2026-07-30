@@ -41,7 +41,7 @@ body.dark-mode > .back-to-top img {filter: invert(100%);}
     float: right;
     position: fixed;
     top: 80px;
-    right: calc(3vw + 20px); /* navbar margin + navbar img padding */
+    right: calc(3vw + 15px); /* navbar margin + navbar img sides margin */
     height: 30px; width: 30px;
     border-radius: 50%;
     background-color: var(--hover-color);
@@ -248,8 +248,8 @@ RESPONSIVE DESIGN
     body p, body ul, body h3, body h5 {padding: 0 5vw;}
     body p.warning {margin: 5vw;}
     .navbar {padding: 0;}
-    .switcher {right: 20px;}
-    .back-to-top {right: 20px;}
+    .switcher {right: 15px;}
+    .back-to-top {right: 15px;}
     .container {flex-direction: column; padding: 0 3vw;}
     #submenu {height: 10rem;}
     .subnavs {width: 100%; margin:0;}
