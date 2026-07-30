@@ -70,7 +70,6 @@ NAVIGATION
 }
 .navbar img {
    height: 30px; width: 30px;
-   opacity: 50%
 }
 .dropdown { /* navbar container for subpages icons, symbols replacing the javascript dropdowns */
     float: right;
