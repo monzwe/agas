@@ -37,25 +37,21 @@ body.dark-mode > .banner-sub {
 body.dark-mode > .centerblock {
     filter: hue-rotate(190deg);
 }
-.switcher, .switcher-sky {
+.switcher, .back-to-top {
+    float: right;
+    position: fixed;
+    top: 80px;
+    right: calc(3vw + 20px); /* navbar margin + navbar img padding */
     height: 30px; width: 30px;
     border-radius: 50%;
     background-color: var(--hover-color);
 }
-.switcher:hover, .switcher-sky:hover {
-    background-color: var(--accent-color);
-}
-.switcher {
-    float: right;
-    margin-top: 17px;
-}
-.switcher-sky {
-    position: fixed;
-    top: 80px;
-    right: calc(3vw + 20px); /* navbar margin + navbar img padding */
-}
+.switcher {margin-top: 34px;}
+.back-to-top {margin-top: 0}
+
 @media print {
-    .switcher{display: none;}
+    .switcher {display: none;}
+    .back-to-top {display: none;}
 }
 /*----------------------------------------
 NAVIGATION
@@ -74,6 +70,7 @@ NAVIGATION
 }
 .navbar img {
    height: 30px; width: 30px;
+   opacity: 50%
 }
 .dropdown { /* navbar container for subpages icons, symbols replacing the javascript dropdowns */
     float: right;
@@ -141,7 +138,7 @@ AREA ABOVE BANNER, WITH EXTRA ICONS
     padding-top: calc(9vw - 30px); /*icon height*/
     padding-left: 34vw;
     padding-right: 3vw;
-    background: linear-gradient(180deg, var(--navbar-color) 0%, var(--sky-color) 10%); 
+    background: linear-gradient(180deg, var(--navbar-color) 0%, var(--sky-color) 50%); 
     /*can start gradient with navbar colour to fade the navbar into the "sky"  */
 }
 .sky img {
@@ -251,7 +248,8 @@ RESPONSIVE DESIGN
     body p, body ul, body h3, body h5 {padding: 0 5vw;}
     body p.warning {margin: 5vw;}
     .navbar {padding: 0;}
-    .switcher-sky {right: 20px;}
+    .switcher {right: 20px;}
+    .back-to-top {right: 20px;}
     .container {flex-direction: column; padding: 0 3vw;}
     #submenu {height: 10rem;}
     .subnavs {width: 100%; margin:0;}
