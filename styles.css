@@ -33,7 +33,6 @@ body.dark-mode > .banner-sub {
     background-image: url('assets/img/AGAS-banner-sub-dark.webp');
 }
 body.dark-mode > .centerblock {
-    background-image: url('assets/img/welcome-heart-es.webp');
     filter: hue-rotate(190deg);
 }
 .switcher, .switcher-sky {
@@ -258,6 +257,7 @@ RESPONSIVE DESIGN
     .imgs-flex {width: 70vw; height: auto;}
     .center, .center-smaller, .tablecontainer {width: 90vw; height: auto;}
     .sky {height:15vw; padding-top: calc(15vw - 30px);}
+    body > .centerblock {width: 160px; height: 133px;}
 }
 @media (max-width: 570px) {
     .AGAS-full {display: none !important;} /*works*/
@@ -344,33 +344,30 @@ WELCOME HEART
 /* heart background image and links to different languages */
 .centerblock {
   position: relative;
-  top:-1vw;
-  margin: 0 auto;
-  width: 240px;
-  height: 200px;
   text-align: center;
-  padding: 12px 0 0;
+  margin: 0 auto;
+  width: 20vw;
+  height: 17vw; /* image ratio: 233 height / 280 width = 0.83 * 20 = 16.6 vw */
+  padding: 4vw 0 0;
   background-size: 100% 100%;
   border-radius: 30%;
   background-image: url('assets/img/welcome-heart-es.webp');
-  filter: hue-rotate(320deg);
+  filter: hue-rotate(300deg);
 }
 .centerblock a {
-    color: black;
+    padding: 4px;
+    line-height: 3vw;
     text-decoration: none;
-    background: linear-gradient(90deg, rgba(255, 250, 245, 0.5) 0%, white 20%,  white 80%, rgba(255, 250, 245, 0.5) 100%);
-    line-height: 2;
-    padding: 2px 5px;
     border-radius: 40% 0%;
     font-weight: 700;
+    background-color: var(--hover-color);
 }
-.centerblock a:hover, a:active {
-    font-size:1.5rem;
-    background-color: white;
-    box-shadow: 2px 2px 5px #987;
+.centerblock a:hover {
+    box-shadow: 3px 3px 5px var(--link-color);
 }
+
 /*----------------------------------------
-JSON FEED
+JSON FEED, ALTERNATIVE HIKES
 /*----------------------------------------*/
 /* styles for content read in from Google Sheets via JSON feed (see script) */
 #cards {
