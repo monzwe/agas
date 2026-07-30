@@ -153,7 +153,7 @@ AREA ABOVE BANNER, WITH EXTRA ICONS
 /*----------------------------------------
 BANNERS
 /*----------------------------------------*/
-.banner { /*banner  (img sizes: 1200*132px **/
+.banner { /*banner  (img sizes: 1200*132px, ratio = 100 : 11  **/
     width: 100vw; height: 11vw;
     display:block;
     margin: 0;
@@ -163,7 +163,7 @@ BANNERS
     background-position: bottom;
     background-image: url('assets/img/AGAS-banner.webp');
 }
-.banner-sub { /*img size: 1200*64px) **/
+.banner-sub { /*img size: 1200*64px), ratio = 100 : 5.3333 **/
     width: 100vw; height: 5.33vw;
     display:block;
     margin: 0;
@@ -347,7 +347,7 @@ WELCOME HEART
   text-align: center;
   margin: 0 auto;
   width: 20vw;
-  height: 17vw; /* image ratio: 233 height / 280 width = 0.83 * 20 = 16.6 vw */
+  height: 17vw; /* image ratio: 233px height / 280px width = 0.83 * 20 = 16.6 vw */
   padding: 4vw 0 0;
   background-size: 100% 100%;
   border-radius: 30%;
@@ -360,7 +360,7 @@ WELCOME HEART
     text-decoration: none;
     border-radius: 40% 0%;
     font-weight: 700;
-    background-color: var(--hover-color);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 0%, white 50%,  rgba(255, 255, 255, 0.5) 100%)
 }
 .centerblock a:hover {
     box-shadow: 3px 3px 5px var(--link-color);
