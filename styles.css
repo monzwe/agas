@@ -46,7 +46,7 @@ body.dark-mode > .centerblock {
     border-radius: 50%;
     background-color: var(--hover-color);
 }
-.switcher img, .back-to-top img {height: 30px; width: auto;}
+.switcher img, .back-to-top img {height: 30px; width: 30px;}
 .switcher {margin-top: 34px;}
 .back-to-top a {margin: 0;}
 
