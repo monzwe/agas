@@ -27,13 +27,13 @@ body.dark-mode {
     --accent-color: #8e7aff;
 }
 body.dark-mode > .banner {
-    background-image: url('assets/AGAS-banner-dark.webp');
+    background-image: url('assets/img/AGAS-banner-dark.webp');
 }
 body.dark-mode > .banner-sub {
-    background-image: url('assets/AGAS-banner-sub-dark.webp');
+    background-image: url('assets/img/AGAS-banner-sub-dark.webp');
 }
 body.dark-mode > .centerblock {
-    background-image: url('assets/welcome-heart-es.webp');
+    background-image: url('assets/img/welcome-heart-es.webp');
     filter: hue-rotate(190deg);
 }
 .switcher, .switcher-sky {
@@ -162,7 +162,7 @@ BANNERS
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
-    background-image: url('assets/AGAS-banner.webp');
+    background-image: url('assets/img/AGAS-banner.webp');
 }
 .banner-sub { /*img size: 1200*64px) **/
     width: 100vw; height: 5.33vw;
@@ -172,7 +172,7 @@ BANNERS
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
-    background-image: url('assets/AGAS-banner-sub.webp');
+    background-image: url('assets/img/AGAS-banner-sub.webp');
 }
 /*----------------------------------------
 TABLES
@@ -352,7 +352,7 @@ WELCOME HEART
   padding: 12px 0 0;
   background-size: 100% 100%;
   border-radius: 30%;
-  background-image: url('assets/welcome-heart-es.webp');
+  background-image: url('assets/img/welcome-heart-es.webp');
   filter: hue-rotate(320deg);
 }
 .centerblock a {
