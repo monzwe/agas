@@ -8,8 +8,8 @@ DARK THEME
     --navbar-color: #ddd;
     --bg-color: #fee6cc; 
     --sky-color: #fde6cc; /*matches top of AGAS-banner images (main and sub) */
-    --ground-color: #707070; /*matches bottom of AGAS-banner (main) image */
-    --mountain-color: #707070; /*matches bottom of AGAS-banner-sub image */
+    --lake-color: #afa184; /*matches bottom of AGAS-banner (main) image */
+    --mountain-color: #818382; /*matches bottom of AGAS-banner-sub image */
     --text-color: #444;
     --link-color: black;
     --hover-color: white;
@@ -24,15 +24,15 @@ body.dark-mode {
     --hover-color: black;
     --hover-col-trsp: rgba(0, 0, 0, 0.5);
     --sky-color: #999; /*matches top of both AGAS-banner-*dark.* images */
-    --ground-color: #303030; /*matches bottom of AGAS-banner-dark.* image */
-    --mountain-color: #404040; /*matches bottom of AGAS-banner-sub-dark.* image */
+    --lake-color: #999; /*matches bottom of AGAS-banner-dark.* image */
+    --mountain-color: #303030; /*matches bottom of AGAS-banner-sub-dark.* image */
     --accent-color: #8e7aff;
 }
 body.dark-mode > .banner {
-    background-image: url('assets/img/AGAS-banner-dark.webp');
+    background-image: url('assets/img/AGAS-banner-dark.jpg');
 }
 body.dark-mode > .banner-sub {
-    background-image: url('assets/img/AGAS-banner-sub-dark.webp');
+    background-image: url('assets/img/AGAS-banner-dark-sub.jpg');
 }
 body.dark-mode > .centerblock {filter: hue-rotate(190deg);}
 body.dark-mode > .back-to-top img {filter: invert(100%);}
@@ -100,7 +100,7 @@ NAVIGATION
 .AGAS-short {display: none;}
 
 #submenu  { /* container holding subpages titles (Le Salève, Qui nous sommes) and subnavs to level 2 headings */
-    padding: 5.7vw 0;
+    padding: 0;
     height: 12rem;
     text-align: center;
     font-weight: 600;
@@ -136,7 +136,7 @@ AREA ABOVE BANNER, WITH EXTRA ICONS
     text-align: left;
     margin: 0;
     padding-top: calc(9vw - 30px); /*icon height*/
-    padding-left: 34vw;
+    padding-left: 48.5vw; /* position of Observatoire on banner image */
     padding-right: 3vw;
     background: linear-gradient(180deg, var(--navbar-color) 0%, var(--sky-color) 50%); 
     /*can start gradient with navbar colour to fade the navbar into the "sky"  */
@@ -152,25 +152,25 @@ AREA ABOVE BANNER, WITH EXTRA ICONS
 /*----------------------------------------
 BANNERS
 /*----------------------------------------*/
-.banner { /*banner  (img sizes: 1200*132px, ratio = 100 : 11  **/
-    width: 100vw; height: 11vw;
+.banner { /*banner  (img sizes: 1200*200px, ratio = 100 : 16.7  **/
+    width: 100vw; height: 16.7vw;
     display:block;
     margin: 0;
     padding: 0;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
-    background-image: url('assets/img/AGAS-banner.webp');
+    background-image: url('assets/img/AGAS-banner.jpg');
 }
 .banner-sub { /*img size: 1200*64px), ratio = 100 : 5.3333 **/
-    width: 100vw; height: 5.33vw;
+    width: 100vw; height: 7.83vw;
     display:block;
     margin: 0;
     padding: 0;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
-    background-image: url('assets/img/AGAS-banner-sub.webp');
+    background-image: url('assets/img/AGAS-banner-sub.jpg');
 }
 /*----------------------------------------
 TABLES
@@ -352,7 +352,7 @@ WELCOME HEART
   background-size: 100% 100%;
   border-radius: 30%;
   background-image: url('assets/img/welcome-heart-es.webp');
-  filter: hue-rotate(300deg);
+  filter: saturate(0);
 }
 .centerblock a {
     padding: 4px;
@@ -406,7 +406,7 @@ h1 {
     padding: 24px 0;
 }
 .homepage-title {
-    background: linear-gradient(180deg, var(--ground-color) 0%, var(--bg-color) 80%);
+    background: linear-gradient(180deg, var(--lake-color) 0%, var(--bg-color) 80%);
     padding-bottom: 3vw;
 }
 h2 {/* page subsection */
