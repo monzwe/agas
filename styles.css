@@ -25,7 +25,7 @@ body.dark-mode {
     --hover-col-trsp: rgba(0, 0, 0, 0.5);
     --sky-color: #999; /*matches top of both AGAS-banner-*dark.* images */
     --lake-color: #999; /*matches bottom of AGAS-banner-dark.* image */
-    --mountain-color: #303030; /*matches bottom of AGAS-banner-sub-dark.* image */
+    --mountain-color: #404040; /*matches bottom of AGAS-banner-sub-dark.* image */
     --accent-color: #8e7aff;
 }
 body.dark-mode > .banner {
@@ -35,7 +35,7 @@ body.dark-mode > .banner-sub {
     background-image: url('assets/img/AGAS-banner-dark-sub.jpg');
 }
 body.dark-mode > .centerblock {filter: hue-rotate(190deg);}
-body.dark-mode > .back-to-top img {filter: invert(100%);}
+body.dark-mode > .back-to-top img, .sky img {filter: invert(100%);}
 
 .switcher, .back-to-top {
     float: right;
@@ -80,8 +80,7 @@ NAVIGATION
     margin: 17px 15px;
     height: 30px;
     border-radius: 50%;
-    background-color: rgba(255, 250, 245, 0.4);
-    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 .navbar a:hover, a:active {
     background-color: white;
@@ -256,7 +255,7 @@ RESPONSIVE DESIGN
     .subnavs div {margin: 0 5%;}
     .imgs-flex {width: 70vw; height: auto;}
     .center, .center-smaller, .tablecontainer {width: 90vw; height: auto;}
-    .sky {height:15vw; padding-top: calc(15vw - 30px);}
+    .sky {height:20vw; padding-top: calc(20vw - 30px);}
     body > .centerblock {width: 160px; height: 133px;}
 }
 @media (max-width: 570px) {
@@ -267,7 +266,6 @@ RESPONSIVE DESIGN
     body p, body ul, body h2,body h3, body h5 {padding: 0 3vw;}
     body p.warning {margin: 3vw;}
     body h1 {font-size: 2rem;}
-    body h2 {text-align: left;}
 }
 /*----------------------------------------
 BODY, TEXT STYLES
