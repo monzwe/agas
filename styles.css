@@ -35,7 +35,7 @@ body.dark-mode > .banner-sub {
     background-image: url('assets/img/AGAS-banner-dark-sub.jpg');
 }
 body.dark-mode > .centerblock {filter: hue-rotate(190deg);}
-body.dark-mode > .back-to-top img, .sky img {filter: invert(100%);}
+body.dark-mode > .back-to-top img {filter: invert(100%);}
 
 .switcher, .back-to-top {
     float: right;
