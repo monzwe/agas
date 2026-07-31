@@ -29,10 +29,10 @@ body.dark-mode {
     --accent-color: #8e7aff;
 }
 body.dark-mode > .banner {
-    background-image: url('assets/img/AGAS-banner-dark.jpg');
+    background-image: url('assets/img/AGAS-banner-dark.webp');
 }
 body.dark-mode > .banner-sub {
-    background-image: url('assets/img/AGAS-banner-dark-sub.jpg');
+    background-image: url('assets/img/AGAS-banner-dark-sub.webp');
 }
 body.dark-mode > .centerblock {filter: hue-rotate(190deg);}
 body.dark-mode > .back-to-top img {filter: invert(100%);}
@@ -159,7 +159,7 @@ BANNERS
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
-    background-image: url('assets/img/AGAS-banner.jpg');
+    background-image: url('assets/img/AGAS-banner.webp');
 }
 .banner-sub { /*img size: 1200*64px), ratio = 100 : 5.3333 **/
     width: 100vw; height: 7.83vw;
@@ -169,7 +169,7 @@ BANNERS
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
-    background-image: url('assets/img/AGAS-banner-sub.jpg');
+    background-image: url('assets/img/AGAS-banner-sub.webp');
 }
 /*----------------------------------------
 TABLES
@@ -302,7 +302,7 @@ mark { /*MARKER-STYLE HIGHLIGHTS IN PAGE INTRO TEXTS */
   background: var(--accent-color);
   background-image: linear-gradient(
     to right,
-    var(--accent-color),
+    rgba(255, 255, 255, 0.3),
     rgba(255, 255, 255, 0.5) 5%,
     rgba(255, 255, 255, 0.7)
   );
@@ -404,7 +404,7 @@ h1 {
     padding: 24px 0;
 }
 .homepage-title {
-    background: linear-gradient(180deg, var(--lake-color) 0%, var(--bg-color) 80%);
+    background: linear-gradient(180deg, var(--lake-color) 0%, var(--bg-color) 100%);
     padding-bottom: 3vw;
 }
 h2 {/* page subsection */
