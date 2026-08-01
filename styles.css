@@ -402,7 +402,7 @@ h1 {
     padding: 24px 0;
 }
 .homepage-title {
-    background: linear-gradient(180deg, var(--lake-color) 0%, var(--bg-color) 100%);
+    background: linear-gradient(180deg, var(--lake-color) 0%, var(--bg-color) 50%);
     padding-bottom: 3vw;
 }
 h2 {/* page subsection */
