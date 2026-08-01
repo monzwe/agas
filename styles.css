@@ -131,7 +131,6 @@ AREA ABOVE BANNER, WITH EXTRA ICONS
 /*----------------------------------------*/
 .sky { /* area above banner image, saves on image size and holds extra iconS */
     height: 3vw; 
-    text-align: left;
     margin: 0;
     padding-top: 4.5vw;
     padding-left: calc(3vw + 15px); /*navbar left margin plus padding */
@@ -142,11 +141,11 @@ AREA ABOVE BANNER, WITH EXTRA ICONS
 .sky img {
     height: 30px; width: 30px;
 }
-.sky a:hover, a:active {
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 20%;
-    font-size: 30px;
+.sky a {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
 }
+.sky a:hover, a:active {background-color: rgba(255, 255, 255, 0.8);}
 /*----------------------------------------
 BANNERS
 /*----------------------------------------*/
