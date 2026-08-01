@@ -8,7 +8,7 @@ DARK THEME
     --navbar-color: #ddd;
     --bg-color: #fee6cc; 
     --sky-color: #fde6cc; /*matches top of AGAS-banner images (main and sub) */
-    --lake-color: #afa184; /*matches bottom of AGAS-banner (main) image */
+    --lake-color: #ba9; /*same or a bit darker than lake on AGAS-banner (main) image */
     --mountain-color: #818382; /*matches bottom of AGAS-banner-sub image */
     --text-color: #444;
     --link-color: black;
@@ -24,7 +24,7 @@ body.dark-mode {
     --hover-color: black;
     --hover-col-trsp: rgba(0, 0, 0, 0.5);
     --sky-color: #999; /*matches top of both AGAS-banner-*dark.* images */
-    --lake-color: #999; /*matches bottom of AGAS-banner-dark.* image */
+    --lake-color: #777; /*same or a bit darker than lake on AGAS-banner-dark.* image */
     --mountain-color: #404040; /*matches bottom of AGAS-banner-sub-dark.* image */
     --accent-color: #8e7aff;
 }
@@ -402,7 +402,7 @@ h1 {
     padding: 24px 0;
 }
 .homepage-title {
-    background: linear-gradient(180deg, var(--lake-color) 0%, var(--bg-color) 50%);
+    background: linear-gradient(180deg, var(--lake-color) 0%, var(--bg-color) 100%);
     padding-bottom: 3vw;
 }
 h2 {/* page subsection */
