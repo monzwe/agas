@@ -106,7 +106,7 @@ NAVIGATION
 }
 .subnavs {
     display: flex;
-    margin: 02vw 15vw;
+    margin: 3vw 15vw;
     justify-content: center;
 }
 .subnavs div {
