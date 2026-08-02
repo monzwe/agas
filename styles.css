@@ -98,7 +98,7 @@ NAVIGATION
 .AGAS-short {display: none;}
 
 #submenu  { /* container holding subpages titles (Le Salève, Qui nous sommes) and subnavs to level 2 headings */
-    padding: 0;
+    padding: 3vw 50px;
     height: 12rem;
     text-align: center;
     font-weight: 600;
