@@ -50,7 +50,8 @@ STICKY ICONS
     background-color: var(--hover-color);
 }
 .switcher img, .back-to-top img {height: 30px; width: 30px;}
-.switcher {margin-top: 0px;}
+.switcher {margin-top: 15px;}
+.switcher-navbar {margin-top: 15px; height: 30px; background-color: var(--hover-color); float: right; border-radius: 50%;}
 .back-to-top {margin-top: calc(100vh - 100px);}
 
 @media print {
@@ -75,7 +76,7 @@ NAVIGATION
 .navbar img {
    height: 30px; width: 30px;
 }
-.dropdown { /* navbar container for subpages icons, symbols replacing the javascript dropdowns */
+.navbar-right { /* navbar container for subpages icons, aligned right in navbar */
     float: right;
 }
 .navbar a {
