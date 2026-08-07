@@ -37,6 +37,10 @@ body.dark-mode > .banner-sub {
 body.dark-mode > .centerblock {filter: hue-rotate(190deg);}
 body.dark-mode > .back-to-top img {filter: invert(100%);}
 
+/*----------------------------------------
+STICKY ICONS
+/*----------------------------------------*/
+
 .switcher, .back-to-top {
     position: fixed;
     top: 64px;
@@ -47,7 +51,7 @@ body.dark-mode > .back-to-top img {filter: invert(100%);}
 }
 .switcher img, .back-to-top img {height: 30px; width: 30px;}
 .switcher {margin-top: 0px;}
-.back-to-top {margin-top:45px;}
+.back-to-top {margin-top: calc(100vh - 100px);}
 
 @media print {
     .switcher {display: none;}
