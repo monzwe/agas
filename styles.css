@@ -139,8 +139,8 @@ AREA ABOVE BANNER, WITH EXTRA ICONS
 .sky { /* area above banner image, saves on image size and holds extra iconS */
     height: 3vw; 
     margin: 0;
-    padding-top: calc(3vw - 20px);
-    padding-left: 51.5vw;
+    padding-top: 3vw;
+    padding-left: calc(3vw + 15px);
     padding-right: 3vw;
     background: linear-gradient(180deg, var(--navbar-color) 0%, var(--sky-color) 100%); 
     /*can start gradient with navbar colour to fade the navbar into the "sky"  */
@@ -260,7 +260,7 @@ RESPONSIVE DESIGN
     .subnavs div {margin: 0 5%;}
     .imgs-flex {width: 70vw; height: auto;}
     .center, .center-smaller, .tablecontainer {width: 90vw; height: auto;}
-    .sky {height:10vw; padding-top: calc(10vw - 20px);}
+    .sky {height:10vw; padding-top: 8vw; padding-left: 15px;}
     body > .centerblock {width: 160px; height: 133px;}
 }
 @media (max-width: 570px) {
