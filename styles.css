@@ -15,7 +15,7 @@ DARK THEME
     --hover-color: white;
     --hover-col-trsp: rgba(255, 255, 255, 0.5);
     --accent-color: #ff8866;
-    --hue: -36deg;
+    --hue: -50deg;
 }
 body.dark-mode {
     --bg-color: #303030;
@@ -139,15 +139,15 @@ AREA ABOVE BANNER, WITH EXTRA ICONS
 .sky { /* area above banner image, saves on image size and holds extra iconS */
     height: 3vw; 
     margin: 0;
-    padding-top:3vw;
-    padding-left: 34vw;
+    padding-top: calc(3vw - 20px);
+    padding-left: 51.5vw;
     padding-right: 3vw;
     background: linear-gradient(180deg, var(--navbar-color) 0%, var(--sky-color) 100%); 
     /*can start gradient with navbar colour to fade the navbar into the "sky"  */
 }
 .sky img {
     height: 30px; width: 30px;
-    filter: hue-rotate(var(--hue)) drop-shadow(-1px -1px 10px var(--hover-color));
+    filter: hue-rotate(var(--hue)) drop-shadow(-1px -1px 5px var(--hover-color));
 }
 .sky a {
     border-radius: 50%;
@@ -260,7 +260,7 @@ RESPONSIVE DESIGN
     .subnavs div {margin: 0 5%;}
     .imgs-flex {width: 70vw; height: auto;}
     .center, .center-smaller, .tablecontainer {width: 90vw; height: auto;}
-    .sky {height:10vw; padding-top: 10vw;}
+    .sky {height:10vw; padding-top: calc(10vw - 20px);}
     body > .centerblock {width: 160px; height: 133px;}
 }
 @media (max-width: 570px) {
