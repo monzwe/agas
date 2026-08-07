@@ -76,7 +76,7 @@ NAVIGATION
     z-index: 1;
 }
 .navbar img {
-   height: 30px; width: 30px; border-radius: 50%;
+   height: 30px; width: 30px; 
 }
 .navbar-right { /* navbar container for subpages icons, aligned right in navbar */
     float: right;
