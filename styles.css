@@ -94,10 +94,7 @@ NAVIGATION
 #active-page {
     background-color: var(--accent-color);
 }
-.language {
-    background-color: var(--hover-col-trsp);
-    filter: hue-rotate(var(--hue));
-}
+
 .AGAS-short, .AGAS-full { /* full name or abbrev of AGAS in the navbar, responsive to viewport width */
     font-weight: 900;
     font-size: 1rem;
