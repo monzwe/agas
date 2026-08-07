@@ -150,8 +150,8 @@ AREA ABOVE BANNER, WITH EXTRA ICONS
     filter: hue-rotate(var(--hue));
 }
 .sky a {
-    background-color: none;
     border-radius: 50%;
+    background-color: var(--bg-color);
     font-size: 30px;
 }
 .sky a:hover, a:active {background-color: rgba(255, 255, 255, 0.8);}
