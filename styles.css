@@ -76,7 +76,7 @@ NAVIGATION
     z-index: 1;
 }
 .navbar img {
-   height: 30px; width: 30px;
+   height: 30px; width: 30px; border-radius: 50%;
 }
 .navbar-right { /* navbar container for subpages icons, aligned right in navbar */
     float: right;
@@ -93,6 +93,10 @@ NAVIGATION
 }
 #active-page {
     background-color: var(--accent-color);
+}
+.language {
+    background-color: var(--hover-col-trsp);
+    filter: hue-rotate(var(--hue));
 }
 .AGAS-short, .AGAS-full { /* full name or abbrev of AGAS in the navbar, responsive to viewport width */
     font-weight: 900;
@@ -147,7 +151,7 @@ AREA ABOVE BANNER, WITH EXTRA ICONS
 }
 .sky img {
     height: 30px; width: 30px;
-    filter: hue-rotate(var(--hue)) drop-shadow(-1px -1px 5px var(--hover-color));
+    filter: hue-rotate(var(--hue)) drop-shadow(-2px -2px var(--hover-color)) drop-shadow(-1px -1px 5px var(--hover-color));
 }
 .sky a {
     border-radius: 50%;
