@@ -148,10 +148,11 @@ AREA ABOVE BANNER, WITH EXTRA ICONS
 }
 .sky img {
     height: 30px; width: 30px;
-    filter: hue-rotate(var(--hue)) drop-shadow(-2px -2px var(--hover-color)) drop-shadow(-1px -1px 5px var(--hover-color));
+    filter: hue-rotate(var(--hue)) drop-shadow(-1px -1px 5px var(--hover-color));
 }
 .sky a {
     border-radius: 50%;
+    font-size: 30px;
 }
 .sky a:hover, a:active {background-color: rgba(255, 255, 255, 0.8);}
 /*----------------------------------------
