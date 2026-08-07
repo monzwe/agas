@@ -15,6 +15,7 @@ DARK THEME
     --hover-color: white;
     --hover-col-trsp: rgba(255, 255, 255, 0.5);
     --accent-color: #ff8866;
+    --hue: -36deg;
 }
 body.dark-mode {
     --bg-color: #303030;
@@ -27,6 +28,8 @@ body.dark-mode {
     --lake-color: #777; /*same or a bit darker than lake on AGAS-banner-dark.* image */
     --mountain-color: #404040; /*matches bottom of AGAS-banner-sub-dark.* image */
     --accent-color: #8e7aff;
+    --hue: 190deg;
+
 }
 body.dark-mode > .banner {
     background-image: url('assets/img/AGAS-banner-dark.webp');
@@ -34,7 +37,6 @@ body.dark-mode > .banner {
 body.dark-mode > .banner-sub {
     background-image: url('assets/img/AGAS-banner-dark-sub.webp');
 }
-body.dark-mode > .centerblock {filter: hue-rotate(190deg);}
 body.dark-mode > .back-to-top img {filter: invert(100%);}
 
 /*----------------------------------------
@@ -145,10 +147,12 @@ AREA ABOVE BANNER, WITH EXTRA ICONS
 }
 .sky img {
     height: 30px; width: 30px;
+    filter: hue-rotate(var(--hue));
 }
 .sky a {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: none;
     border-radius: 50%;
+    font-size: 30px;
 }
 .sky a:hover, a:active {background-color: rgba(255, 255, 255, 0.8);}
 /*----------------------------------------
@@ -307,7 +311,7 @@ mark { /*MARKER-STYLE HIGHLIGHTS IN PAGE INTRO TEXTS */
     to right,
     rgba(255, 255, 255, 0.3),
     rgba(255, 255, 255, 0.5) 5%,
-    rgba(255, 255, 255, 0.7)
+    rgba(255, 255, 255, 0.5)
   );
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
@@ -353,7 +357,7 @@ WELCOME HEART
   background-size: 100% 100%;
   border-radius: 30%;
   background-image: url('assets/img/welcome-heart-es.webp');
-  filter: saturate(0);
+  filter: hue-rotate(var(--hue));
 }
 .centerblock a {
     padding: 4px;
