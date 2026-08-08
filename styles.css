@@ -6,29 +6,29 @@ DARK THEME
 /*----------------------------------------*/
 :root {
     --navbar-color: #ddd;
-    --bg-color: #fee6cc; 
+    --bg-color: #fee6cc; /* HSV 31-20-100 */
     --sky-color: #fde6cc; /*matches top of AGAS-banner images (main and sub) */
-    --lake-color: #ba9; /*same or a bit darker than lake on AGAS-banner (main) image */
+    --lake-color: #ba9; /*same or a bit darker than lake on AGAS-banner image */
     --mountain-color: #818382; /*matches bottom of AGAS-banner-sub image */
     --text-color: #444;
     --link-color: black;
     --hover-color: white;
-    --hover-col-trsp: rgba(255, 255, 255, 0.7);
-    --accent-color: #ff8866;
-    --hue: -50deg;
+    --accent-color: #ff5959; 
+    --hue: 110deg;
+    --invert: 0%;
 }
 body.dark-mode {
     --bg-color: #303030;
-    --navbar-color: #9191a8;
+    --navbar-color: #56566D;
     --text-color: #fdfdfd;
     --link-color: white;
     --hover-color: black;
-    --hover-col-trsp: rgba(0, 0, 0, 0.5);
     --sky-color: #999; /*matches top of both AGAS-banner-*dark.* images */
     --lake-color: #777; /*same or a bit darker than lake on AGAS-banner-dark.* image */
     --mountain-color: #404040; /*matches bottom of AGAS-banner-sub-dark.* image */
-    --accent-color: #8e7aff;
-    --hue: 190deg;
+    --accent-color: #0000ff;
+    --hue: 0deg;
+    --invert: 100%;
 
 }
 body.dark-mode > .banner {
@@ -37,23 +37,22 @@ body.dark-mode > .banner {
 body.dark-mode > .banner-sub {
     background-image: url('assets/img/AGAS-banner-dark-sub.webp');
 }
-body.dark-mode > .back-to-top img {filter: invert(100%);}
 
 /*----------------------------------------
 STICKY ICONS
 /*----------------------------------------*/
 
+#modeSwitcher, .back-to-top {filter: hue-rotate(var(--hue));}
 .switcher, .back-to-top {
     position: fixed;
     top: 64px; /* height of navbar */
     right: calc(3vw + 15px); /* navbar margin + navbar img margin */
     height: 30px; width: 30px;
     border-radius: 50%;
-    background-color: var(--hover-color);
 }
 .switcher img, .back-to-top img {height: 30px; width: 30px;}
 .switcher {margin-top: 15px;}
-.switcher-navbar {margin: 15px; height: 30px; background-color: var(--hover-color); float: right; border-radius: 50%;}
+.switcher-navbar {margin: 15px; height: 30px; float: right; border-radius: 50%;}
 .back-to-top {margin-top: calc(100vh - 100px);}
 
 @media print {
@@ -76,7 +75,7 @@ NAVIGATION
     z-index: 1;
 }
 .navbar img {
-   height: 30px; width: 30px; 
+   height: 30px; width: 30px; filter: invert(var(--invert));
 }
 .navbar-right { /* navbar container for subpages icons, aligned right in navbar */
     float: right;
@@ -86,7 +85,6 @@ NAVIGATION
     margin: 15px;
     height: 30px;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.5);
 }
 .navbar a:hover, a:active {
     background-color: white;
@@ -105,7 +103,7 @@ NAVIGATION
 .AGAS-full {display: inline-block;}
 .AGAS-short {display: none;}
 
-#submenu  { /* container holding subpages titles (Le Salève, Qui nous sommes) and subnavs to level 2 headings */
+#submenu  { /* container holding subpages titles (Le Salève, Qui nous sommes) and subnav links to level 2 headings */
     padding: 3vw 50px;
     height: 12rem;
     text-align: center;
@@ -148,7 +146,7 @@ AREA ABOVE BANNER, WITH EXTRA ICONS
 }
 .sky img {
     height: 30px; width: 30px;
-    filter: hue-rotate(var(--hue)) drop-shadow(-1px -1px 5px var(--hover-color));
+    filter: hue-rotate(var(--hue));
 }
 .sky a {
     border-radius: 50%;
@@ -309,9 +307,9 @@ mark { /*MARKER-STYLE HIGHLIGHTS IN PAGE INTRO TEXTS */
   background: var(--accent-color);
   background-image: linear-gradient(
     to right,
-    rgba(255, 255, 255, 0.3),
-    rgba(255, 255, 255, 0.5) 5%,
-    rgba(255, 255, 255, 0.5)
+    rgba(255, 255, 230, 0.3) 0%,
+    rgba(255, 255, 230, 0.5) 5%,
+    rgba(255, 255, 230, 0.5) 100%
   );
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
@@ -323,8 +321,8 @@ mark a:hover {
     color: var(--link-color);
 }
 p.warning { /* message "you need to be in good shape and wear proper shoes..." */
-    background-color: white;
-    color: #444;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: var(--link-color);
     border-style: solid;
     border-color: var(--accent-color);
     border-width: 0 0 0 10px;
@@ -356,14 +354,14 @@ WELCOME HEART
   padding: 4vw 0 0;
   background-size: 100% 100%;
   border-radius: 30%;
-  background-image: url('assets/img/welcome-heart-es.webp');
-  filter: hue-rotate(var(--hue));
+  background-image: url('assets/img/welcome-heart.webp');
+  filter: hue-rotate(var(--hue)) brightness(120%);
 }
 .centerblock a {
-    padding: 0px;
+    padding: 1px;
     line-height: 3vw;
     text-decoration: none;
-    border-radius: 40% 0%;
+    border-radius: 20% 0%;
     font-weight: 700;
     background-color: var(--hover-color);
 }
