@@ -362,7 +362,7 @@ WELCOME HEART
   height: 17vw; /* image ratio: 208px height / 250px width = 0.832 * 20 = 16.64 vw */
   padding: 4vw 0 0;
   background-size: 100% 100%;
-  background-image: url('assets/img/welcome-heart.webp');
+  background-image: url('assets/img/welcome-heart.png');
   filter: hue-rotate(var(--hue)) brightness(110%);
 }
 .centerblock a {
