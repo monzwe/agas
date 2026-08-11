@@ -47,7 +47,6 @@ STICKY ICONS
     top: 60px; /* height of navbar */
     right: calc(3vw + 15px); /* navbar margin + navbar img margin */
     height: 30px; width: 30px;
-    border-radius: 50%;
     z-index: 2;
     background: radial-gradient(var(--bg-color) 0%, rgba(255,255,255,0) 100%);
 }
@@ -85,24 +84,29 @@ NAVIGATION
     float: left;
     margin: 15px;
     height: 30px;
-    border-radius: 50%;
-}
-.navbar a:hover, a:active {
-    background-color: var(--accent-color);
+    border-radius: 40% 0;
 }
 #active-page {
     background-color: var(--accent-color);
 }
-
+.full { /*right-hand menu items, display in full on large screens */
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.short { /*right-hand menu items, display as icons on <800px screens */
+    display: none;
+}
 .AGAS-short, .AGAS-full { /* full name or abbrev of AGAS in the navbar, responsive to viewport width */
-    font-weight: 900;
-    font-size: 1rem;
+    font-weight: 700;
     position:relative;
-    top: 25px;
+    top: 15px;
     background-color: none;
 }
 .AGAS-full {display: inline-block;}
 .AGAS-short {display: none;}
+
 
 #submenu  { /* container holding subpages titles (Le Salève, Qui nous sommes) and subnav links to level 2 headings */
     padding: 3vw 50px;
@@ -130,7 +134,6 @@ NAVIGATION
 }
 .subnavs a:hover, a:active {
   background-color: white;
-  box-shadow: 5px 5px 2px var(--accent-color);
   color: #444;
 }
 /*----------------------------------------
@@ -148,12 +151,6 @@ AREA ABOVE BANNER, WITH EXTRA ICONS
 .sky img {
     height: 30px; width: 30px;
     filter: invert(var(--invert));
-}
-
-.sky a:hover, a:active {
-    background-color: var(--accent-color);
-    border-radius: 50%;
-    font-size: 30px;
 }
 /*----------------------------------------
 BANNERS
@@ -251,6 +248,8 @@ IMAGE FLEXBOXES AND LEGENDS
 RESPONSIVE DESIGN
 /*----------------------------------------*/
 @media (max-width: 800px) {
+    .AGAS-full {display: none !important;} /*works*/
+    .AGAS-short {display: inline-block !important;} 
     body p, body ul, body h3, body h5 {padding: 0 5vw;}
     body p.warning {margin: 5vw;}
     .navbar {padding: 0;}
@@ -266,8 +265,8 @@ RESPONSIVE DESIGN
     body > .centerblock {width: 160px; height: 133px;}
 }
 @media (max-width: 570px) {
-    .AGAS-full {display: none !important;} /*works*/
-    .AGAS-short {display: inline-block !important;} 
+    .full {display: none !important};
+    .short {display: inline-block !important};
     .subnavs {font-size: 0.9rem;}
     #submenu {height: 8rem;}
     body p, body ul, body h2,body h3, body h5 {padding: 0 3vw;}
@@ -357,7 +356,6 @@ WELCOME HEART
   height: 17vw; /* image ratio: 233px height / 280px width = 0.83 * 20 = 16.6 vw */
   padding: 4vw 0 0;
   background-size: 100% 100%;
-  border-radius: 30%;
   background-image: url('assets/img/welcome-heart.webp');
   filter: hue-rotate(var(--hue)) brightness(120%);
 }
