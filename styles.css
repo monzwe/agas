@@ -88,6 +88,8 @@ NAVIGATION
 }
 #active-page {
     background-color: var(--accent-color);
+    color: black;
+    box-shadow: -5px 0 0 var(--accent-color), 5px 0 0 var(--accent-color); /* in lieu of padding */
 }
 .full { /*right-hand menu items, display in full on large screens */
     display: inline-block;
@@ -146,7 +148,7 @@ AREA ABOVE BANNER, WITH EXTRA ICONS
     padding-left: calc(3vw + 15px);
     padding-right: 3vw;
     background: linear-gradient(180deg, var(--navbar-color) 0%, var(--sky-color) 100%); 
-    /*can start gradient with navbar colour to fade the navbar into the "sky"  */
+    /* fade the navbar into the "sky"  */
 }
 .sky img {
     height: 30px; width: 30px; vertical-align: middle;
