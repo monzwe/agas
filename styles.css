@@ -14,7 +14,7 @@ DARK THEME
     --link-color: black;
     --hover-color: white;
     --accent-color: #ff8080; 
-    --hue: 110deg;
+    --hue: 120deg;
     --invert: 0%;
 }
 body.dark-mode {
@@ -362,11 +362,11 @@ WELCOME HEART
   text-align: center;
   margin: 0 auto;
   width: 20vw;
-  height: 17vw; /* image ratio: 233px height / 280px width = 0.83 * 20 = 16.6 vw */
+  height: 17vw; /* image ratio: 208px height / 250px width = 0.832 * 20 = 16.64 vw */
   padding: 4vw 0 0;
   background-size: 100% 100%;
   background-image: url('assets/img/welcome-heart.webp');
-  filter: hue-rotate(var(--hue)) brightness(120%);
+  filter: hue-rotate(var(--hue)) brightness(110%);
 }
 .centerblock a {
     padding: 1px;
