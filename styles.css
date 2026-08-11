@@ -14,7 +14,6 @@ DARK THEME
     --link-color: black;
     --hover-color: white;
     --accent-color: #ff8080; 
-    --hue: 120deg;
     --invert: 0%;
 }
 body.dark-mode {
@@ -26,8 +25,7 @@ body.dark-mode {
     --sky-color: #999; /*matches top of both AGAS-banner-*dark.* images */
     --lake-color: #777; /*same or a bit darker than lake on AGAS-banner-dark.* image */
     --mountain-color: #404040; /*matches bottom of AGAS-banner-sub-dark.* image */
-    --accent-color: #8080ff;
-    --hue: 0deg;
+    --accent-color: #80bbff;
     --invert: 100%;
 
 }
@@ -362,8 +360,8 @@ WELCOME HEART
   height: 17vw; /* image ratio: 208px height / 250px width = 0.832 * 20 = 16.64 vw */
   padding: 4vw 0 0;
   background-size: 100% 100%;
-  background-image: url('assets/img/welcome-heart.png');
-  filter: hue-rotate(var(--hue)) brightness(110%);
+  background-image: url('assets/img/welcome-heart-250.png');
+  filter: invert(var(--invert)) brightness(110%);
 }
 .centerblock a {
     padding: 1px;
