@@ -374,10 +374,10 @@ WELCOME HEART
     text-decoration: none;
     border-radius: 0.8em 0.3em;
     font-weight: 700;
-    background-color: var(--bg-color);
+    background-color: var(--navbar-color); /* Light theme: neutral grey, as hue will be rotated, dark theme needs a darker bg */
 }
 .centerblock a:hover {
-    padding: 3px;
+    background-color: var(--hover-color);
 }
 
 /*----------------------------------------
