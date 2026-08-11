@@ -155,11 +155,8 @@ AREA ABOVE BANNER, WITH EXTRA ICONS
     filter: invert(var(--invert));
 }
 
-.roll-text {width: 30px; height: 30px; white-space: nowrap; overflow: hidden;}
-.roll-text:hover {
-  animation: rollout 1s;
-  animation-fill-mode: forwards;
-}
+.roll-text {width: 30px; height: 30px; white-space: nowrap; overflow: hidden; transition: width 1s;}
+.roll-text:hover {width: 200px;}
 
 /*----------------------------------------
 BANNERS
@@ -398,7 +395,7 @@ JSON FEED, ALTERNATIVE HIKES
 }
 @keyframes rollout { /* for "Please wait" bar in javascript (JSON feed) */
   from {width: 30px;}
-  to {width: 200px;}
+  to {width: 500px;}
 }
 /*----------------------------------------
 HEADINGS
