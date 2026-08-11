@@ -155,7 +155,7 @@ AREA ABOVE BANNER, WITH EXTRA ICONS
 
 .roll-text {width: 30px; height: 30px; white-space: nowrap; overflow: hidden;}
 .roll-text:hover {
-  animation: rollout 2s;
+  animation: rollout 1s;
   animation-fill-mode: forwards;
 }
 
