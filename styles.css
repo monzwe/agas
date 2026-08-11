@@ -314,9 +314,9 @@ mark { /*MARKER-STYLE HIGHLIGHTS IN PAGE INTRO TEXTS */
   background: var(--accent-color);
   background-image: linear-gradient(
     to right,
-    rgba(255, 255, 230, 0.3) 0%,
-    rgba(255, 255, 230, 0.5) 5%,
-    rgba(255, 255, 230, 0.5) 100%
+    rgba(255, 255, 230, 0.2) 0%,
+    rgba(255, 255, 230, 0.4) 5%,
+    rgba(255, 255, 230, 0.4) 100%
   );
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
@@ -369,7 +369,7 @@ WELCOME HEART
     text-decoration: none;
     border-radius: 0.8em 0.3em;
     font-weight: 700;
-    background-color: var(--navbar-color); /* Light theme: neutral grey, as hue will be rotated, dark theme needs a darker bg */
+    background-color: var(--bg-color);
 }
 .centerblock a:hover {
     background-color: var(--hover-color);
