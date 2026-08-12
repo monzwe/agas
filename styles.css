@@ -43,14 +43,14 @@ STICKY ICONS
 .switcher, .switcher-navbar, .back-to-top {
     position: fixed;
     top: 60px; /* height of navbar */
-    right: calc(3vw + 15px); /* navbar margin + navbar img margin */
+    right: 3vw; /* navbar right padding*/
     height: 30px; width: 30px;
     z-index: 2;
     background: radial-gradient(var(--bg-color) 0%, rgba(255,255,255,0) 100%);
 }
 .switcher img, .back-to-top img, .switcher-navbar img {height: 30px; width: 30px;}
 .switcher {margin-top: 15px;}
-.switcher-navbar {margin-top: -45px; height: 30px;}
+.switcher-navbar {margin-top: -45px;}
 .back-to-top {margin-top: calc(100vh - 100px);}
 
 @media print {
@@ -263,8 +263,7 @@ RESPONSIVE DESIGN
     body p, body ul, body h3, body h5 {padding: 0 5vw;}
     body p.warning {margin: 5vw;}
     .navbar {padding: 0;}
-    .switcher {right: 15px;}
-    .back-to-top {right: 15px;}
+    .switcher, .switcher-navbar, .back-to-top {right: 15px;}
     .container {flex-direction: column; padding: 0 3vw;}
     #submenu {height: 10rem;}
     .subnavs {width: 100%; margin:0;}
@@ -274,7 +273,7 @@ RESPONSIVE DESIGN
     .sky {height:10vw; padding-top: 10vw; padding-left: 15px;}
 }
 @media (max-width: 570px) {
-    .full {display: none !important};
+    .full {display: none !important}; /*icons only for menus */
     .short {display: inline-block !important};
     .subnavs {font-size: 0.9rem;}
     #submenu {height: 8rem;}
@@ -357,11 +356,14 @@ a:hover, a:active {
 WELCOME HEART
 /*----------------------------------------*/
 .heart {
+    position: relative;
+    margin: 0 auto;
+    width: 50vw;
     font-family: 'Courier New', Courier, monospace;
-    font-size: calc(0.5vw + 14px);
+    font-size: calc(0.5vw + 12px);
     font-weight: 400;
-    transform:scale(1.5,1.0);
-    line-height: 0.9;
+    transform:scale(1.3,1.0);
+    line-height: 0.85;
     text-align: center;
     color: var(--accent-color);
 }
