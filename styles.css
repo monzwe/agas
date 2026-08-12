@@ -337,29 +337,26 @@ a:hover, a:active {
 /*----------------------------------------
 WELCOME HEART
 /*----------------------------------------*/
-/* heart background image and links to different languages */
-.centerblock {
-  position: relative;
-  text-align: center;
-  margin: 0 auto;
-  width: 20vw;
-  height: 17vw; /* image ratio: 233px height / 280px width = 0.83 * 20 = 16.6 vw */
-  padding: 4vw 0 0;
-  background-size: 100% 100%;
-  border-radius: 30%;
-  background-image: url('assets/img/welcome-heart-es.webp');
-  filter: saturate(0);
+.heart {
+    font-family: monospace;
+    font-size: 1.4vw;
+    font-weight: 400;
+    transform:scale(1.5,1.0);
+    line-height: 0.9;
+    text-align: center;
+    color: var(--accent-color);
 }
-.centerblock a {
-    padding: 4px;
-    line-height: 3vw;
-    text-decoration: none;
-    border-radius: 40% 0%;
-    font-weight: 700;
-    background: linear-gradient(90deg, var(--hover-col-trsp) 0%, var(--hover-color) 50%,  var(--hover-col-trsp) 100%);
+.hrt1 {filter: hue-rotate(20deg);}
+.hrt2 {filter: hue-rotate(-40deg);}
+
+.heart a {
+    font-weight: 900;
+    color: var(--link-color);
+
 }
-.centerblock a:hover {
-    box-shadow: 3px 3px 5px var(--link-color);
+.heart a:hover {
+    background-color: var(--accent-color);
+    color: black;
 }
 
 /*----------------------------------------
@@ -403,7 +400,6 @@ h1 {
 }
 .homepage-title {
     background: linear-gradient(180deg, var(--lake-color) 0%, var(--bg-color) 100%);
-    padding-bottom: 3vw;
 }
 h2 {/* page subsection */
     color: var(--link-color);
