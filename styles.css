@@ -6,27 +6,28 @@ DARK THEME
 /*----------------------------------------*/
 :root {
     --navbar-color: #ddd;
-    --bg-color: #fee6cc; 
+    --bg-color: #fee6cc; /* HSV 31-20-100 */
     --sky-color: #fde6cc; /*matches top of AGAS-banner images (main and sub) */
-    --lake-color: #ba9; /*same or a bit darker than lake on AGAS-banner (main) image */
+    --lake-color: #ba9; /*same or a bit darker than lake on AGAS-banner image */
     --mountain-color: #818382; /*matches bottom of AGAS-banner-sub image */
     --text-color: #444;
     --link-color: black;
     --hover-color: white;
-    --hover-col-trsp: rgba(255, 255, 255, 0.5);
-    --accent-color: #ff8866;
+    --accent-color: #ff8080; 
+    --invert: 0%;
 }
 body.dark-mode {
     --bg-color: #303030;
-    --navbar-color: #9191a8;
+    --navbar-color: #56566D;
     --text-color: #fdfdfd;
     --link-color: white;
     --hover-color: black;
-    --hover-col-trsp: rgba(0, 0, 0, 0.5);
     --sky-color: #999; /*matches top of both AGAS-banner-*dark.* images */
     --lake-color: #777; /*same or a bit darker than lake on AGAS-banner-dark.* image */
     --mountain-color: #404040; /*matches bottom of AGAS-banner-sub-dark.* image */
-    --accent-color: #8e7aff;
+    --accent-color: #80bbff;
+    --invert: 100%;
+
 }
 body.dark-mode > .banner {
     background-image: url('assets/img/AGAS-banner-dark.webp');
@@ -34,20 +35,23 @@ body.dark-mode > .banner {
 body.dark-mode > .banner-sub {
     background-image: url('assets/img/AGAS-banner-dark-sub.webp');
 }
-body.dark-mode > .centerblock {filter: hue-rotate(190deg);}
-body.dark-mode > .back-to-top img {filter: invert(100%);}
 
-.switcher, .back-to-top {
+/*----------------------------------------
+STICKY ICONS
+/*----------------------------------------*/
+
+.switcher, .switcher-navbar, .back-to-top {
     position: fixed;
-    top: 64px;
+    top: 60px; /* height of navbar */
     right: calc(3vw + 15px); /* navbar margin + navbar img margin */
     height: 30px; width: 30px;
-    border-radius: 50%;
-    background-color: var(--hover-color);
+    z-index: 2;
+    background: radial-gradient(var(--bg-color) 0%, rgba(255,255,255,0) 100%);
 }
-.switcher img, .back-to-top img {height: 30px; width: 30px;}
-.switcher {margin-top: 0px;}
-.back-to-top {margin-top:45px;}
+.switcher img, .back-to-top img, .switcher-navbar img {height: 30px; width: 30px;}
+.switcher {margin-top: 15px;}
+.switcher-navbar {margin-top: -45px; height: 30px;}
+.back-to-top {margin-top: calc(100vh - 100px);}
 
 @media print {
     .switcher {display: none;}
@@ -62,42 +66,49 @@ NAVIGATION
     background-color: var(--navbar-color);
     color: var(--link-color);
     width: 100%;
-    height: 64px;
+    height: 60px;
     top: 0px;
     position: sticky;
     scroll-snap-type: y mandatory;
     z-index: 1;
 }
 .navbar img {
-   height: 30px; width: 30px;
+   height: 30px; width: 30px; filter: invert(var(--invert));
 }
-.dropdown { /* navbar container for subpages icons, symbols replacing the javascript dropdowns */
+.navbar-right { /* navbar container for subpages icons, aligned right in navbar */
     float: right;
 }
 .navbar a {
     float: left;
     margin: 15px;
     height: 30px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.5);
-}
-.navbar a:hover, a:active {
-    background-color: white;
+    border-radius: 0.8em 0.3em;
 }
 #active-page {
     background-color: var(--accent-color);
+    color: black;
+    box-shadow: -5px 0 0 var(--accent-color), 5px 0 0 var(--accent-color); /* in lieu of padding */
+}
+.full { /*right-hand menu items, display in full on large screens */
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.short { /*right-hand menu items, display as icons on <800px screens */
+    display: none;
 }
 .AGAS-short, .AGAS-full { /* full name or abbrev of AGAS in the navbar, responsive to viewport width */
-    font-weight: 900;
-    font-size: 1rem;
+    font-weight: 700;
     position:relative;
-    top: 25px;
+    top: 15px;
     background-color: none;
 }
 .AGAS-full {display: inline-block;}
 .AGAS-short {display: none;}
 
-#submenu  { /* container holding subpages titles (Le Salève, Qui nous sommes) and subnavs to level 2 headings */
+
+#submenu  { /* container holding subpages titles (Le Salève, Qui nous sommes) and subnav links to level 2 headings */
     padding: 3vw 50px;
     height: 12rem;
     text-align: center;
@@ -117,35 +128,34 @@ NAVIGATION
   font-weight: 700;
   text-decoration: none;
   padding: 6px 10px;
-  border-radius: 40% 0%;
+  border-radius: 0.8em 0.3em;
   background-color: #555;
   color: white;
 }
 .subnavs a:hover, a:active {
   background-color: white;
-  box-shadow: 5px 5px 2px var(--accent-color);
   color: #444;
 }
 /*----------------------------------------
 AREA ABOVE BANNER, WITH EXTRA ICONS
 /*----------------------------------------*/
 .sky { /* area above banner image, saves on image size and holds extra iconS */
-    height: 3vw; 
+    height: 5vw; 
     margin: 0;
-    padding-top: 4.5vw;
-    padding-left: calc(3vw + 15px); /*navbar left margin plus padding */
+    padding-top: 5vw;
+    padding-left: calc(3vw + 15px);
     padding-right: 3vw;
     background: linear-gradient(180deg, var(--navbar-color) 0%, var(--sky-color) 100%); 
-    /*can start gradient with navbar colour to fade the navbar into the "sky"  */
+    /* fade the navbar into the "sky"  */
 }
 .sky img {
-    height: 30px; width: 30px;
+    height: 30px; width: 30px; vertical-align: middle;
+    filter: invert(var(--invert));
 }
-.sky a {
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 50%;
-}
-.sky a:hover, a:active {background-color: rgba(255, 255, 255, 0.8);}
+
+.roll-text {width: 30px; height: 30px; white-space: nowrap; overflow: hidden; transition: width 1s;}
+.roll-text:hover {width: 200px;}
+
 /*----------------------------------------
 BANNERS
 /*----------------------------------------*/
@@ -242,6 +252,8 @@ IMAGE FLEXBOXES AND LEGENDS
 RESPONSIVE DESIGN
 /*----------------------------------------*/
 @media (max-width: 800px) {
+    .AGAS-full {display: none !important;} /*works*/
+    .AGAS-short {display: inline-block !important;} 
     body p, body ul, body h3, body h5 {padding: 0 5vw;}
     body p.warning {margin: 5vw;}
     .navbar {padding: 0;}
@@ -257,8 +269,8 @@ RESPONSIVE DESIGN
     body > .centerblock {width: 160px; height: 133px;}
 }
 @media (max-width: 570px) {
-    .AGAS-full {display: none !important;} /*works*/
-    .AGAS-short {display: inline-block !important;} 
+    .full {display: none !important};
+    .short {display: inline-block !important};
     .subnavs {font-size: 0.9rem;}
     #submenu {height: 8rem;}
     body p, body ul, body h2,body h3, body h5 {padding: 0 3vw;}
@@ -295,14 +307,16 @@ li {
 }
 mark { /*MARKER-STYLE HIGHLIGHTS IN PAGE INTRO TEXTS */
   margin: 0;
+  font-weight: 700;
+  color: black;
   padding: 0em 0.3em;
   border-radius: 0.8em 0.3em;
   background: var(--accent-color);
   background-image: linear-gradient(
     to right,
-    rgba(255, 255, 255, 0.3),
-    rgba(255, 255, 255, 0.5) 5%,
-    rgba(255, 255, 255, 0.7)
+    rgba(255, 255, 230, 0.2) 0%,
+    rgba(255, 255, 230, 0.4) 5%,
+    rgba(255, 255, 230, 0.4) 100%
   );
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
@@ -314,8 +328,8 @@ mark a:hover {
     color: var(--link-color);
 }
 p.warning { /* message "you need to be in good shape and wear proper shoes..." */
-    background-color: white;
-    color: #444;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: var(--link-color);
     border-style: solid;
     border-color: var(--accent-color);
     border-width: 0 0 0 10px;
@@ -376,8 +390,8 @@ JSON FEED, ALTERNATIVE HIKES
     animation: rollout 5s;
 }
 @keyframes rollout { /* for "Please wait" bar in javascript (JSON feed) */
-  from {width: 50px;}
-  to {width: 200px;}
+  from {width: 30px;}
+  to {width: 500px;}
 }
 /*----------------------------------------
 HEADINGS
