@@ -153,7 +153,12 @@ AREA ABOVE BANNER, WITH EXTRA ICONS
     filter: invert(var(--invert));
 }
 
-.roll-text {width: 30px; height: 30px; white-space: nowrap; overflow: hidden; transition: width 1s;}
+.roll-text {
+    font-family: 'Courier New', Courier, monospace;
+    width: 30px; height: 30px; 
+    white-space: nowrap; overflow: hidden; 
+    transition: width 1s;
+}
 .roll-text:hover {width: 200px;}
 
 /*----------------------------------------
