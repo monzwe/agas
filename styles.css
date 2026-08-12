@@ -352,7 +352,7 @@ a:hover, a:active {
 WELCOME HEART
 /*----------------------------------------*/
 .heart {
-    font-family: monospace;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 1.4vw;
     font-weight: 400;
     transform:scale(1.5,1.0);
