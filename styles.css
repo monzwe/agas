@@ -256,6 +256,7 @@ IMAGE FLEXBOXES AND LEGENDS
 /*----------------------------------------
 RESPONSIVE DESIGN
 /*----------------------------------------*/
+
 @media (max-width: 800px) {
     .AGAS-full {display: none !important;} /*works*/
     .AGAS-short {display: inline-block !important;} 
@@ -271,7 +272,6 @@ RESPONSIVE DESIGN
     .imgs-flex {width: 70vw; height: auto;}
     .center, .center-smaller, .tablecontainer {width: 90vw; height: auto;}
     .sky {height:10vw; padding-top: 10vw; padding-left: 15px;}
-    body > .centerblock {width: 160px; height: 133px;}
 }
 @media (max-width: 570px) {
     .full {display: none !important};
@@ -358,7 +358,7 @@ WELCOME HEART
 /*----------------------------------------*/
 .heart {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 1.4vw;
+    font-size: calc(0.5vw + 14px);
     font-weight: 400;
     transform:scale(1.5,1.0);
     line-height: 0.9;
@@ -371,7 +371,6 @@ WELCOME HEART
 .heart a {
     font-weight: 900;
     color: var(--link-color);
-
 }
 .heart a:hover {
     background-color: var(--accent-color);
