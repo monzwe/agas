@@ -358,11 +358,10 @@ WELCOME HEART
 .heart {
     position: relative;
     margin: 0 auto;
-    width: calc(50vw + 30px);
     font-family: 'Courier New', Courier, monospace;
     font-size: calc(0.5vw + 12px);
-    /* transform:scale(1.3,1.0);*/
-    line-height: 0.85;
+    font-weight: 600;
+    line-height: 0.8;
     text-align: center;
     color: var(--accent-color);
     background: url(assets/img/heart-shape.svg);
@@ -375,6 +374,9 @@ WELCOME HEART
 
 .heart a {
     color: var(--link-color);
+    text-decoration: none;
+    border-radius: 0.8em 0.3em;
+    background-color: var(--hover-color);
 }
 .heart a:hover {
     background-color: var(--accent-color);
