@@ -369,8 +369,8 @@ WELCOME HEART
     background-position-x: center;
     background-repeat: no-repeat;
 }
-.hrt1 {filter: hue-rotate(20deg);}
-.hrt2 {filter: hue-rotate(-40deg);}
+.hrt1 {filter: hue-rotate(30deg);}
+.hrt2 {filter: hue-rotate(-50deg);}
 
 .heart a {
     color: var(--link-color);
