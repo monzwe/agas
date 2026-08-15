@@ -41,13 +41,13 @@ STICKY ICONS
     top: 60px; /* height of navbar */
     right: calc(3vw + 15px); /* navbar right padding plus menu item right padding*/
     height: 30px; width: 30px;
+    border-radius: 50%;
     z-index: 2;
-    background: radial-gradient(var(--bg-color) 0%, rgba(255,255,255,0) 100%);
 }
 .switcher img, .back-to-top img, .switcher-navbar img {height: 30px; width: 30px;}
-.switcher {margin-top: 15px;}
-.switcher-navbar {margin-top: -45px;}
-.back-to-top {margin-top: calc(100vh - 100px);}
+.switcher {margin-top: 15px; background: var(--bg-color);}
+.switcher-navbar {margin-top: -45px; background: var(--navbar-color);}
+.back-to-top {margin-top: calc(100vh - 100px); filter: invert(var(--invert));}
 
 @media print {
     .switcher {display: none;}
