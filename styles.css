@@ -7,9 +7,8 @@ DARK THEME
 :root {
     --navbar-color: #ddd;
     --bg-color: #fee6cc; /* HSV 31-20-100 */
-    --sky-color: #fde6cc; /*matches top of AGAS-banner images (main and sub) */
-    --lake-color: #ba9; /*same or a bit darker than lake on AGAS-banner image */
-    --mountain-color: #818382; /*matches bottom of AGAS-banner-sub image */
+    --sky-color: #fce1c2; /*matches top of AGAS-banner images (main and sub) */
+    --lake-color: #ba9; /*same or darker than lake on AGAS-banner image */
     --text-color: #444;
     --link-color: black;
     --hover-color: white;
@@ -23,19 +22,14 @@ body.dark-mode {
     --text-color: #fdfdfd;
     --link-color: white;
     --hover-color: black;
-    --sky-color: #999; /*matches top of both AGAS-banner-*dark.* images */
-    --lake-color: #777; /*same or a bit darker than lake on AGAS-banner-dark.* image */
-    --mountain-color: #404040; /*matches bottom of AGAS-banner-sub-dark.* image */
+    --sky-color: #999; 
+    --lake-color: #777; 
     --accent-color: #80bbff;
     --invert: 100%;
     --opacity: 100%;
 }
 body.dark-mode > .banner {
-    background-image: url('assets/img/AGAS-banner-dark.webp');
-}
-*/
-body.dark-mode > .banner-sub {
-    background-image: url('assets/img/AGAS-banner-dark-sub.webp');
+       background-image: url('assets/img/AGAS-banner-dark.webp'), linear-gradient(var(--sky-color) 70%,var(--lake-color));
 }
 
 /*----------------------------------------
@@ -144,7 +138,7 @@ AREA ABOVE BANNER, WITH EXTRA ICONS
 .sky { /* area above banner image, saves on image size and holds extra iconS */
     height: 5vw; 
     margin: 0;
-    padding-top: 3vw;
+    padding-top: 5vw;
     padding-left: calc(3vw + 15px);
     padding-right: 3vw;
     background: linear-gradient(180deg, var(--navbar-color) 0%, var(--sky-color) 100%); 
@@ -171,11 +165,13 @@ BANNERS
     display:block;
     margin: 0;
     padding: 0;
+    background-color: var(--sky-color);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
-    background-image: url('assets/img/AGAS-banner.webp');
+    background-image: url('assets/img/AGAS-banner.webp'), linear-gradient(var(--sky-color)  70%, var(--lake-color));
 }
+
 .banner-sub { /*img size: 1000*59px > ratio = 100 : 5.9 **/
     width: 100vw; height: 7.3vw;
     display:block;
@@ -274,7 +270,7 @@ RESPONSIVE DESIGN
     .subnavs div {margin: 0 5%;}
     .imgs-flex {width: 70vw; height: auto;}
     .center, .center-smaller, .tablecontainer {width: 90vw; height: auto;}
-    .sky {height:10vw; padding-top: 10vw; padding-left: 15px;}
+    .sky {height:10vw; padding-top: calc(10vw - 15px); padding-left: 15px;}
 }
 @media (max-width: 570px) {
     .full {display: none !important}; /*icons only for menus */
