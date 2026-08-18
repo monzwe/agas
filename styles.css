@@ -261,7 +261,7 @@ RESPONSIVE DESIGN
 @media (max-width: 800px) {
     .AGAS-full {display: none !important;} /*works*/
     .AGAS-short {display: inline-block !important;} 
-    body p, body ul, body h3, body h5 {padding: 0 5vw;}
+    body p, body h3, body h5, body ul {padding: 0 5vw;}
     body p.warning {margin: 5vw;}
     .navbar {padding: 0;}
     .switcher, .switcher-navbar, .back-to-top, .site-map {right: 15px;}
@@ -272,17 +272,17 @@ RESPONSIVE DESIGN
     .imgs-flex {width: 70vw; height: auto;}
     .center, .center-smaller, .tablecontainer {width: 90vw; height: auto;}
     .sky {height:10vw; padding-top: calc(10vw - 15px); padding-left: 15px;}
-    .map {font-size: 14px;}
+    body p.map {font-size: 14px; margin: 15px 0 0 5vw;}
 }
 @media (max-width: 570px) {
     .full {display: none !important}; /*icons only for menus */
     .short {display: inline-block !important};
     .subnavs {font-size: 0.9rem;}
     #submenu {height: 8rem;}
-    body p, body ul, body h2,body h3, body h5 {padding: 0 3vw;}
+    body p, body h3, body h5, body ul {padding: 0 3vw;}
     body p.warning {margin: 3vw;}
     body h1 {font-size: 2rem;}
-    .map {font-size: 12px;}
+    body p.map {font-size: 12px; margin: 15px 0 0 3vw;}
 }
 /*----------------------------------------
 BODY, TEXT STYLES
@@ -463,16 +463,10 @@ h5 img {height:18px; width:auto}
 SITE MAP
 /*----------------------------------------*/
 .map {
-    background-color: var(--hover-color);
-    box-shadow: -1px -1px 10px var(--accent-color);
-    width: 50vw; 
+    background: linear-gradient(90deg, var(--hover-color), var(--bg-color) 50%);
     min-width: 300px;
-    margin: 15px auto;
-    padding: 6px;
-}
-.map div {
-    text-align: left; 
-    margin: 0 auto;
+    margin: 15px 0 0 15vw;
+    padding: 5px 0 0 5px;
     font-weight: 700; 
 }
 .map img {filter: invert(var(--invert))}
