@@ -45,8 +45,8 @@ STICKY ICONS
     z-index: 2;
 }
 .switcher img, .back-to-top img, .switcher-navbar img, .site-map img {height: 30px; width: 30px;}
-.switcher {margin-top: 15px; background: var(--bg-color);}
-.switcher-navbar {margin-top: -45px; background: var(--navbar-color);}
+.switcher {margin-top: 15px; background: var(--hover-color);}
+.switcher-navbar {margin-top: -45px; background: var(--hover-color);}
 .back-to-top {margin-top: calc(100vh - 145px); filter: invert(var(--invert));}
 .site-map {margin-top: calc(100vh - 100px); filter: invert(var(--invert));}
 @media print {
