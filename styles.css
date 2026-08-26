@@ -147,7 +147,7 @@ AREA ABOVE BANNER, WITH EXTRA ICONS
 }
 .sky img {
     height: 30px; width: 30px; vertical-align: middle;
-    filter: invert(var(--invert));
+    filter: invert(var(--invert)) opacity(50%);
 }
 
 .roll-text {
@@ -282,7 +282,7 @@ RESPONSIVE DESIGN
     body p, body h3, body h5, body ul {padding: 0 3vw;}
     body p.warning {margin: 3vw;}
     body h1 {font-size: 2rem;}
-    body p.map {font-size: 12px; margin: 15px 0 0 3vw;}
+    body p.map {margin: 15px 0 0 0;}
 }
 /*----------------------------------------
 BODY, TEXT STYLES
@@ -470,7 +470,6 @@ SITE MAP
     font-weight: 700; 
 }
 .map img {filter: invert(var(--invert))}
-.map a {text-decoration: none;}
 .map a:hover {background-color: var(--accent-color); border-radius:  0.8em 0.3em;}
 .section {text-transform: uppercase;}
 .anchor {font-weight: 400; opacity: 70%;}
