@@ -408,7 +408,7 @@ JSON FEED, ALTERNATIVE HIKES
 }
 @keyframes rollout { /* for "Please wait" bar in javascript (JSON feed) */
   from {width: 30px;}
-  to {width: 500px;}
+  to {width: 200px;}
 }
 /*----------------------------------------
 HEADINGS
