@@ -101,6 +101,10 @@ NAVIGATION
     top: 15px;
     background-color: none;
 }
+
+.AGAS-short a, .AGAS-full a {
+    text-decoration: none;
+}
 .AGAS-full {display: inline-block;}
 .AGAS-short {display: none;}
 
