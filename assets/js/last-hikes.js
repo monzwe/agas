@@ -1,4 +1,4 @@
-    const scriptUrl = "https://script.google.com/macros/s/AKfycbxrDnesoYawPLQHClhvAdgQ99RgiN-gSm2uwStbYuDarsovduTptgTzfamoxxQPuR5X/exec"; 
+    const scriptUrl = "https://script.google.com/macros/s/AKfycbz4KiP_MMVQrpB0dVLBZlo2B4vXDUcZYkHdFmEoXRsFd0r9Te9BVqCUhftdlcWYeroTeg/exec";
 
     async function loadHikes() {
       const container = document.getElementById("cards");
@@ -16,13 +16,15 @@
 
           card.innerHTML = `
             <ul>
-            <li><strong> ${hike.Date || ""}</strong><br>
-            ${hike.Participants || ""}<br>
+            <li><strong> ${hike.Date || ""}</strong>
+            ${hike.Rdv}<br>
+            <mark> ${hike.Participants || ""} participants</mark><br>
             ${hike.Descriptif || ""}</li>
             </ul>
           `;
-
-          container.appendChild(card);
+          if (hike.Participants > 0) {
+            container.appendChild(card);
+          }
         });
 
       } catch (err) {
