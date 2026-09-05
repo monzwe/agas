@@ -16,7 +16,8 @@
 
           card.innerHTML = `
             <ul>
-            <li><strong> ${hike.Date || ""}</strong>,
+            <li><strong> ${hike.Date || ""}
+            ${hike.Event}</strong> -  
             ${hike.Rdv}<br>
             <mark> ${hike.Participants || ""} participants</mark><br>
             ${hike.Descriptif || ""}</li>
