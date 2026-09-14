@@ -1,4 +1,4 @@
-    const scriptUrl = "https://script.google.com/macros/s/AKfycbz4KiP_MMVQrpB0dVLBZlo2B4vXDUcZYkHdFmEoXRsFd0r9Te9BVqCUhftdlcWYeroTeg/exec";
+    const scriptUrl = "https://script.google.com/macros/s/AKfycbyNYq4NchpnncjEwNjLZMEKiAaMyzsnimAt2u97eKTo6A-vus6mHo0FZJExXhym_-MFLQ/exec";
 
     async function loadItems() {
       const container = document.getElementById("names");
