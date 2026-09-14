@@ -394,6 +394,7 @@ WELCOME HEART
 JSON FEED, ALTERNATIVE HIKES
 /*----------------------------------------*/
 /* styles for content read in from Google Sheets via JSON feed (see script) */
+
 #cards {
     margin: 0;
 }
