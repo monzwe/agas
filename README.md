@@ -1,2 +1,2 @@
-# landing-page
-Originally created as an educational exercise; a minimalist version of the website at https://www.saleve.xyz: Independent of Jekyll; responsive, fewer pages, lower page weight, loads faster, minimal JS. Once this was achieved, I renamed the old index.html page and created a new one as a way to publish info for the Friends of Salève (a Geneva-based hiking group) through a JSON feed from a shared Google sheet.
+# agas
+Originally created as an educational exercise for HTML and CSS. A minimalist version of the website at https://www.saleve.xyz: Independent of Jekyll; responsive, fewer pages, lower home page weight, loads faster, minimal JS. Once this was achieved, I renamed the old index.html page and created a new one as a way to publish info for the Friends of Salève (a Geneva-based hiking group) through a JSON feed from a shared Google sheet.
