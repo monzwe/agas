@@ -230,11 +230,11 @@ IMAGE FLEXBOXES AND LEGENDS
   padding: 0 15vw;
 }
 .container div {
-  margin: 0 0 12px 0;
+  margin: 0 4px 12px; width: 25vw;
 }
 /* Images with standardized height, for use in flexbox side-by-side, three images max: */
 .imgs-flex {
-    height: 25vw; width: auto; display:block; margin: auto;
+    height: 25vw; width: auto; display:block; margin: auto; 
 /* Centered images, standardized widths (as opposed to fixed number of pixels): */
 }
 .center-smaller {
@@ -250,7 +250,7 @@ IMAGE FLEXBOXES AND LEGENDS
     color: var(--text-color);
     line-height: 1.3;
     margin: 0;
-    padding: 3px 18px;
+    padding: 3px;
 }
 .legend-centered { /* legends below images */
     text-align: center;
