@@ -319,6 +319,7 @@ ul li::marker {
 }
 li {
     margin: 10px 0;
+    scroll-margin-top: 70px;
 }
 mark { /*MARKER-STYLE HIGHLIGHTS IN PAGE INTRO TEXTS */
   margin: 0;
