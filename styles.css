@@ -14,7 +14,8 @@ DARK THEME
     --hover-color: white;
     --accent-color: #ff8080; 
     --invert: 0%;
-    --opacity: 50% /*Saleve silhouette on subpages, on sky background */
+    --opacity: 50%; /*Saleve silhouette on subpages, on sky background */
+    --tbl-color: 10%; /*Columns in tables: dark transparent */
 }
 body.dark-mode {
     --bg-color: #303030;
@@ -27,6 +28,7 @@ body.dark-mode {
     --accent-color: #80bbff;
     --invert: 100%;
     --opacity: 100%;
+    --tbl-color: 90%; /*Columns in tables dark opaque */
 }
 body.dark-mode > .banner {
        background-image: url('assets/img/AGAS-banner-dark.webp'), linear-gradient(var(--sky-color) 70%,var(--lake-color));
@@ -192,7 +194,7 @@ BANNERS
 /*----------------------------------------
 TABLES
 /*----------------------------------------*/
-/* table style for annual reports stats */
+/* table style for annual reports stats and media table */
 .tablecontainer {
     overflow-x: auto;
     width: 70vw;
@@ -200,26 +202,13 @@ TABLES
 }
 table {
   width: 100%;
-  height: auto;
-  border: #ddd 1px;
   border-collapse: collapse;
   font-size: 1rem;
-  color: #444;
-  text-align:  center;
 }
-tr:nth-child(even){background-color: rgba(221,221,221,0.4);}
-th, td {
-  padding: 5px;
-  font-size: 0.87rem;
-  line-height: 1.1;
-}
-th {
-  background-color: #ddd;
-  vertical-align: text-top;
-}
-.table-lefthead {
-    text-align: left;
-}
+tr {border-bottom: 1px solid #aaa;}
+tr:nth-child(even){background-color: rgba(255,255,255,0.4);}
+td {padding: 10px; line-height: 1.4;}
+
 /*----------------------------------------
 IMAGE FLEXBOXES AND LEGENDS
 /*----------------------------------------*/
