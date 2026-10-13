@@ -82,6 +82,7 @@ NAVIGATION
     margin: 15px;
     height: 30px;
     border-radius: 0.8em 0.3em;
+    background-color: var(--bg-color);
 }
 #active-page {
     background-color: var(--accent-color);
