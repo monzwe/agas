@@ -221,7 +221,7 @@ IMAGE FLEXBOXES AND LEGENDS
   padding: 0 15vw;
 }
 .container div {
-  margin: 0 4px 12px; width: 25vw;
+  margin: 0 4px 12px;
 }
 /* Images with standardized height, for use in flexbox side-by-side, three images max: */
 .imgs-flex {
