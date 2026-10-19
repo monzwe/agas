@@ -12,7 +12,7 @@ DARK THEME
     --text-color: #444;
     --link-color: black;
     --hover-color: white;
-    --accent-color: #ffaa80;
+    --accent-color: #f96353;
     --invert: 0%;
     --opacity: 50%; /*Saleve silhouette on subpages, on sky background */
     --tbl-color: 10%; /*Columns in tables: dark transparent */
@@ -86,7 +86,7 @@ NAVIGATION
 }
 #active-page {
     background-color: var(--accent-color);
-    color: black;
+    color: var(--hover-color);
     box-shadow: -5px 0 0 var(--accent-color), 5px 0 0 var(--accent-color); /* in lieu of padding */
 }
 .full { /*right-hand menu items, display in full on large screens */
@@ -323,7 +323,7 @@ mark { /*MARKER-STYLE HIGHLIGHTS IN PAGE INTRO TEXTS */
     to right,
     rgba(255, 255, 230, 0.2) 0%,
     rgba(255, 255, 230, 0.4) 5%,
-    rgba(255, 255, 230, 0.4) 100%
+    rgba(255, 255, 230, 0.6) 100%
   );
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
@@ -354,6 +354,7 @@ a {
 }
 a:hover, a:active {
     background-color: var(--hover-color);
+    color: var(--accent-color);
     font-size: inherit;
 }
 #disclaimer a, #aviso-legal a, #haftungsausschluss a {text-decoration: none;}
