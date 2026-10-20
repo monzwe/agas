@@ -467,7 +467,7 @@ SITE MAP
 /*----------------------------------------*/
 .map {
     background: var(--hover-color);
-    border-top: var(--accent-color) solid 4px;
+    border-top: var(--accent-color) dotted 4px;
     margin: 5px 2vw;
     padding: 10px;
     min-width: 22vw;
