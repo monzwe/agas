@@ -6,7 +6,7 @@ DARK THEME
 /*----------------------------------------*/
 :root {
     --navbar-color: #ccc;
-    --bg-color: #fffeee; /* HSV 31-20-100 */
+    --bg-color: #fffaee; 
     --sky-color: #fce1c2; /*matches top of AGAS-banner images (main and sub) */
     --lake-color: #ba9; /*same or darker than lake on AGAS-banner image */
     --text-color: #444;
@@ -337,11 +337,9 @@ mark a:hover {
     border-radius: 0.8em 0.3em;
 }
 p.warning { /* message "you need to be in good shape and wear proper shoes..." */
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: var(--hover-color);
     color: var(--link-color);
-    border-style: solid;
-    border-color: var(--accent-color);
-    border-width: 0 0 0 10px;
+    border-left: var(--accent-color) solid 10px;
     margin: 30px 15vw;
     padding: 30px 10px;
 }
@@ -469,6 +467,7 @@ SITE MAP
 /*----------------------------------------*/
 .map {
     background: var(--hover-color);
+    border-top: var(--accent-color) solid 4px;
     margin: 5px 2vw;
     padding: 10px;
     min-width: 22vw;
@@ -491,9 +490,7 @@ footer {
 p.decline {
     background-color: white;
     color: #444;
-    border-color:  var(--accent-color);
-    border-style: solid;
-    border-width: 0 0 0 6px;
+    border-left:  var(--accent-color) solid 6px;
     margin: 20px 15vw;
     padding: 15px 10px;
 }
