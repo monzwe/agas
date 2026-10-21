@@ -73,15 +73,16 @@ NAVIGATION
 }
 .navbar img {
    height: 30px; width: 30px; filter: invert(var(--invert));
-   margin: 15px;
+   margin: 10px;
 }
 .navbar-right { /* navbar container for subpages icons, aligned right in navbar */
     float: right;
 }
 .navbar a {
     float: left;
-    padding: 0 0.3em;
+    padding: 0.3em;
     font-size: 1rem;
+    background-color: var(--hover-color);
 }
 #active-page {
     color: var(--hover-color);
@@ -125,7 +126,6 @@ NAVIGATION
 .dropdown-content {
   display: none;
   position: absolute;
-  padding: 0 1vw 1vw;
   margin: -10px 0 0;
   font-size: 1rem;
   width: 20vw;
@@ -175,7 +175,6 @@ NAVIGATION
   text-transform:uppercase;
   font-weight: 700;
   text-decoration: none;
-  padding: 6px 0.3em;
 }
 
 /*----------------------------------------
