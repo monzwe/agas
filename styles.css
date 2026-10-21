@@ -80,7 +80,6 @@ NAVIGATION
 }
 .navbar a {
     float: left;
-    padding: 0.3em;
     font-size: 1rem;
     background-color: var(--hover-color);
 }
