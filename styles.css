@@ -19,11 +19,11 @@ DARK THEME
 }
 body.dark-mode {
     --bg-color: #303030;
-    --navbar-color: #404060;
+    --navbar-color: #2F445D;
     --text-color: #fdfdfd;
     --link-color: white;
     --hover-color: black;
-    --sky-color: #999;
+    --sky-color: #777;
     --lake-color: #777;
     --accent-color: #80bbff;
     --invert: 100%;
@@ -73,21 +73,20 @@ NAVIGATION
 }
 .navbar img {
    height: 30px; width: 30px; filter: invert(var(--invert));
+   margin: 15px;
 }
 .navbar-right { /* navbar container for subpages icons, aligned right in navbar */
     float: right;
 }
 .navbar a {
     float: left;
-    margin: 15px;
-    height: 30px;
     border-radius: 0.8em 0.3em;
     background-color: var(--bg-color);
+    padding: 0 5px;
 }
 #active-page {
     background-color: var(--accent-color);
     color: var(--hover-color);
-    box-shadow: -5px 0 0 var(--accent-color), 5px 0 0 var(--accent-color); /* in lieu of padding */
 }
 .full { /*right-hand menu items, display in full on large screens */
     display: inline-block;
@@ -112,6 +111,44 @@ NAVIGATION
 .AGAS-full {display: inline-block;}
 .AGAS-short {display: none;}
 
+.dropbtn {
+  display: inline-block;
+  margin-top: 15px;
+  border: none;
+  cursor: pointer;
+  width: 20vw;
+  height: 30px;
+  font-size: inherit;
+}
+.dropbtn a {  text-decoration: none;}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  padding: 0 1vw 1vw;
+  margin: -10px 0 0;
+  font-size: 1rem;
+  width: 20vw;
+  background-color: var(--navbar-color);
+  border-radius: 0.8em 0.3em;
+  z-index: 1;
+}
+.dropdown-content a {
+  text-transform: none;
+  background-color: transparent;
+  text-decoration: none;
+  font-weight: 400;
+  width: 18vw;
+  display: block;
+}
+
+@media (any-hover: hover) {
+  .dropbtn:hover + .dropdown-content {
+    display: block;
+  }
+  .dropdown-content div:hover + .dropdown-content,.dropdown-content:hover{
+    display: block;
+  }
+}
 
 #submenu  { /* container holding subpages titles and subnav links to level 2 headings */
     padding: 0 50px 3vw;
@@ -137,7 +174,7 @@ NAVIGATION
   background-color: #555;
   color: white;
 }
-.subnavs a:hover, a:active {
+.subnavs a:hover, subnavs a:active {
   background-color: white;
   color: #444;
 }
@@ -157,7 +194,6 @@ AREA ABOVE BANNER, WITH EXTRA ICONS
     height: 30px; width: 30px; vertical-align: middle;
     filter: invert(var(--invert)) opacity(50%);
 }
-
 .roll-text {
     font-family: 'Courier New', Courier, monospace;
     width: 30px; height: 30px;
@@ -265,6 +301,7 @@ RESPONSIVE DESIGN
     .navbar {padding: 0;}
     .switcher, .switcher-navbar, .back-to-top, .site-map {right: 15px;}
     .container {flex-direction: column; padding: 0 3vw;}
+    .dropbtn {width: 30vw;}
     #submenu {height: 10rem;}
     .subnavs {width: 100%; margin:0;}
     .subnavs div {margin: 0 5%;}
@@ -350,6 +387,7 @@ a {
     color: var(--link-color);
     text-decoration: underline 2px var(--accent-color);
 }
+
 a:hover, a:active {
     background-color: var(--hover-color);
     color: var(--accent-color);
