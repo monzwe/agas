@@ -14,6 +14,7 @@ DARK THEME
     --hover-color: white;
     --accent-color: #f96353;
     --invert: 0%;
+    --active: 100%;
     --opacity: 50%; /*Saleve silhouette on subpages, on sky background */
     --tbl-color: 10%; /*Columns in tables: dark transparent */
 }
@@ -27,6 +28,7 @@ body.dark-mode {
     --lake-color: #777;
     --accent-color: #80bbff;
     --invert: 100%;
+    --active: 0%;
     --opacity: 100%;
     --tbl-color: 90%; /*Columns in tables dark opaque */
 }
@@ -73,7 +75,7 @@ NAVIGATION
 }
 .navbar img {
    height: 30px; width: 30px; filter: invert(var(--invert));
-   margin: 5px;
+   margin: 5px 5px 0; /*to center the icons, they seem to have extra space at the bottom? */
 }
 .navbar-right { /* navbar container for subpages icons, aligned right in navbar */
     float: right;
@@ -87,6 +89,9 @@ NAVIGATION
     color: var(--hover-color);
     transition: none;
     background: var(--accent-color);
+}
+#active-page img {
+ filter: invert(var(--active));
 }
 
 .full { /*right-hand menu items, display in full on large screens */
