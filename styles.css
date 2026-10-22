@@ -21,7 +21,7 @@ DARK THEME
 body.dark-mode {
     --bg-color: #303030;
     --navbar-color: #2F445D;
-    --text-color: #dadada;
+    --text-color: #ccc;
     --link-color: white;
     --hover-color: black;
     --sky-color: #777;
@@ -383,7 +383,7 @@ General-style links in body text
 /*----------------------------------------*/
 a {
     color: var(--link-color);
-    text-decoration: underline dotted 3px var(--accent-color);
+    text-decoration: underline 2px var(--accent-color);
       border-radius: 0.8em 0.3em;
       padding: 0em 0.3em;
       background: linear-gradient(90deg,
