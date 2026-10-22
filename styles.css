@@ -19,7 +19,7 @@ DARK THEME
     --tbl-color: 10%; /*Columns in tables: dark transparent */
 }
 body.dark-mode {
-    --bg-color: #303030;
+    --bg-color: #333;
     --navbar-color: #2F445D;
     --text-color: #ccc;
     --link-color: white;
