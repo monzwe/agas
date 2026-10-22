@@ -51,8 +51,8 @@ STICKY ICONS
 .switcher img, .back-to-top img, .switcher-navbar img, .site-map img {height: 30px; width: 30px;}
 .switcher {margin-top: 15px; background: var(--hover-color);}
 .switcher-navbar {margin-top: -45px; background: var(--hover-color);}
-.back-to-top {margin-top: calc(100vh - 145px); padding:0; transition:none; background: transparent; filter: invert(var(--invert));}
-.site-map {margin-top: calc(100vh - 100px); padding:0; transition:none; background: transparent; filter: invert(var(--invert));}
+.back-to-top {margin-top: calc(100vh - 145px); padding:0; transition:none; background: #bbb; filter: invert(var(--invert));}
+.site-map {margin-top: calc(100vh - 100px); padding:0; transition:none; background: #ccc; filter: invert(var(--invert));}
 @media print {
     .switcher {display: none;}
     .back-to-top {display: none;}
