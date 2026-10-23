@@ -488,6 +488,7 @@ h3 {/* subheading */
     line-height: 1.5;
     padding: 0 15vw;
     margin: 30px 0 10px 0;
+    scroll-margin-top: 70px;
 }
 
 h4 {/* Centered bold para, e.g. for images with a fixed width */
