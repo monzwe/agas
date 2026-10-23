@@ -16,7 +16,7 @@ DARK THEME
     --invert: 0%;
     --active: 100%;
     --opacity: 50%; /*Saleve silhouette on subpages, on sky background */
-    --tbl-color: 10%; /*Columns in tables: dark transparent */
+    --tbl-color: 5%; /*Columns in tables: black transparent */
 }
 body.dark-mode {
     --bg-color: #222;
@@ -30,7 +30,7 @@ body.dark-mode {
     --invert: 100%;
     --active: 0%;
     --opacity: 100%;
-    --tbl-color: 90%; /*Columns in tables dark opaque */
+    --tbl-color: 100%; /*Columns in tables black opaque */
 }
 body.dark-mode > .banner {
        background-image: url('assets/img/AGAS-banner-dark.webp'), linear-gradient(var(--sky-color) 70%,var(--lake-color));
@@ -248,7 +248,7 @@ table {
   font-size: 1rem;
 }
 tr {border-bottom: 1px solid #aaa;}
-tr:nth-child(even){background-color: rgba(255,255,255,0.4);}
+tr:nth-child(even){background-color: rgba(0,0,0,var(--tbl-color));}
 td {padding: 10px; line-height: 1.4;}
 
 /*----------------------------------------
