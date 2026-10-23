@@ -5,7 +5,7 @@
 DARK THEME
 /*----------------------------------------*/
 :root {
-    --navbar-color: #ccc;
+    --navbar-color: #ddd;
     --bg-color: #FEE6cc; 
     --sky-color: #fce1c2; /*matches top of AGAS-banner images (main and sub) */
     --lake-color: #ba9; /*same or darker than lake on AGAS-banner image */
@@ -19,7 +19,7 @@ DARK THEME
     --tbl-color: 10%; /*Columns in tables: dark transparent */
 }
 body.dark-mode {
-    --bg-color: #333;
+    --bg-color: #222;
     --navbar-color: #2F445D;
     --text-color: #ccc;
     --link-color: white;
@@ -51,8 +51,8 @@ STICKY ICONS
 .switcher img, .back-to-top img, .switcher-navbar img, .site-map img {height: 30px; width: 30px;}
 .switcher {margin-top: 15px; background: var(--hover-color);}
 .switcher-navbar {margin-top: -45px; background: var(--hover-color);}
-.back-to-top {margin-top: calc(100vh - 145px); padding:0; transition:none; background: #ccc; filter: invert(var(--invert));}
-.site-map {margin-top: calc(100vh - 100px); padding:0; transition:none; background: #ccc; filter: invert(var(--invert));}
+.back-to-top {margin-top: calc(100vh - 145px); padding:0; transition:none; background: #ddd; filter: invert(var(--invert));}
+.site-map {margin-top: calc(100vh - 100px); padding:0; transition:none; background: #ddd; filter: invert(var(--invert));}
 @media print {
     .switcher {display: none;}
     .back-to-top {display: none;}
@@ -134,8 +134,8 @@ NAVIGATION
   font-size: 1rem;
   width: 18vw;
   background: linear-gradient(90deg, var(--navbar-color) 80%, transparent);
-  padding: 0em 0.3em;
-  border-radius: 0 0.8em 0.8em;
+  padding: 0;
+  border-radius: 0.8em 0.3em;
   z-index: 1;
 }
 .dropdown-content a {
@@ -170,15 +170,15 @@ NAVIGATION
 }
 .subnavs div {
     margin: 6px 5%;
+    color: #aaa;
     background-color: var(--hover-color);
-    padding: 0em 0.3em;
     border-radius: 0.8em 0.3em;
-
 }
 .subnavs a {
   text-transform:uppercase;
   font-weight: 700;
   text-decoration: none;
+  transition:none;
 }
 
 /*----------------------------------------
@@ -385,7 +385,6 @@ a {
     color: var(--link-color);
     text-decoration: underline 2px var(--accent-color);
       border-radius: 0.8em 0.3em;
-      padding: 0em 0.3em;
       background: linear-gradient(90deg,
 	  transparent 0%,
       transparent 50%,
@@ -515,7 +514,7 @@ SITE MAP
 }
 .map img {filter: invert(var(--invert))}
 .map a {text-decoration: none;}
-.page {text-transform: uppercase; font-weight: 700; color: var(--accent-color);}
+.page {text-transform: uppercase; font-weight: 700; color: var(--accent-color); background-color: var(--hover-color);}
 .sky-icon {font-family: 'Courier New', Courier, monospace;}
 
 /*----------------------------------------
@@ -530,7 +529,8 @@ footer {
 p.decline {
     background-color: var(--hover-color);
     border-left:  var(--accent-color) solid 6px;
-    margin: 20px 15vw;
+    margin: 40px 15vw;
     padding: 15px 10px;
+    text-align: center;
 }
 
